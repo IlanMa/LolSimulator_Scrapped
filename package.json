@@ -1,0 +1,22 @@
+{
+  "name": "lolsimulator",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IlanMa/LolSimulator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IlanMa/LolSimulator/issues"
+  },
+  "homepage": "https://github.com/IlanMa/LolSimulator#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
