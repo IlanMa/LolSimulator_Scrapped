@@ -1,0 +1,1 @@
+var simulator = angular.module('simulator', []);
