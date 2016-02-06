@@ -5,7 +5,8 @@ console.log("### APP JS")
 simulation.config(function ($routeProvider) {
       $routeProvider
         .when('/',{
-            templateUrl: 'views/landing.html'
+            templateUrl: 'views/landing.html',
+            controller: 'SimController'
         })
         .otherwise({
           redirectTo: '/'
