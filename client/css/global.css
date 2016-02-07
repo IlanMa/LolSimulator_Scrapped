@@ -42,12 +42,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.container {
+.global-container {
   position: relative;
-  margin: auto;
   width: 1200px;
   height: 100%;
-  background-color: blue; }
+  background-color: blue;
+  margin: auto; }
 
 .banner-container {
   position: relative;
@@ -55,39 +55,25 @@ table {
   height: 100px;
   background-color: green; }
 
-.stats-container {
+.nav-container {
   position: relative;
   width: 100%;
-  height: 150px; }
-
-.price-container {
-  position: relative;
-  float: left;
-  width: 60%;
-  height: 150px;
-  background-color: yellow; }
-
-.type-container {
-  position: relative;
-  float: left;
-  width: 40%;
-  height: 150px;
+  height: 30px;
   background-color: red; }
 
 .mode-container {
   position: relative;
-  float: left;
-  width: 80px;
-  width: 200px;
-  height: 250px;
-  background-color: black; }
+  width: 250px;
+  height: 300px;
+  background-color: black;
+  float: left; }
 
 .history-container {
   position: relative;
-  float: right;
-  width: 200px;
-  height: 250px;
-  background-color: black; }
+  width: 250px;
+  height: 300px;
+  background-color: black;
+  float: right; }
 
 .chest {
   position: relative;

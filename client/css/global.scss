@@ -44,58 +44,34 @@ table {
 	border-spacing: 0;
 }
 
-.container {
+@mixin container($width, $height, $bg) {
 	position: relative;
+	width: $width;
+	height: $height;
+	background-color: $bg;
+}
+
+.global-container {
+	@include container(1200px, 100%, blue);
 	margin: auto;
-	width: 1200px;
-	height: 100%;
-	background-color: blue;
 }
 
 .banner-container {
-	position: relative;
-	width: 100%;
-	height: 100px;
-	background-color: green;
+	@include container(100%, 100px, green);
 }
 
-.stats-container {
-	position: relative;
-	width: 100%;
-	height: 150px;
-}
-
-.price-container {
-	position: relative;
-	float: left;
-	width: 60%;
-	height: 150px;
-	background-color: yellow;
-}
-
-.type-container {
-	position: relative;
-	float: left;
-	width: 40%;
-	height: 150px;
-	background-color: red;
+.nav-container {
+	@include container(100%, 30px, red);
 }
 
 .mode-container {
-	position: relative;
+	@include container(250px, 300px, black);
 	float: left;
-	width: 80px;
-	width: 200px;
-	height: 250px;
-	background-color: black;
 }
 
 .history-container {
-	position: relative;
+	@include container(250px, 300px, black);
 	float: right;
-	width: 200px;
-	height: 250px;
-	background-color: black;
 }
 
 .chest {
