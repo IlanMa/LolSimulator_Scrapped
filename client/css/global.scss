@@ -26,6 +26,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background-color: #ADADAD;
 }
 ol, ul {
 	list-style: none;
@@ -41,4 +42,35 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+.container {
+	position: relative;
+	margin: auto;
+	width: 1200px;
+	height: 100%;
+	background-color: blue;
+}
+
+.banner-container {
+	position: relative;
+	width: 100%;
+	height: 100px;
+	background-color: green;
+}
+
+.stats-container {
+	position: relative;
+	float: left;
+	width: 60%;
+	height: 150px;
+	background-color: yellow;
+}
+
+.type-container {
+	position: relative;
+	float: left;
+	width: 40%;
+	height: 150px;
+	background-color: red;
 }

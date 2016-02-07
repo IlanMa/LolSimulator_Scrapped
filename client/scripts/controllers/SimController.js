@@ -17,7 +17,7 @@ simulation.controller('SimController', [
                 console.log(err)
             })
         }
-        getSkins();
+        //getSkins();
 
         function storeSkins(res) {
         	var data = res.data.data
