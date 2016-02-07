@@ -15,12 +15,13 @@
 	float: right;
 }
 
-.chest {
+.result-container {
 	position: relative;
     margin: 30px auto auto auto;
-    width: 350px;
-    height: 200px;
-    background-color: white;
+    width: 240px;
+    height: 350px;
+    background-size: 240px 350px;
+    background-repeat: no-repeat;
 }
 
 .chest-button {

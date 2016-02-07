@@ -18,7 +18,16 @@ simulation.controller('SimController', [
         //     console.log(skins);
         // });
 
-        console.log(championInfo);
+        $scope.image = 'http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg';
+
+        var skins = championInfo;
+        $scope.openSkin = function() {
+            var skinResult;
+            do {
+                skinResult = skins[Math.floor(Math.random() * skins.length)];
+            } while (skinResult.name === 'default')
+            $scope.image = skinResult.img;
+        }
 
     }   
 ])
