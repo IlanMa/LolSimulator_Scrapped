@@ -69,28 +69,3 @@ table {
   /* ng-view */
   position: absolute;
   width: 100%; }
-
-.mode-container {
-  position: relative;
-  width: 250px;
-  height: 300px;
-  background-color: black;
-  float: left; }
-
-.history-container {
-  position: relative;
-  width: 250px;
-  height: 300px;
-  background-color: black;
-  float: right; }
-
-.chest {
-  position: relative;
-  margin: 30px auto auto auto;
-  width: 350px;
-  height: 200px;
-  background-color: white; }
-
-.chest-button {
-  position: relative;
-  margin-top: 30px; }

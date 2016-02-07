@@ -73,26 +73,3 @@ table {
 		width: 100%;
 	}
 }
-
-.mode-container {
-	@include container(250px, 300px, black);
-	float: left;
-}
-
-.history-container {
-	@include container(250px, 300px, black);
-	float: right;
-}
-
-.chest {
-	position: relative;
-    margin: 30px auto auto auto;
-    width: 350px;
-    height: 200px;
-    background-color: white;
-}
-
-.chest-button {
-	position: relative;
-	margin-top: 30px;
-}
