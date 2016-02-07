@@ -54,6 +54,7 @@ table {
 .global-container {
 	@include container(1200px, 100%, blue);
 	margin: auto;
+	text-align: center;
 }
 
 .banner-container {
@@ -62,6 +63,15 @@ table {
 
 .nav-container {
 	@include container(100%, 30px, red);
+}
+
+.main-container {
+	position: relative;
+	& > div { 
+		/* ng-view */
+		position: absolute;
+		width: 100%;
+	}
 }
 
 .mode-container {
@@ -80,4 +90,9 @@ table {
     width: 350px;
     height: 200px;
     background-color: white;
+}
+
+.chest-button {
+	position: relative;
+	margin-top: 30px;
 }
