@@ -15,7 +15,7 @@ simulation.service('SkinService', [
                 })
             },
             getSkinsData: function(obj) {
-                var data = obj.data.data
+                var data = obj.data.data;
                 var skins = [];
                 for (var index in data) {
                     var length = data[index].skins.length;
@@ -24,6 +24,7 @@ simulation.service('SkinService', [
                         var tempSkin = {
                             "name": data[index].skins[i].name,
                             "champ": data[index].key,
+                            "price": 0,
                             "num": data[index].skins[i].num
                         };
 
@@ -38,7 +39,6 @@ simulation.service('SkinService', [
                     }
 
                 }
-                console.log(skins)
                 return skins;
             }
         }

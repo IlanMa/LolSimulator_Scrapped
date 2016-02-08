@@ -12,11 +12,11 @@ simulation.controller('SimController', [
 
         console.log('### SIM CONTROLLER');
 
-        // var skins = [];
-        // SkinService.getChampData(function(res){
-        //     skins = SkinService.getSkinsData(res);
-        //     console.log(skins);
-        // });
+        var skins = [];
+        SkinService.getChampData(function(res){
+            skins = SkinService.getSkinsData(res);
+            console.log(skins);
+        });
 
         // Initial image
         $scope.image = 'http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg';
