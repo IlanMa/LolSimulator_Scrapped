@@ -1,4 +1,11 @@
 <div class="mode-container"></div>
-<div class="history-container"></div>
+<div class="history-container">
+	<p>History</p>
+	<ul>
+		<li ng-repeat="skin in skinHistory">
+			{{$index + 1}} - {{skin}}
+		</li>
+	</ul>
+</div>
 <div class="result-container" ng-style="{'background-image':'url('+image+')'}"></div>
 <button class="chest-button" ng-click="openSkin()">Button</button>

@@ -11,8 +11,19 @@
 }
 
 .history-container {
-	@include container(250px, 300px, black);
+	@include container(250px, 300px, rgb(100,100,100));
 	float: right;
+	& > p {
+		/* history paragraph */
+		margin-top: 10px;
+		font-size: 18px;
+		color: white;
+	}
+	& li {
+		color: rgb(200,200,200);
+		padding: 5px;
+		text-align: left;
+	}
 }
 
 .result-container {

@@ -9,8 +9,19 @@
   position: relative;
   width: 250px;
   height: 300px;
-  background-color: black;
+  background-color: #646464;
   float: right; }
+
+.history-container > p {
+  /* history paragraph */
+  margin-top: 10px;
+  font-size: 18px;
+  color: white; }
+
+.history-container li {
+  color: #c8c8c8;
+  padding: 5px;
+  text-align: left; }
 
 .result-container {
   position: relative;
