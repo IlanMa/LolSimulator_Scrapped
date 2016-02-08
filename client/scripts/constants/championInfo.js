@@ -1,4 +1,4 @@
-simulation.constant('championInfo', [{
+simulation.constant('ChampionInfo', [{
     "name": "default",
     "champ": "Thresh",
     "num": 0,

@@ -2,12 +2,12 @@ simulation.controller('SimController', [
     '$scope',
     '$http',
     'SkinService',
-    'championInfo',
+    'ChampionInfo',
     function(
         $scope,
         $http,
         SkinService,
-        championInfo) {
+        ChampionInfo) {
         'use strict';
 
         console.log('### SIM CONTROLLER');
@@ -18,9 +18,10 @@ simulation.controller('SimController', [
         //     console.log(skins);
         // });
 
+        // Initial Img
         $scope.image = 'http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg';
 
-        var skins = championInfo;
+        var skins = ChampionInfo;
         $scope.openSkin = function() {
             var skinResult;
             do {
