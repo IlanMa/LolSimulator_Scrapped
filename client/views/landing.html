@@ -2,7 +2,7 @@
 <div class="history-container">
 	<p>History</p>
 	<ul>
-		<li ng-repeat="skin in skinHistory">
+		<li ng-repeat="skin in skinHistory | limitTo: -10">
 			{{$index + 1}} - {{skin}}
 		</li>
 	</ul>

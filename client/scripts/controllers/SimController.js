@@ -33,9 +33,6 @@ simulation.controller('SimController', [
             do {
                 skinResult = skins[Math.floor(Math.random() * skins.length)];
             } while (skinResult.name === 'default')
-            if ($scope.skinHistory.length >= 10) {
-                $scope.skinHistory.shift();
-            }
             $scope.skinHistory.push(skinResult.name);
             $scope.image = skinResult.img;
         }
