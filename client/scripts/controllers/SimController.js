@@ -2,11 +2,13 @@ simulation.controller('SimController', [
     '$scope',
     '$http',
     'SkinService',
+    'GiftService',
     'ChampionInfo',
     function(
         $scope,
         $http,
         SkinService,
+        GiftService,
         ChampionInfo) {
         'use strict';
 
@@ -21,6 +23,12 @@ simulation.controller('SimController', [
         // Initial image
         //$scope.image = 'http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg';
 
+        $scope.chestsOpened = 0;
+        $scope.dollarSpent = 0;
+        $scope.rpSpent = 0;
+        $scope.rpGained = 0;
+        $scope.dollarReturn = 0;
+
         // Contains all skins
         var skins = ChampionInfo;
 
@@ -34,7 +42,7 @@ simulation.controller('SimController', [
                 skinResult = skins[Math.floor(Math.random() * skins.length)];
             } while (skinResult.name === 'default')
             $scope.skinHistory.push(skinResult.name);
-            $scope.image = skinResult.img;
+            // $scope.image = skinResult.img;
             $scope.calculatePricing(skinResult);
         }
 
@@ -45,12 +53,6 @@ simulation.controller('SimController', [
             $scope.rpGained += skin.price;
             $scope.dollarReturn = ($scope.rpGained - $scope.rpSpent) * 0.0096153846153846;
         }
-
-        $scope.chestsOpened = 0;
-        $scope.dollarSpent = 0;
-        $scope.rpSpent = 0;
-        $scope.rpGained = 0;
-        $scope.dollarReturn = 0;
 
     }
 ])
