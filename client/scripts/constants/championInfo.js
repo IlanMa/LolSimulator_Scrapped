@@ -61,7 +61,7 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Highland Tryndamere",
     "champ": "Tryndamere",
-    "price": 0,
+    "price": 520,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Tryndamere_1.jpg"
 }, {
