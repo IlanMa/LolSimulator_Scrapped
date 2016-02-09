@@ -19,7 +19,7 @@ simulation.controller('SimController', [
         });
 
         // Initial image
-        $scope.image = 'http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg';
+        //$scope.image = 'http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg';
 
         // Contains all skins
         var skins = ChampionInfo;

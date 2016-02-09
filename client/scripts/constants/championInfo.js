@@ -2521,31 +2521,31 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Ironscale Shyvana",
     "champ": "Shyvana",
-    "price": 0,
+    "price": 750,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Shyvana_1.jpg"
 }, {
     "name": "Boneclaw Shyvana",
     "champ": "Shyvana",
-    "price": 0,
+    "price": 520,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Shyvana_2.jpg"
 }, {
     "name": "Darkflame Shyvana",
     "champ": "Shyvana",
-    "price": 0,
+    "price": 975,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Shyvana_3.jpg"
 }, {
     "name": "Ice Drake Shyvana",
     "champ": "Shyvana",
-    "price": 0,
+    "price": 975,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Shyvana_4.jpg"
 }, {
     "name": "Championship Shyvana",
     "champ": "Shyvana",
-    "price": 0,
+    "price": 975,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Shyvana_5.jpg"
 }, {
@@ -2557,13 +2557,13 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Blood Moon Kalista",
     "champ": "Kalista",
-    "price": 0,
+    "price": 975,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Kalista_1.jpg"
 }, {
     "name": "Championship Kalista",
     "champ": "Kalista",
-    "price": 0,
+    "price": 975,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Kalista_2.jpg"
 }, {
@@ -2575,49 +2575,49 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Toxic Dr. Mundo",
     "champ": "DrMundo",
-    "price": 0,
+    "price": 520,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/DrMundo_1.jpg"
 }, {
     "name": "Mr. Mundoverse",
     "champ": "DrMundo",
-    "price": 0,
+    "price": 520,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/DrMundo_2.jpg"
 }, {
     "name": "Corporate Mundo",
     "champ": "DrMundo",
-    "price": 0,
+    "price": 1820,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/DrMundo_3.jpg"
 }, {
     "name": "Mundo Mundo",
     "champ": "DrMundo",
-    "price": 0,
+    "price": 975,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/DrMundo_4.jpg"
 }, {
     "name": "Executioner Mundo",
     "champ": "DrMundo",
-    "price": 0,
+    "price": 520,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/DrMundo_5.jpg"
 }, {
     "name": "Rageborn Mundo",
     "champ": "DrMundo",
-    "price": 0,
+    "price": 975,
     "num": 6,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/DrMundo_6.jpg"
 }, {
     "name": "TPA Mundo",
     "champ": "DrMundo",
-    "price": 0,
+    "price": 750,
     "num": 7,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/DrMundo_7.jpg"
 }, {
     "name": "Pool Party Mundo",
     "champ": "DrMundo",
-    "price": 0,
+    "price": 975,
     "num": 8,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/DrMundo_8.jpg"
 }, {
@@ -2629,7 +2629,7 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Master Chef Tahm Kench",
     "champ": "TahmKench",
-    "price": 0,
+    "price": 975,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/TahmKench_1.jpg"
 }, {
@@ -2641,13 +2641,13 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Dark Valkyrie Diana",
     "champ": "Diana",
-    "price": 0,
+    "price": 975,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Diana_1.jpg"
 }, {
     "name": "Lunar Goddess Diana",
     "champ": "Diana",
-    "price": 0,
+    "price": 975,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Diana_2.jpg"
 }, {
@@ -2659,31 +2659,31 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Apocalyptic Brand",
     "champ": "Brand",
-    "price": 0,
+    "price": 750,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Brand_1.jpg"
 }, {
     "name": "Vandal Brand",
     "champ": "Brand",
-    "price": 0,
+    "price": 520,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Brand_2.jpg"
 }, {
     "name": "Cryocore Brand",
     "champ": "Brand",
-    "price": 0,
+    "price": 975,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Brand_3.jpg"
 }, {
     "name": "Zombie Brand",
     "champ": "Brand",
-    "price": 0,
+    "price": 1820,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Brand_4.jpg"
 }, {
     "name": "Spirit Fire Brand",
     "champ": "Brand",
-    "price": 0,
+    "price": 1350,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Brand_5.jpg"
 }, {
@@ -2695,13 +2695,13 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Sabretusk Sejuani",
     "champ": "Sejuani",
-    "price": 0,
+    "price": 975,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Sejuani_1.jpg"
 }, {
     "name": "Darkrider Sejuani",
     "champ": "Sejuani",
-    "price": 0,
+    "price": 975,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Sejuani_2.jpg"
 }, {
@@ -2713,19 +2713,19 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Bear Cavalry Sejuani",
     "champ": "Sejuani",
-    "price": 0,
+    "price": 1350,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Sejuani_4.jpg"
 }, {
     "name": "Poro Rider Sejuani",
     "champ": "Sejuani",
-    "price": 0,
+    "price": 975,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Sejuani_5.jpg"
 }, {
     "name": "Beast Hunter Sejuani",
     "champ": "Sejuani",
-    "price": 0,
+    "price": 750,
     "num": 6,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Sejuani_6.jpg"
 }, {
@@ -2737,43 +2737,43 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Count Vladimir",
     "champ": "Vladimir",
-    "price": 0,
+    "price": 520,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Vladimir_1.jpg"
 }, {
     "name": "Marquis Vladimir",
     "champ": "Vladimir",
-    "price": 0,
+    "price": 520,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Vladimir_2.jpg"
 }, {
     "name": "Nosferatu Vladimir",
     "champ": "Vladimir",
-    "price": 0,
+    "price": 975,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Vladimir_3.jpg"
 }, {
     "name": "Vandal Vladimir",
     "champ": "Vladimir",
-    "price": 0,
+    "price": 975,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Vladimir_4.jpg"
 }, {
     "name": "Blood Lord Vladimir",
     "champ": "Vladimir",
-    "price": 0,
+    "price": 1820,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Vladimir_5.jpg"
 }, {
     "name": "Soulstealer Vladimir",
     "champ": "Vladimir",
-    "price": 0,
+    "price": 1350,
     "num": 6,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Vladimir_6.jpg"
 }, {
     "name": "Academy Vladimir",
     "champ": "Vladimir",
-    "price": 0,
+    "price": 750,
     "num": 7,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Vladimir_7.jpg"
 }, {
@@ -2785,13 +2785,13 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Special Weapon Zac",
     "champ": "Zac",
-    "price": 0,
+    "price": 975,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Zac_1.jpg"
 }, {
     "name": "Pool Party Zac",
     "champ": "Zac",
-    "price": 0,
+    "price": 1350,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Zac_2.jpg"
 }, {
@@ -2803,13 +2803,13 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Eternum Rek'Sai",
     "champ": "RekSai",
-    "price": 0,
+    "price": 1350,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/RekSai_1.jpg"
 }, {
     "name": "Pool Party Rek'Sai",
     "champ": "RekSai",
-    "price": 0,
+    "price": 1350,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/RekSai_2.jpg"
 }, {
@@ -2821,19 +2821,19 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Phoenix Quinn",
     "champ": "Quinn",
-    "price": 0,
+    "price": 975,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Quinn_1.jpg"
 }, {
     "name": "Woad Scout Quinn",
     "champ": "Quinn",
-    "price": 0,
+    "price": 975,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Quinn_2.jpg"
 }, {
     "name": "Corsair Quinn",
     "champ": "Quinn",
-    "price": 0,
+    "price": 750,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Quinn_3.jpg"
 }, {
@@ -2845,19 +2845,19 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Stinger Akali",
     "champ": "Akali",
-    "price": 0,
+    "price": 520,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Akali_1.jpg"
 }, {
     "name": "Crimson Akali",
     "champ": "Akali",
-    "price": 0,
+    "price": 520,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Akali_2.jpg"
 }, {
     "name": "All-star Akali",
     "champ": "Akali",
-    "price": 0,
+    "price": 975,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Akali_3.jpg"
 }, {
@@ -2899,37 +2899,37 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Earnest Elf Tristana",
     "champ": "Tristana",
-    "price": 0,
+    "price": 520,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Tristana_2.jpg"
 }, {
     "name": "Firefighter Tristana",
     "champ": "Tristana",
-    "price": 0,
+    "price": 1820,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Tristana_3.jpg"
 }, {
     "name": "Guerilla Tristana",
     "champ": "Tristana",
-    "price": 0,
+    "price": 975,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Tristana_4.jpg"
 }, {
     "name": "Buccaneer Tristana",
     "champ": "Tristana",
-    "price": 0,
+    "price": 520,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Tristana_5.jpg"
 }, {
     "name": "Rocket Girl Tristana",
     "champ": "Tristana",
-    "price": 0,
+    "price": 975,
     "num": 6,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Tristana_6.jpg"
 }, {
     "name": "Dragon Trainer Tristana",
     "champ": "Tristana",
-    "price": 0,
+    "price": 1820,
     "num": 10,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Tristana_10.jpg"
 }, {
@@ -2941,31 +2941,31 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Blood Knight Hecarim",
     "champ": "Hecarim",
-    "price": 0,
+    "price": 975,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Hecarim_1.jpg"
 }, {
     "name": "Reaper Hecarim",
     "champ": "Hecarim",
-    "price": 0,
+    "price": 975,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Hecarim_2.jpg"
 }, {
     "name": "Headless Hecarim",
     "champ": "Hecarim",
-    "price": 0,
+    "price": 975,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Hecarim_3.jpg"
 }, {
     "name": "Arcade Hecarim",
     "champ": "Hecarim",
-    "price": 0,
+    "price": 1350,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Hecarim_4.jpg"
 }, {
     "name": "Elderwood Hecarim",
     "champ": "Hecarim",
-    "price": 0,
+    "price": 1350,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Hecarim_5.jpg"
 }, {
@@ -2977,13 +2977,13 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Warrior Princess Sivir",
     "champ": "Sivir",
-    "price": 0,
+    "price": 520,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Sivir_1.jpg"
 }, {
     "name": "Spectacular Sivir",
     "champ": "Sivir",
-    "price": 0,
+    "price": 975,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Sivir_2.jpg"
 }, {
@@ -2995,7 +2995,7 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Bandit Sivir",
     "champ": "Sivir",
-    "price": 0,
+    "price": 750,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Sivir_4.jpg"
 }, {
@@ -3007,13 +3007,13 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Snowstorm Sivir",
     "champ": "Sivir",
-    "price": 0,
+    "price": 975,
     "num": 6,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Sivir_6.jpg"
 }, {
     "name": "Warden Sivir",
     "champ": "Sivir",
-    "price": 0,
+    "price": 750,
     "num": 7,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Sivir_7.jpg"
 }, {
@@ -3031,19 +3031,19 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Hired Gun Lucian",
     "champ": "Lucian",
-    "price": 0,
+    "price": 975,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Lucian_1.jpg"
 }, {
     "name": "Striker Lucian",
     "champ": "Lucian",
-    "price": 0,
+    "price": 750,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Lucian_2.jpg"
 }, {
     "name": "PROJECT: Lucian",
     "champ": "Lucian",
-    "price": 0,
+    "price": 1350,
     "num": 6,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Lucian_6.jpg"
 }, {
@@ -3055,19 +3055,19 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Headhunter Rengar",
     "champ": "Rengar",
-    "price": 0,
+    "price": 975,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Rengar_1.jpg"
 }, {
     "name": "Night Hunter Rengar",
     "champ": "Rengar",
-    "price": 0,
+    "price": 975,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Rengar_2.jpg"
 }, {
     "name": "SSW Rengar",
     "champ": "Rengar",
-    "price": 0,
+    "price": 750,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Rengar_3.jpg"
 }, {
@@ -3091,37 +3091,37 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Big Bad Warwick",
     "champ": "Warwick",
-    "price": 0,
+    "price": 520,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Warwick_3.jpg"
 }, {
     "name": "Tundra Hunter Warwick",
     "champ": "Warwick",
-    "price": 0,
+    "price": 520,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Warwick_4.jpg"
 }, {
     "name": "Feral Warwick",
     "champ": "Warwick",
-    "price": 0,
+    "price": 975,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Warwick_5.jpg"
 }, {
     "name": "Firefang Warwick",
     "champ": "Warwick",
-    "price": 0,
+    "price": 975,
     "num": 6,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Warwick_6.jpg"
 }, {
     "name": "Hyena Warwick",
     "champ": "Warwick",
-    "price": 0,
+    "price": 975,
     "num": 7,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Warwick_7.jpg"
 }, {
     "name": "Marauder Warwick",
     "champ": "Warwick",
-    "price": 0,
+    "price": 750,
     "num": 8,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Warwick_8.jpg"
 }, {
@@ -3133,25 +3133,25 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Sandscourge Skarner",
     "champ": "Skarner",
-    "price": 0,
+    "price": 975,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Skarner_1.jpg"
 }, {
     "name": "Earthrune Skarner",
     "champ": "Skarner",
-    "price": 0,
+    "price": 520,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Skarner_2.jpg"
 }, {
     "name": "Battlecast Alpha Skarner",
     "champ": "Skarner",
-    "price": 0,
+    "price": 1820,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Skarner_3.jpg"
 }, {
     "name": "Guardian of the Sands Skarner",
     "champ": "Skarner",
-    "price": 0,
+    "price": 975,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Skarner_4.jpg"
 }, {
@@ -3163,43 +3163,43 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Shamrock Malphite",
     "champ": "Malphite",
-    "price": 0,
+    "price": 520,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Malphite_1.jpg"
 }, {
     "name": "Coral Reef Malphite",
     "champ": "Malphite",
-    "price": 0,
+    "price": 750,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Malphite_2.jpg"
 }, {
     "name": "Marble Malphite",
     "champ": "Malphite",
-    "price": 0,
+    "price": 520,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Malphite_3.jpg"
 }, {
     "name": "Obsidian Malphite",
     "champ": "Malphite",
-    "price": 0,
+    "price": 975,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Malphite_4.jpg"
 }, {
     "name": "Glacial Malphite",
     "champ": "Malphite",
-    "price": 0,
+    "price": 1350,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Malphite_5.jpg"
 }, {
     "name": "Mecha Malphite",
     "champ": "Malphite",
-    "price": 0,
+    "price": 1350,
     "num": 6,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Malphite_6.jpg"
 }, {
     "name": "Ironside Malphite",
     "champ": "Malphite",
-    "price": 0,
+    "price": 975,
     "num": 7,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Malphite_7.jpg"
 }, {
@@ -3211,13 +3211,13 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "High Noon Yasuo",
     "champ": "Yasuo",
-    "price": 0,
+    "price": 975,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Yasuo_1.jpg"
 }, {
     "name": "PROJECT: Yasuo",
     "champ": "Yasuo",
-    "price": 0,
+    "price": 1350,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Yasuo_2.jpg"
 }, {
@@ -3229,25 +3229,25 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Runeborn Xerath",
     "champ": "Xerath",
-    "price": 0,
+    "price": 750,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Xerath_1.jpg"
 }, {
     "name": "Battlecast Xerath",
     "champ": "Xerath",
-    "price": 0,
+    "price": 520,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Xerath_2.jpg"
 }, {
     "name": "Scorched Earth Xerath",
     "champ": "Xerath",
-    "price": 0,
+    "price": 1350,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Xerath_3.jpg"
 }, {
     "name": "Guardian of the Sands Xerath",
     "champ": "Xerath",
-    "price": 0,
+    "price": 1350,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Xerath_4.jpg"
 }, {
@@ -3259,49 +3259,49 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Happy Elf Teemo",
     "champ": "Teemo",
-    "price": 0,
+    "price": 520,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Teemo_1.jpg"
 }, {
     "name": "Recon Teemo",
     "champ": "Teemo",
-    "price": 0,
+    "price": 520,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Teemo_2.jpg"
 }, {
     "name": "Badger Teemo",
     "champ": "Teemo",
-    "price": 0,
+    "price": 520,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Teemo_3.jpg"
 }, {
     "name": "Astronaut Teemo",
     "champ": "Teemo",
-    "price": 0,
+    "price": 1350,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Teemo_4.jpg"
 }, {
     "name": "Cottontail Teemo",
     "champ": "Teemo",
-    "price": 0,
+    "price": 975,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Teemo_5.jpg"
 }, {
     "name": "Super Teemo",
     "champ": "Teemo",
-    "price": 0,
+    "price": 975,
     "num": 6,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Teemo_6.jpg"
 }, {
     "name": "Panda Teemo",
     "champ": "Teemo",
-    "price": 0,
+    "price": 975,
     "num": 7,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Teemo_7.jpg"
 }, {
     "name": "Omega Squad Teemo",
     "champ": "Teemo",
-    "price": 0,
+    "price": 1820,
     "num": 8,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Teemo_8.jpg"
 }, {
@@ -3313,43 +3313,43 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Galactic Renekton",
     "champ": "Renekton",
-    "price": 0,
+    "price": 520,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Renekton_1.jpg"
 }, {
     "name": "Outback Renekton",
     "champ": "Renekton",
-    "price": 0,
+    "price": 520,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Renekton_2.jpg"
 }, {
     "name": "Bloodfury Renekton",
     "champ": "Renekton",
-    "price": 0,
+    "price": 975,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Renekton_3.jpg"
 }, {
     "name": "Rune Wars Renekton",
     "champ": "Renekton",
-    "price": 0,
+    "price": 975,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Renekton_4.jpg"
 }, {
     "name": "Scorched Earth Renekton",
     "champ": "Renekton",
-    "price": 0,
+    "price": 975,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Renekton_5.jpg"
 }, {
     "name": "Pool Party Renekton",
     "champ": "Renekton",
-    "price": 0,
+    "price": 1350,
     "num": 6,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Renekton_6.jpg"
 }, {
     "name": "Prehistoric Renekton",
     "champ": "Renekton",
-    "price": 0,
+    "price": 750,
     "num": 7,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Renekton_7.jpg"
 }, {
@@ -3361,37 +3361,37 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Galactic Nasus",
     "champ": "Nasus",
-    "price": 0,
+    "price": 520,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Nasus_1.jpg"
 }, {
     "name": "Pharaoh Nasus",
     "champ": "Nasus",
-    "price": 0,
+    "price": 520,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Nasus_2.jpg"
 }, {
     "name": "Dreadknight Nasus",
     "champ": "Nasus",
-    "price": 0,
+    "price": 975,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Nasus_3.jpg"
 }, {
     "name": "Riot K-9 Nasus",
     "champ": "Nasus",
-    "price": 0,
+    "price": 975,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Nasus_4.jpg"
 }, {
     "name": "Infernal Nasus",
     "champ": "Nasus",
-    "price": 0,
+    "price": 1820,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Nasus_5.jpg"
 }, {
     "name": "Archduke Nasus",
     "champ": "Nasus",
-    "price": 0,
+    "price": 750,
     "num": 6,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Nasus_6.jpg"
 }, {
@@ -3403,31 +3403,31 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Soul Reaver Draven",
     "champ": "Draven",
-    "price": 0,
+    "price": 1350,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Draven_1.jpg"
 }, {
     "name": "Gladiator Draven",
     "champ": "Draven",
-    "price": 0,
+    "price": 975,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Draven_2.jpg"
 }, {
     "name": "Primetime Draven",
     "champ": "Draven",
-    "price": 0,
+    "price": 975,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Draven_3.jpg"
 }, {
     "name": "Pool Party Draven",
     "champ": "Draven",
-    "price": 0,
+    "price": 975,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Draven_4.jpg"
 }, {
     "name": "Beast Hunter Draven",
     "champ": "Draven",
-    "price": 0,
+    "price": 750,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Draven_5.jpg"
 }, {
@@ -3439,43 +3439,43 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Mad Hatter Shaco",
     "champ": "Shaco",
-    "price": 0,
+    "price": 520,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Shaco_1.jpg"
 }, {
     "name": "Royal Shaco",
     "champ": "Shaco",
-    "price": 0,
+    "price": 520,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Shaco_2.jpg"
 }, {
     "name": "Nutcracko",
     "champ": "Shaco",
-    "price": 0,
+    "price": 975,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Shaco_3.jpg"
 }, {
     "name": "Workshop Shaco",
     "champ": "Shaco",
-    "price": 0,
+    "price": 975,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Shaco_4.jpg"
 }, {
     "name": "Asylum Shaco",
     "champ": "Shaco",
-    "price": 0,
+    "price": 975,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Shaco_5.jpg"
 }, {
     "name": "Masked Shaco",
     "champ": "Shaco",
-    "price": 0,
+    "price": 975,
     "num": 6,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Shaco_6.jpg"
 }, {
     "name": "Wild Card Shaco",
     "champ": "Shaco",
-    "price": 0,
+    "price": 750,
     "num": 7,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Shaco_7.jpg"
 }, {
@@ -3487,19 +3487,19 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Northern Front Swain",
     "champ": "Swain",
-    "price": 0,
+    "price": 750,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Swain_1.jpg"
 }, {
     "name": "Bilgewater Swain",
     "champ": "Swain",
-    "price": 0,
+    "price": 520,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Swain_2.jpg"
 }, {
     "name": "Tyrant Swain",
     "champ": "Swain",
-    "price": 0,
+    "price": 1350,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Swain_3.jpg"
 }, {
@@ -3511,31 +3511,31 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Mad Scientist Ziggs",
     "champ": "Ziggs",
-    "price": 0,
+    "price": 975,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ziggs_1.jpg"
 }, {
     "name": "Major Ziggs",
     "champ": "Ziggs",
-    "price": 0,
+    "price": 975,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ziggs_2.jpg"
 }, {
     "name": "Pool Party Ziggs",
     "champ": "Ziggs",
-    "price": 0,
+    "price": 1350,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ziggs_3.jpg"
 }, {
     "name": "Snow Day Ziggs",
     "champ": "Ziggs",
-    "price": 0,
+    "price": 975,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ziggs_4.jpg"
 }, {
     "name": "Master Arcanist Ziggs",
     "champ": "Ziggs",
-    "price": 0,
+    "price": 1350,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ziggs_5.jpg"
 }, {
@@ -3547,25 +3547,25 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Renegade Talon",
     "champ": "Talon",
-    "price": 0,
+    "price": 520,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Talon_1.jpg"
 }, {
     "name": "Crimson Elite Talon",
     "champ": "Talon",
-    "price": 0,
+    "price": 750,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Talon_2.jpg"
 }, {
     "name": "Dragonblade Talon",
     "champ": "Talon",
-    "price": 0,
+    "price": 975,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Talon_3.jpg"
 }, {
     "name": "SSW Talon",
     "champ": "Talon",
-    "price": 0,
+    "price": 750,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Talon_4.jpg"
 }, {
@@ -3577,19 +3577,19 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Tempest Janna",
     "champ": "Janna",
-    "price": 0,
+    "price": 520,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Janna_1.jpg"
 }, {
     "name": "Hextech Janna",
     "champ": "Janna",
-    "price": 0,
+    "price": 975,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Janna_2.jpg"
 }, {
     "name": "Frost Queen Janna",
     "champ": "Janna",
-    "price": 0,
+    "price": 975,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Janna_3.jpg"
 }, {
@@ -3601,13 +3601,13 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Forecast Janna",
     "champ": "Janna",
-    "price": 0,
+    "price": 1820,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Janna_5.jpg"
 }, {
     "name": "Fnatic Janna",
     "champ": "Janna",
-    "price": 0,
+    "price": 750,
     "num": 6,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Janna_6.jpg"
 }, {
@@ -3619,13 +3619,13 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Sandstorm Ekko",
     "champ": "Ekko",
-    "price": 0,
+    "price": 975,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ekko_1.jpg"
 }, {
     "name": "Academy Ekko",
     "champ": "Ekko",
-    "price": 0,
+    "price": 750
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ekko_2.jpg"
 }, {
@@ -3637,31 +3637,31 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Gothic Orianna",
     "champ": "Orianna",
-    "price": 0,
+    "price": 520,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Orianna_1.jpg"
 }, {
     "name": "Sewn Chaos Orianna",
     "champ": "Orianna",
-    "price": 0,
+    "price": 520,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Orianna_2.jpg"
 }, {
     "name": "Bladecraft Orianna",
     "champ": "Orianna",
-    "price": 0,
+    "price": 975,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Orianna_3.jpg"
 }, {
     "name": "TPA Orianna",
     "champ": "Orianna",
-    "price": 0,
+    "price": 750,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Orianna_4.jpg"
 }, {
     "name": "Winter Wonder Orianna",
     "champ": "Orianna",
-    "price": 0,
+    "price": 975,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Orianna_5.jpg"
 }, {
@@ -3673,25 +3673,25 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Royal Guard Fiora",
     "champ": "Fiora",
-    "price": 0,
+    "price": 520,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Fiora_1.jpg"
 }, {
     "name": "Nightraven Fiora",
     "champ": "Fiora",
-    "price": 0,
+    "price": 750,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Fiora_2.jpg"
 }, {
     "name": "Headmistress Fiora",
     "champ": "Fiora",
-    "price": 0,
+    "price": 975,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Fiora_3.jpg"
 }, {
     "name": "PROJECT: Fiora",
     "champ": "Fiora",
-    "price": 0,
+    "price": 1350,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Fiora_4.jpg"
 }, {
@@ -3703,49 +3703,49 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Spectral Fiddlesticks",
     "champ": "FiddleSticks",
-    "price": 0,
+    "price": 520,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/FiddleSticks_1.jpg"
 }, {
     "name": "Union Jack Fiddlesticks",
     "champ": "FiddleSticks",
-    "price": 0,
+    "price": 520,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/FiddleSticks_2.jpg"
 }, {
     "name": "Bandito Fiddlesticks",
     "champ": "FiddleSticks",
-    "price": 0,
+    "price": 520,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/FiddleSticks_3.jpg"
 }, {
     "name": "Pumpkinhead Fiddlesticks",
     "champ": "FiddleSticks",
-    "price": 0,
+    "price": 975,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/FiddleSticks_4.jpg"
 }, {
     "name": "Fiddle Me Timbers",
     "champ": "FiddleSticks",
-    "price": 0,
+    "price": 750,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/FiddleSticks_5.jpg"
 }, {
     "name": "Surprise Party Fiddlesticks",
     "champ": "FiddleSticks",
-    "price": 0,
+    "price": 975,
     "num": 6,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/FiddleSticks_6.jpg"
 }, {
     "name": "Dark Candy Fiddlesticks",
     "champ": "FiddleSticks",
-    "price": 0,
+    "price": 975,
     "num": 7,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/FiddleSticks_7.jpg"
 }, {
     "name": "Risen Fiddlesticks",
     "champ": "FiddleSticks",
-    "price": 0,
+    "price": 1350,
     "num": 8,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/FiddleSticks_8.jpg"
 }, {
@@ -3763,37 +3763,37 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Chrome Rammus",
     "champ": "Rammus",
-    "price": 0,
+    "price": 750,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Rammus_2.jpg"
 }, {
     "name": "Molten Rammus",
     "champ": "Rammus",
-    "price": 0,
+    "price": 975,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Rammus_3.jpg"
 }, {
     "name": "Freljord Rammus",
     "champ": "Rammus",
-    "price": 0,
+    "price": 520,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Rammus_4.jpg"
 }, {
     "name": "Ninja Rammus",
     "champ": "Rammus",
-    "price": 0,
+    "price": 975,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Rammus_5.jpg"
 }, {
     "name": "Full Metal Rammus",
     "champ": "Rammus",
-    "price": 0,
+    "price": 975,
     "num": 6,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Rammus_6.jpg"
 }, {
     "name": "Guardian of the Sands Rammus",
     "champ": "Rammus",
-    "price": 0,
+    "price": 975,
     "num": 7,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Rammus_7.jpg"
 }, {
@@ -3805,37 +3805,37 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Nightmare Cho'Gath",
     "champ": "Chogath",
-    "price": 0,
+    "price": 520,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Chogath_1.jpg"
 }, {
     "name": "Gentleman Cho'Gath",
     "champ": "Chogath",
-    "price": 0,
+    "price": 1820,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Chogath_2.jpg"
 }, {
     "name": "Loch Ness Cho'Gath",
     "champ": "Chogath",
-    "price": 0,
+    "price": 520,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Chogath_3.jpg"
 }, {
     "name": "Jurassic Cho'Gath",
     "champ": "Chogath",
-    "price": 0,
+    "price": 975,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Chogath_4.jpg"
 }, {
     "name": "Battlecast Prime Cho'Gath",
     "champ": "Chogath",
-    "price": 0,
+    "price": 1820,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Chogath_5.jpg"
 }, {
     "name": "Prehistoric Cho'Gath",
     "champ": "Chogath",
-    "price": 0,
+    "price": 750,
     "num": 6,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Chogath_6.jpg"
 }, {
@@ -3847,25 +3847,25 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Wicked LeBlanc",
     "champ": "Leblanc",
-    "price": 0,
+    "price": 750,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Leblanc_1.jpg"
 }, {
     "name": "Prestigious LeBlanc",
     "champ": "Leblanc",
-    "price": 0,
+    "price": 520,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Leblanc_2.jpg"
 }, {
     "name": "Mistletoe LeBlanc",
     "champ": "Leblanc",
-    "price": 0,
+    "price": 975,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Leblanc_3.jpg"
 }, {
     "name": "Ravenborn LeBlanc",
     "champ": "Leblanc",
-    "price": 0,
+    "price": 975,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Leblanc_4.jpg"
 }, {
@@ -3877,31 +3877,31 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Old Saint Zilean",
     "champ": "Zilean",
-    "price": 0,
+    "price": 520,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Zilean_1.jpg"
 }, {
     "name": "Groovy Zilean",
     "champ": "Zilean",
-    "price": 0,
+    "price": 520,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Zilean_2.jpg"
 }, {
     "name": "Shurima Desert Zilean",
     "champ": "Zilean",
-    "price": 0,
+    "price": 975,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Zilean_3.jpg"
 }, {
     "name": "Time Machine Zilean",
     "champ": "Zilean",
-    "price": 0,
+    "price": 520,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Zilean_4.jpg"
 }, {
     "name": "Blood Moon Zilean",
     "champ": "Zilean",
-    "price": 0,
+    "price": 975,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Zilean_5.jpg"
 }, {
@@ -3913,31 +3913,31 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Dryad Soraka",
     "champ": "Soraka",
-    "price": 0,
+    "price": 520,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Soraka_1.jpg"
 }, {
     "name": "Divine Soraka",
     "champ": "Soraka",
-    "price": 0,
+    "price": 975,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Soraka_2.jpg"
 }, {
     "name": "Celestine Soraka",
     "champ": "Soraka",
-    "price": 0,
+    "price": 975,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Soraka_3.jpg"
 }, {
     "name": "Reaper Soraka",
     "champ": "Soraka",
-    "price": 0,
+    "price": 1350,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Soraka_4.jpg"
 }, {
     "name": "Order of the Banana Soraka",
     "champ": "Soraka",
-    "price": 0,
+    "price": 750,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Soraka_5.jpg"
 }, {
@@ -3949,31 +3949,31 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Frozen Terror Nocturne",
     "champ": "Nocturne",
-    "price": 0,
+    "price": 975,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Nocturne_1.jpg"
 }, {
     "name": "Void Nocturne",
     "champ": "Nocturne",
-    "price": 0,
+    "price": 520,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Nocturne_2.jpg"
 }, {
     "name": "Ravager Nocturne",
     "champ": "Nocturne",
-    "price": 0,
+    "price": 520,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Nocturne_3.jpg"
 }, {
     "name": "Haunting Nocturne",
     "champ": "Nocturne",
-    "price": 0,
+    "price": 520,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Nocturne_4.jpg"
 }, {
     "name": "Eternum Nocturne",
     "champ": "Nocturne",
-    "price": 0,
+    "price": 1820,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Nocturne_5.jpg"
 }, {
@@ -3985,19 +3985,19 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Mafia Jinx",
     "champ": "Jinx",
-    "price": 0,
+    "price": 975,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Jinx_1.jpg"
 }, {
     "name": "Firecracker Jinx",
     "champ": "Jinx",
-    "price": 0,
+    "price": 1350,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Jinx_2.jpg"
 }, {
     "name": "Slayer Jinx",
     "champ": "Jinx",
-    "price": 0,
+    "price": 1350,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Jinx_3.jpg"
 }, {
@@ -4009,13 +4009,13 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Undertaker Yorick",
     "champ": "Yorick",
-    "price": 0,
+    "price": 520,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Yorick_1.jpg"
 }, {
     "name": "Pentakill Yorick",
     "champ": "Yorick",
-    "price": 0,
+    "price": 975,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Yorick_2.jpg"
 }, {
@@ -4027,19 +4027,19 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Giant Enemy Crabgot",
     "champ": "Urgot",
-    "price": 0,
+    "price": 520,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Urgot_1.jpg"
 }, {
     "name": "Butcher Urgot",
     "champ": "Urgot",
-    "price": 0,
+    "price": 520,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Urgot_2.jpg"
 }, {
     "name": "Battlecast Urgot",
     "champ": "Urgot",
-    "price": 0,
+    "price": 1350,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Urgot_3.jpg"
 }, {
@@ -4051,7 +4051,7 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Shadowfire Kindred",
     "champ": "Kindred",
-    "price": 0,
+    "price": 1350,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Kindred_1.jpg"
 }, {
@@ -4063,49 +4063,49 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Cowgirl Miss Fortune",
     "champ": "MissFortune",
-    "price": 0,
+    "price": 750,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/MissFortune_1.jpg"
 }, {
     "name": "Waterloo Miss Fortune",
     "champ": "MissFortune",
-    "price": 0,
+    "price": 520,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/MissFortune_2.jpg"
 }, {
     "name": "Secret Agent Miss Fortune",
     "champ": "MissFortune",
-    "price": 0,
+    "price": 975,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/MissFortune_3.jpg"
 }, {
     "name": "Candy Cane Miss Fortune",
     "champ": "MissFortune",
-    "price": 0,
+    "price": 975,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/MissFortune_4.jpg"
 }, {
     "name": "Road Warrior Miss Fortune",
     "champ": "MissFortune",
-    "price": 0,
+    "price": 520,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/MissFortune_5.jpg"
 }, {
     "name": "Mafia Miss Fortune",
     "champ": "MissFortune",
-    "price": 0,
+    "price": 975,
     "num": 6,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/MissFortune_6.jpg"
 }, {
     "name": "Arcade Miss Fortune",
     "champ": "MissFortune",
-    "price": 0,
+    "price": 1350,
     "num": 7,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/MissFortune_7.jpg"
 }, {
     "name": "Captain Fortune",
     "champ": "MissFortune",
-    "price": 0,
+    "price": 975,
     "num": 8,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/MissFortune_8.jpg"
 }, {
@@ -4117,31 +4117,31 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Volcanic Wukong",
     "champ": "MonkeyKing",
-    "price": 0,
+    "price": 975,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/MonkeyKing_1.jpg"
 }, {
     "name": "General Wukong",
     "champ": "MonkeyKing",
-    "price": 0,
+    "price": 750,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/MonkeyKing_2.jpg"
 }, {
     "name": "Jade Dragon Wukong",
     "champ": "MonkeyKing",
-    "price": 0,
+    "price": 975,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/MonkeyKing_3.jpg"
 }, {
     "name": "Underworld Wukong",
     "champ": "MonkeyKing",
-    "price": 0,
+    "price": 1350,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/MonkeyKing_4.jpg"
 }, {
     "name": "Radiant Wukong",
     "champ": "MonkeyKing",
-    "price": 0,
+    "price": 1350,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/MonkeyKing_5.jpg"
 }, {
@@ -4159,43 +4159,43 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Goalkeeper Blitzcrank",
     "champ": "Blitzcrank",
-    "price": 0,
+    "price": 520,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Blitzcrank_2.jpg"
 }, {
     "name": "Boom Boom Blitzcrank",
     "champ": "Blitzcrank",
-    "price": 0,
+    "price": 520,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Blitzcrank_3.jpg"
 }, {
     "name": "Piltover Customs Blitzcrank",
     "champ": "Blitzcrank",
-    "price": 0,
+    "price": 1350,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Blitzcrank_4.jpg"
 }, {
     "name": "Definitely Not Blitzcrank",
     "champ": "Blitzcrank",
-    "price": 0,
+    "price": 520,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Blitzcrank_5.jpg"
 }, {
     "name": "iBlitzcrank",
     "champ": "Blitzcrank",
-    "price": 0,
+    "price": 1350,
     "num": 6,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Blitzcrank_6.jpg"
 }, {
     "name": "Riot Blitzcrank",
     "champ": "Blitzcrank",
-    "price": 0,
+    "price": 975,
     "num": 7,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Blitzcrank_7.jpg"
 }, {
     "name": "Battle Boss Blitzcrank",
     "champ": "Blitzcrank",
-    "price": 0,
+    "price": 1350,
     "num": 11,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Blitzcrank_11.jpg"
 }, {
@@ -4207,37 +4207,37 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Frozen Shen",
     "champ": "Shen",
-    "price": 0,
+    "price": 520,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Shen_1.jpg"
 }, {
     "name": "Yellow Jacket Shen",
     "champ": "Shen",
-    "price": 0,
+    "price": 520,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Shen_2.jpg"
 }, {
     "name": "Surgeon Shen",
     "champ": "Shen",
-    "price": 0,
+    "price": 975,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Shen_3.jpg"
 }, {
     "name": "Blood Moon Shen",
     "champ": "Shen",
-    "price": 0,
+    "price": 750,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Shen_4.jpg"
 }, {
     "name": "Warlord Shen",
     "champ": "Shen",
-    "price": 0,
+    "price": 975,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Shen_5.jpg"
 }, {
     "name": "TPA Shen",
     "champ": "Shen",
-    "price": 0,
+    "price": 750,
     "num": 6,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Shen_6.jpg"
 }, {
@@ -4249,19 +4249,19 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Dragonslayer Braum",
     "champ": "Braum",
-    "price": 0,
+    "price": 975,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Braum_1.jpg"
 }, {
     "name": "El Tigre Braum",
     "champ": "Braum",
-    "price": 0,
+    "price": 1350,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Braum_2.jpg"
 }, {
     "name": "Braum Lionheart",
     "champ": "Braum",
-    "price": 0,
+    "price": 750,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Braum_3.jpg"
 }, {
@@ -4273,37 +4273,37 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Commando Xin Zhao",
     "champ": "XinZhao",
-    "price": 0,
+    "price": 520,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/XinZhao_1.jpg"
 }, {
     "name": "Imperial Xin Zhao",
     "champ": "XinZhao",
-    "price": 0,
+    "price": 520,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/XinZhao_2.jpg"
 }, {
     "name": "Viscero Xin Zhao",
     "champ": "XinZhao",
-    "price": 0,
+    "price": 975,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/XinZhao_3.jpg"
 }, {
     "name": "Winged Hussar Xin Zhao",
     "champ": "XinZhao",
-    "price": 0,
+    "price": 975,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/XinZhao_4.jpg"
 }, {
     "name": "Warring Kingdoms Xin Zhao",
     "champ": "XinZhao",
-    "price": 0,
+    "price": 1350,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/XinZhao_5.jpg"
 }, {
     "name": "Secret Agent Xin Zhao",
     "champ": "XinZhao",
-    "price": 0,
+    "price": 975,
     "num": 6,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/XinZhao_6.jpg"
 }, {
@@ -4315,13 +4315,13 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Kingpin Twitch",
     "champ": "Twitch",
-    "price": 0,
+    "price": 520,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Twitch_1.jpg"
 }, {
     "name": "Whistler Village Twitch",
     "champ": "Twitch",
-    "price": 0,
+    "price": 520,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Twitch_2.jpg"
 }, {
@@ -4333,25 +4333,25 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Gangster Twitch",
     "champ": "Twitch",
-    "price": 0,
+    "price": 975,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Twitch_4.jpg"
 }, {
     "name": "Vandal Twitch",
     "champ": "Twitch",
-    "price": 0,
+    "price": 975,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Twitch_5.jpg"
 }, {
     "name": "Pickpocket Twitch",
     "champ": "Twitch",
-    "price": 0,
+    "price": 750,
     "num": 6,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Twitch_6.jpg"
 }, {
     "name": "SSW Twitch",
     "champ": "Twitch",
-    "price": 0,
+    "price": 975,
     "num": 7,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Twitch_7.jpg"
 }, {
@@ -4363,37 +4363,37 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Assassin Master Yi",
     "champ": "MasterYi",
-    "price": 0,
+    "price": 390,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/MasterYi_1.jpg"
 }, {
     "name": "Chosen Master Yi",
     "champ": "MasterYi",
-    "price": 0,
+    "price": 520,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/MasterYi_2.jpg"
 }, {
     "name": "Ionia Master Yi",
     "champ": "MasterYi",
-    "price": 0,
+    "price": 975,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/MasterYi_3.jpg"
 }, {
     "name": "Samurai Yi",
     "champ": "MasterYi",
-    "price": 0,
+    "price": 520,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/MasterYi_4.jpg"
 }, {
     "name": "Headhunter Master Yi",
     "champ": "MasterYi",
-    "price": 0,
+    "price": 975,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/MasterYi_5.jpg"
 }, {
     "name": "PROJECT: Yi",
     "champ": "MasterYi",
-    "price": 0,
+    "price": 1820,
     "num": 9,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/MasterYi_9.jpg"
 }, {
@@ -4405,19 +4405,19 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Emerald Taric",
     "champ": "Taric",
-    "price": 0,
+    "price": 520,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Taric_1.jpg"
 }, {
     "name": "Armor of the Fifth Age Taric",
     "champ": "Taric",
-    "price": 0,
+    "price": 975,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Taric_2.jpg"
 }, {
     "name": "Bloodstone Taric",
     "champ": "Taric",
-    "price": 0,
+    "price": 975,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Taric_3.jpg"
 }, {
@@ -4429,13 +4429,13 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Pharaoh Amumu",
     "champ": "Amumu",
-    "price": 0,
+    "price": 520,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Amumu_1.jpg"
 }, {
     "name": "Vancouver Amumu",
     "champ": "Amumu",
-    "price": 0,
+    "price": 520,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Amumu_2.jpg"
 }, {
@@ -4447,13 +4447,13 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Re-Gifted Amumu",
     "champ": "Amumu",
-    "price": 0,
+    "price": 520,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Amumu_4.jpg"
 }, {
     "name": "Almost-Prom King Amumu",
     "champ": "Amumu",
-    "price": 0,
+    "price": 520,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Amumu_5.jpg"
 }, {
@@ -4483,43 +4483,43 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Spooky Gangplank",
     "champ": "Gangplank",
-    "price": 0,
+    "price": 520,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Gangplank_1.jpg"
 }, {
     "name": "Minuteman Gangplank",
     "champ": "Gangplank",
-    "price": 0,
+    "price": 520,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Gangplank_2.jpg"
 }, {
     "name": "Sailor Gangplank",
     "champ": "Gangplank",
-    "price": 0,
+    "price": 750,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Gangplank_3.jpg"
 }, {
     "name": "Toy Soldier Gangplank",
     "champ": "Gangplank",
-    "price": 0,
+    "price": 975,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Gangplank_4.jpg"
 }, {
     "name": "Special Forces Gangplank",
     "champ": "Gangplank",
-    "price": 0,
+    "price": 975,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Gangplank_5.jpg"
 }, {
     "name": "Sultan Gangplank",
     "champ": "Gangplank",
-    "price": 0,
+    "price": 975,
     "num": 6,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Gangplank_6.jpg"
 }, {
     "name": "Captain Gangplank",
     "champ": "Gangplank",
-    "price": 0,
+    "price": 975,
     "num": 7,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Gangplank_7.jpg"
 }, {
@@ -4531,13 +4531,13 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Lil' Slugger Trundle",
     "champ": "Trundle",
-    "price": 0,
+    "price": 520,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Trundle_1.jpg"
 }, {
     "name": "Junkyard Trundle",
     "champ": "Trundle",
-    "price": 0,
+    "price": 750,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Trundle_2.jpg"
 }, {
@@ -4549,7 +4549,7 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Constable Trundle",
     "champ": "Trundle",
-    "price": 0,
+    "price": 750,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Trundle_4.jpg"
 }, {
@@ -4561,31 +4561,31 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Festival Kassadin",
     "champ": "Kassadin",
-    "price": 0,
+    "price": 520,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Kassadin_1.jpg"
 }, {
     "name": "Deep One Kassadin",
     "champ": "Kassadin",
-    "price": 0,
+    "price": 520,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Kassadin_2.jpg"
 }, {
     "name": "Pre-Void Kassadin",
     "champ": "Kassadin",
-    "price": 0,
+    "price": 520,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Kassadin_3.jpg"
 }, {
     "name": "Harbinger Kassadin",
     "champ": "Kassadin",
-    "price": 0,
+    "price": 975,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Kassadin_4.jpg"
 }, {
     "name": "Cosmic Reaver Kassadin",
     "champ": "Kassadin",
-    "price": 0,
+    "price": 1350,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Kassadin_5.jpg"
 }, {
@@ -4597,13 +4597,13 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Battlecast Vel'Koz",
     "champ": "Velkoz",
-    "price": 0,
+    "price": 1350,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Velkoz_1.jpg"
 }, {
     "name": "Arclight Vel'Koz",
     "champ": "Velkoz",
-    "price": 0,
+    "price": 1350,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Velkoz_2.jpg"
 }, {
@@ -4615,19 +4615,19 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Wildfire Zyra",
     "champ": "Zyra",
-    "price": 0,
+    "price": 975,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Zyra_1.jpg"
 }, {
     "name": "Haunted Zyra",
     "champ": "Zyra",
-    "price": 0,
+    "price": 1350,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Zyra_2.jpg"
 }, {
     "name": "SKT T1 Zyra",
     "champ": "Zyra",
-    "price": 0,
+    "price": 750,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Zyra_3.jpg"
 }, {
@@ -4639,19 +4639,19 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Koi Nami",
     "champ": "Nami",
-    "price": 0,
+    "price": 975,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Nami_1.jpg"
 }, {
     "name": "River Spirit Nami",
     "champ": "Nami",
-    "price": 0,
+    "price": 975,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Nami_2.jpg"
 }, {
     "name": "Urf the Nami-tee",
     "champ": "Nami",
-    "price": 0,
+    "price": 750,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Nami_3.jpg"
 }, {
@@ -4663,19 +4663,19 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Commando Jarvan IV",
     "champ": "JarvanIV",
-    "price": 0,
+    "price": 520,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/JarvanIV_1.jpg"
 }, {
     "name": "Dragonslayer Jarvan IV",
     "champ": "JarvanIV",
-    "price": 0,
+    "price": 750,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/JarvanIV_2.jpg"
 }, {
     "name": "Darkforge Jarvan IV",
     "champ": "JarvanIV",
-    "price": 0,
+    "price": 975,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/JarvanIV_3.jpg"
 }, {
@@ -4687,13 +4687,13 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Warring Kingdoms Jarvan IV",
     "champ": "JarvanIV",
-    "price": 0,
+    "price": 1350,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/JarvanIV_5.jpg"
 }, {
     "name": "Fnatic Jarvan IV",
     "champ": "JarvanIV",
-    "price": 0,
+    "price": 750,
     "num": 6,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/JarvanIV_6.jpg"
 }, {
@@ -4705,49 +4705,49 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Nottingham Ezreal",
     "champ": "Ezreal",
-    "price": 0,
+    "price": 520,
     "num": 1,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ezreal_1.jpg"
 }, {
     "name": "Striker Ezreal",
     "champ": "Ezreal",
-    "price": 0,
+    "price": 520,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ezreal_2.jpg"
 }, {
     "name": "Frosted Ezreal",
     "champ": "Ezreal",
-    "price": 0,
+    "price": 520,
     "num": 3,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ezreal_3.jpg"
 }, {
     "name": "Explorer Ezreal",
     "champ": "Ezreal",
-    "price": 0,
+    "price": 750,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ezreal_4.jpg"
 }, {
     "name": "Pulsefire Ezreal",
     "champ": "Ezreal",
-    "price": 0,
+    "price": 3250,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ezreal_5.jpg"
 }, {
     "name": "TPA Ezreal",
     "champ": "Ezreal",
-    "price": 0,
+    "price": 750,
     "num": 6,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ezreal_6.jpg"
 }, {
     "name": "Debonair Ezreal",
     "champ": "Ezreal",
-    "price": 0,
+    "price": 750,
     "num": 7,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ezreal_7.jpg"
 }, {
     "name": "Ace of Spades Ezreal",
     "champ": "Ezreal",
-    "price": 0,
+    "price": 750,
     "num": 8,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ezreal_8.jpg"
 }])
