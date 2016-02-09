@@ -12,7 +12,7 @@
 	<p>History</p>
 	<ul>
 		<li ng-repeat="skin in skinHistory | limitTo: -10">
-			{{$index + 1}} - {{skin}}
+			{{$index + 1}} - {{skin.name}} ({{skin.price}}rp)
 		</li>
 	</ul>
 </div>
