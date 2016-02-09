@@ -6,15 +6,26 @@
 }
 
 .mode-container {
-	@include container(250px, 300px, black);
+	@include container(250px, 300px, rgb(200,200,250));
 	float: left;
+	& > p {
+		/* stats p-tag */
+		margin-top: 10px;
+		font-size: 18px;
+		color: black;
+	}
+	& li {
+		color: black;
+		padding: 5px;
+		text-align: left;
+	}
 }
 
 .history-container {
 	@include container(250px, 300px, rgb(100,100,100));
 	float: right;
 	& > p {
-		/* history paragraph */
+		/* history p-tag */
 		margin-top: 10px;
 		font-size: 18px;
 		color: white;

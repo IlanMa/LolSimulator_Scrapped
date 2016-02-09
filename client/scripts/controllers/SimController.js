@@ -12,11 +12,11 @@ simulation.controller('SimController', [
 
         console.log('### SIM CONTROLLER');
 
-        var skins = [];
-        SkinService.getChampData(function(res){
-            skins = SkinService.getSkinsData(res);
-            console.log(skins);
-        });
+        // var skins = [];
+        // SkinService.getChampData(function(res){
+        //     skins = SkinService.getSkinsData(res);
+        //     console.log(skins);
+        // });
 
         // Initial image
         //$scope.image = 'http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg';
@@ -35,7 +35,22 @@ simulation.controller('SimController', [
             } while (skinResult.name === 'default')
             $scope.skinHistory.push(skinResult.name);
             $scope.image = skinResult.img;
+            $scope.calculatePricing(skinResult);
         }
+
+        $scope.calculatePricing = function(skin) {
+            $scope.chestsOpened += 1;
+            $scope.dollarSpent = $scope.chestsOpened * 4;
+            $scope.rpSpent = $scope.chestsOpened * 490;
+            $scope.rpGained += skin.price;
+            $scope.dollarReturn = ($scope.rpGained - $scope.rpSpent) * 0.0096153846153846;
+        }
+
+        $scope.chestsOpened = 0;
+        $scope.dollarSpent = 0;
+        $scope.rpSpent = 0;
+        $scope.rpGained = 0;
+        $scope.dollarReturn = 0;
 
     }
 ])

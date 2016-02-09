@@ -2,8 +2,19 @@
   position: relative;
   width: 250px;
   height: 300px;
-  background-color: black;
+  background-color: #c8c8fa;
   float: left; }
+
+.mode-container > p {
+  /* stats p-tag */
+  margin-top: 10px;
+  font-size: 18px;
+  color: black; }
+
+.mode-container li {
+  color: black;
+  padding: 5px;
+  text-align: left; }
 
 .history-container {
   position: relative;
@@ -13,7 +24,7 @@
   float: right; }
 
 .history-container > p {
-  /* history paragraph */
+  /* history p-tag */
   margin-top: 10px;
   font-size: 18px;
   color: white; }

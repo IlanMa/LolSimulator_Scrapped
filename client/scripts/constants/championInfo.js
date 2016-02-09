@@ -3625,7 +3625,7 @@ simulation.constant('ChampionInfo', [{
 }, {
     "name": "Academy Ekko",
     "champ": "Ekko",
-    "price": 750
+    "price": 750,
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ekko_2.jpg"
 }, {
