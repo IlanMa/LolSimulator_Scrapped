@@ -27,9 +27,9 @@ simulation.controller('SimController', [
         $scope.chestsOpened = 0;
         // Dollars spent
         $scope.dollarSpent = 0;
-        // Rp spent
+        // RP spent
         $scope.rpSpent = 0;
-        // Rp gained
+        // RP gained
         $scope.rpGained = 0;
         // Dollar return
         $scope.dollarReturn = 0;
@@ -37,16 +37,17 @@ simulation.controller('SimController', [
         // Contains all skins
         var skins = ChampionInfo;
 
-        // Contains skins history
-        $scope.skinHistory = [];
-
         // Invoked when button is clicked
         $scope.openSkin = function() {
             var skinResult;
             do {
                 skinResult = skins[Math.floor(Math.random() * skins.length)];
             } while (skinResult.name === 'default')
-            $scope.skinHistory.push({name: skinResult.name, price: skinResult.price});
+            GiftService.skinHistory.push({
+                name: skinResult.name,
+                price: skinResult.price
+            })
+            $scope.skinHistory = GiftService.skinHistory;
             // $scope.image = skinResult.img;
             $scope.calculatePricing(skinResult);
         }

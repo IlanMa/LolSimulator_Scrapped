@@ -3,9 +3,10 @@ simulation.service('GiftService', [
         'use strict';
 
         console.log('### GIFT SERVICE');
+        
         return {
-
+        	skinHistory: [],
+        	championHistory: [],
         }
-
     }
 ]) 
