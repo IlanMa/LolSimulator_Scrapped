@@ -28,7 +28,14 @@ simulation.controller('SimController', [
 
         // Invoked when button is clicked
         $scope.openSkin = function() {
-            GiftService.openSkin(); 
+            var skins = ChampionInfo;
+            console.log($scope.mode);
+            // for (var skin in skins) {
+            //     if (skins[skin].price > 1500) {
+            //         console.log(skins[skin].name);
+            //     }
+            // }
+            GiftService.openSkin($scope.mode); 
             $scope.skinImage = GiftService.skinImage;
         }
 
