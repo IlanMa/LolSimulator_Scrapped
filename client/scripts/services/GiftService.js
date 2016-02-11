@@ -41,22 +41,27 @@ simulation.service('GiftService', [
             },
             retrieveList: function(mode) {
                 if (!this.skinList[mode].length) {
-                	console.log("IN")
                     if (mode === 'normal') {
                         this.skinList.normal = ChampionInfo;
                         return this.skinList.normal
                     } else if (mode === 'chest') {
-                        for (skin in skins) {
-                            if (skins[skin].price >= 975) {
-                                chest.push(skins[skin]);
+                        for (var skin in ChampionInfo) {
+                            if (ChampionInfo[skin].price >= 975) {
+                                this.skinList.chest.push(ChampionInfo[skin]);
                             }
                         }
                         return this.skinList.chest;
+                    } else if (mode === 'legendary') {
+                        this.skinList.legendary = ChampionInfo;
+                        for (var skin in ChampionInfo) {
+                            if (ChampionInfo[skin].price >= 1820) {
+                                this.skinList.legendary.push(ChampionInfo[skin]);
+                            }
+                        }
+                        return this.skinList.legendary;
                     }
                 } else {
-                	console.log("OUT")
-
-                	return this.skinList[mode];
+                    return this.skinList[mode];
                 }
             }
         }
