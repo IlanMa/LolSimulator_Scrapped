@@ -8,9 +8,13 @@ simulation.service('GiftService', [
         return {
             skinHistory: [], // Contains skins history
             skinList: {
-                normal: [],
-                chest: [],
-                legendary: []
+                normal: [], // Skin list for normal mode
+                chest: [], // Skin list for chest mode
+                legendary: [] // Skin list for legendary promo mode
+            },
+            price: {
+                normal: 490, // RP Price to open mystery gift
+                chest: 790 // RP Price to open mystery chest
             },
             statistics: {
                 chestsOpened: 0, // Chests opened
@@ -29,13 +33,14 @@ simulation.service('GiftService', [
                     price: skinResult.price
                 })
                 this.skinImage = skinResult.img;
-                this.calculateStatistics(skinResult);
+                this.calculateStatistics(skinResult, mode);
             },
-            calculateStatistics: function(skin) {
+            calculateStatistics: function(skin, mode) {
                 var stats = this.statistics;
+                var costToOpen = (mode === 'chest' ? this.price.chest : this.price.normal);
                 stats.chestsOpened += 1;
-                stats.dollarSpent = stats.chestsOpened * 4.25;
-                stats.rpSpent = stats.chestsOpened * 490;
+                stats.dollarSpent += costToOpen * 0.0096153846153846;
+                stats.rpSpent = stats.chestsOpened * costToOpen;
                 stats.rpGained += skin.price;
                 stats.dollarReturn = (stats.rpGained - stats.rpSpent) * 0.0096153846153846;
             },
