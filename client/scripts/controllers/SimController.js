@@ -3,12 +3,14 @@ simulation.controller('SimController', [
     '$http',
     'SkinService',
     'GiftService',
+    'StatService',
     'ChampionInfo',
     function(
         $scope,
         $http,
         SkinService,
         GiftService,
+        StatService,
         ChampionInfo) {
         'use strict';
 
@@ -26,7 +28,7 @@ simulation.controller('SimController', [
         $scope.skinHistory = GiftService.skinHistory;
 
         // Contains all statistics
-        $scope.statistics = GiftService.statistics;
+        $scope.statistics = StatService.statistics;
 
         // Invoked when button is clicked
         $scope.openSkin = function() {

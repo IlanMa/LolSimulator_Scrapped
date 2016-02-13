@@ -1,6 +1,7 @@
 simulation.service('GiftService', [
+    'StatService',
     'ChampionInfo',
-    function(ChampionInfo) {
+    function(StatService, ChampionInfo) {
         'use strict';
 
         console.log('### GIFT SERVICE');
@@ -16,13 +17,6 @@ simulation.service('GiftService', [
                 normal: 490, // RP Price to open mystery gift
                 chest: 790 // RP Price to open mystery chest
             },
-            statistics: {
-                chestsOpened: 0, // Chests opened
-                dollarSpent: 0, // Dollars spent
-                rpSpent: 0, // RP spent
-                rpGained: 0, // RP gained
-                dollarReturn: 0 // Dollar Return 
-            },
             skinImage: 'http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg',
 
             openSkin: function(mode) { // Invoked on gift open
@@ -33,16 +27,7 @@ simulation.service('GiftService', [
                     price: skinResult.price
                 })
                 this.skinImage = skinResult.img;
-                this.calculateStatistics(skinResult, mode);
-            },
-            calculateStatistics: function(skin, mode) {
-                var stats = this.statistics;
-                var costToOpen = (mode === 'chest' ? this.price.chest : this.price.normal);
-                stats.chestsOpened += 1;
-                stats.dollarSpent += costToOpen * 0.0096153846153846;
-                stats.rpSpent = stats.chestsOpened * costToOpen;
-                stats.rpGained += skin.price;
-                stats.dollarReturn = (stats.rpGained - stats.rpSpent) * 0.0096153846153846;
+                StatService.calculateStatistics(skinResult, mode);
             },
             retrieveList: function(mode) {
                 if (!this.skinList[mode].length) {
