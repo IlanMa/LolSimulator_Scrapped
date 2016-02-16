@@ -839,6 +839,12 @@ simulation.constant('ChampionInfo', [{
     "num": 6,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Sona_6.jpg"
 }, {
+    "name": "Sweetheart Sona",
+    "champ": "Sona",
+    "price": 975,
+    "num": 7,
+    "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Sona_7.jpg"
+}, {
     "name": "Dragon Knight Mordekaiser",
     "champ": "Mordekaiser",
     "price": 520,
@@ -2932,6 +2938,12 @@ simulation.constant('ChampionInfo', [{
     "price": 975,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Orianna_5.jpg"
+}, {
+    "name": "Heartseeker Orianna",
+    "champ": "Orianna",
+    "price": 1350,
+    "num": 6,
+    "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Orianna_6.jpg"
 }, {
     "name": "Royal Guard Fiora",
     "champ": "Fiora",
