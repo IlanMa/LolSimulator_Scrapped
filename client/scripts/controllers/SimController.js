@@ -26,7 +26,7 @@ simulation.controller('SimController', [
         $scope.mode = 'normal';
 
         // Determines animation mode
-        $scope.animation = 'normal'
+        $scope.animation = 'scroll';
 
         // Contains skin history
         $scope.skinHistory = GiftService.skinHistory;

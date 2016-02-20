@@ -24,6 +24,8 @@
 	</ul>
 </div>
 
-<div class="scroll-result-container" ng-hide="animation === 'normal'"></div>
+<div class="scroll-container" ng-hide="animation === 'normal'">
+	<gift-animation></gift-animation>
+</div>
 <div class="normal-result-container" ng-hide="animation === 'scroll'" ng-style="{'background-image':'url('+skinImage+')'}"></div>
 <button class="chest-button" ng-click="openSkin()">Open</button>

@@ -43,7 +43,7 @@
   background-size: 240px 350px;
   background-repeat: no-repeat; }
 
-.scroll-result-container {
+.scroll-container {
   position: relative;
   width: 400px;
   height: 80px;
@@ -53,3 +53,20 @@
 .chest-button {
   position: relative;
   margin-top: 30px; }
+
+.scroll-result {
+  position: relative;
+  width: auto;
+  height: 100%;
+  background-color: yellow; }
+
+.scroll-result > ul {
+  position: absolute;
+  width: auto;
+  height: 80px;
+  background-color: red; }
+
+.scroll-result > ul > li {
+  float: left;
+  width: 80px;
+  height: 80px; }
