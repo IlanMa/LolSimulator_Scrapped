@@ -34,14 +34,21 @@
   padding: 5px;
   text-align: left; }
 
-.result-container {
+.normal-result-container {
   position: relative;
-  margin: 30px auto auto auto;
   width: 240px;
   height: 350px;
   background-color: black;
+  margin: 30px auto auto auto;
   background-size: 240px 350px;
   background-repeat: no-repeat; }
+
+.scroll-result-container {
+  position: relative;
+  width: 400px;
+  height: 80px;
+  background-color: #323232;
+  margin: 30px auto auto auto; }
 
 .chest-button {
   position: relative;

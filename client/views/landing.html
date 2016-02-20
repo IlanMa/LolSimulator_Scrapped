@@ -10,6 +10,10 @@
 		<button ng-click="mode = 'legendary'">Legendary</button>
 		<button ng-click="mode = 'chest'">Chest</button>
 	</ul>
+	<p>Animation Type</p>
+	<button ng-click="animation = 'normal'">Normal</button>
+	<button ng-click="animation = 'scroll'">Scroll</button>
+
 </div>
 <div class="history-container">
 	<p>History</p>
@@ -19,6 +23,7 @@
 		</li>
 	</ul>
 </div>
-<div class="result-container" ng-style="{'background-image':'url('+skinImage+')'}"></div>
-<button class="chest-button" ng-click="openSkin()">Button</button>
-<gift-animation></gift-animation>
+
+<div class="scroll-result-container" ng-hide="animation === 'normal'"></div>
+<div class="normal-result-container" ng-hide="animation === 'scroll'" ng-style="{'background-image':'url('+skinImage+')'}"></div>
+<button class="chest-button" ng-click="openSkin()">Open</button>

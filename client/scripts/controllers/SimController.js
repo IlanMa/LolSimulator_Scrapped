@@ -22,7 +22,11 @@ simulation.controller('SimController', [
         //     console.log(skins);
         // });
 
+        // Determines gift mode
         $scope.mode = 'normal';
+
+        // Determines animation mode
+        $scope.animation = 'normal'
 
         // Contains skin history
         $scope.skinHistory = GiftService.skinHistory;

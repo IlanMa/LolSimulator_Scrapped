@@ -6,6 +6,7 @@ simulation.directive('giftAnimation', [
 
         return {
             restrict: 'E',
+            templateUrl: "../../views/animation.html",
             link: function(scope, element, attrs) {
 
             }
