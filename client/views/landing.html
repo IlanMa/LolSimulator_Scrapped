@@ -6,9 +6,9 @@
 		<li>RP Spent: {{statistics.rpSpent}}</li>
 		<li>RP Gained: {{statistics.rpGained}}</li>
 		<li>Dollars Return: {{statistics.dollarReturn | currency}}</li>
-		<button ng-click="mode = 'normal'">Normal</button>
-		<button ng-click="mode = 'legendary'">Legendary</button>
-		<button ng-click="mode = 'chest'">Chest</button>
+		<button ng-click="changeMode('normal')">Normal</button>
+		<button ng-click="changeMode('legendary')">Legendary</button>
+		<button ng-click="changeMode('chest')">Chest</button>
 	</ul>
 	<p>Animation Type</p>
 	<button ng-click="animation = 'normal'">Normal</button>

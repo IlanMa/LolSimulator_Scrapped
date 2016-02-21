@@ -8,6 +8,8 @@ simulation.service('GiftService', [
 
         return {
             skinHistory: [], // Contains skins history
+            currentMode: 'normal',
+            currentAnimation: 'normal',
             skinList: {
                 normal: [], // Skin list for normal mode
                 chest: [], // Skin list for chest mode

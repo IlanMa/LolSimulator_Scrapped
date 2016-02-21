@@ -22,8 +22,9 @@ simulation.controller('SimController', [
         //     console.log(skins);
         // });
 
-        // Determines gift mode
-        $scope.mode = 'normal';
+        $scope.changeMode = function(mode) {
+            GiftService.currentMode = mode;
+        }
 
         // Determines animation mode
         $scope.animation = 'scroll';
@@ -36,7 +37,7 @@ simulation.controller('SimController', [
 
         // Invoked when button is clicked
         $scope.openSkin = function() {
-            GiftService.openSkin($scope.mode);
+            GiftService.openSkin(GiftService.currentMode);
             $scope.skinImage = GiftService.skinImage;
         }
 

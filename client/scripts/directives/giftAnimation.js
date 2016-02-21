@@ -7,6 +7,7 @@ simulation.directive('giftAnimation', [
 
         return {
             restrict: 'E',
+            scope: {},
             templateUrl: '../../views/animation.html',
             link: function(scope, element, attrs) {
                 var skinArray = [];
@@ -14,7 +15,8 @@ simulation.directive('giftAnimation', [
                 var skinList;
                 // Invoked when gift button is clicked
                 function openGift() {
-                    var skins = GiftService.skinList.normal;
+                	var mode = GiftService.currentMode;
+                    var skins = GiftService.skinList[mode];
                     var currentLeft = 0;
                     skinList = '';
                     if (skinArray.length) {
