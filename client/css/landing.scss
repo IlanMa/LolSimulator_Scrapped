@@ -56,7 +56,7 @@
 
 .scroll-result {
 	@include container(auto, 100%, yellow);
-	//overflow: hidden;
+	overflow: hidden;
 	& > ul {
 		position: absolute;
 		width: auto;
