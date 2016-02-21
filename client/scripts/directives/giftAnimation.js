@@ -1,6 +1,7 @@
 simulation.directive('giftAnimation', [
+    '$timeout',
     'GiftService',
-    function(GiftService) {
+    function($timeout, GiftService) {
         'use strict';
 
         console.log("### GIFT ANIMATION DIRECTIVE");
@@ -15,7 +16,7 @@ simulation.directive('giftAnimation', [
                 var skinList;
                 // Invoked when gift button is clicked
                 function openGift() {
-                	var mode = GiftService.currentMode;
+                    var mode = GiftService.currentMode;
                     var skins = GiftService.skinList[mode];
                     var currentLeft = 0;
                     skinList = '';
@@ -24,7 +25,6 @@ simulation.directive('giftAnimation', [
                         $('.skin-list').css('left', '0px');
                         skinArray.splice(0, 35);
                         for (var i = 0; i < skinArray.length; i++) {
-                            // skinList += '<li>' + skinArray[i].name + '</li>';
                             populateDOM(skinArray[i]);
                         }
                     }
@@ -32,11 +32,14 @@ simulation.directive('giftAnimation', [
                         var skinResult = skins[Math.floor(Math.random() * skins.length)];
                         skinArray.push(skinResult);
                         populateDOM(skinResult);
-                        // skinList += '<li>' + skinResult.name + '</li>';
                     }
                     $('.skin-list').css('width', skinArray.length * 80).html(skinList).animate({
                         left: (currentLeft = currentLeft - 2800) + 'px'
-                    }, 3000);
+                    }, 3000, function() {
+                        $timeout(function() {
+                            GiftService.updateData(skinArray[37], mode);
+                        })
+                    });
                 }
 
                 function populateDOM(skin) {
@@ -65,10 +68,10 @@ simulation.directive('giftAnimation', [
                             break;
                     }
                     skinList += "<li style='border: " + color + " 3px solid; box-shadow:inset 0px 0px 25px 3px " + color + "'>" +
-                   	"<span style='color: " + color + "'>?</span></li>";
+                        "<span style='color: " + color + "'>?</span></li>";
                 }
 
-                $('.chest-button').on('click', openGift);
+                $('.chest-button-scroll').on('click', openGift);
             }
         }
     }

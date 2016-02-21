@@ -1,31 +1,29 @@
 <div class="mode-container">
-	<p>Stats</p>
-	<ul>
-		<li>Chests Opened: {{statistics.chestsOpened}}</li>
-		<li>Dollars Spent: {{statistics.dollarSpent | currency}}</li>
-		<li>RP Spent: {{statistics.rpSpent}}</li>
-		<li>RP Gained: {{statistics.rpGained}}</li>
-		<li>Dollars Return: {{statistics.dollarReturn | currency}}</li>
-		<button ng-click="changeMode('normal')">Normal</button>
-		<button ng-click="changeMode('legendary')">Legendary</button>
-		<button ng-click="changeMode('chest')">Chest</button>
-	</ul>
-	<p>Animation Type</p>
-	<button ng-click="animation = 'normal'">Normal</button>
-	<button ng-click="animation = 'scroll'">Scroll</button>
-
+    <p>Stats</p>
+    <ul>
+        <li>Chests Opened: {{statistics.chestsOpened}}</li>
+        <li>Dollars Spent: {{statistics.dollarSpent | currency}}</li>
+        <li>RP Spent: {{statistics.rpSpent}}</li>
+        <li>RP Gained: {{statistics.rpGained}}</li>
+        <li>Dollars Return: {{statistics.dollarReturn | currency}}</li>
+        <button ng-click="changeMode('normal')">Normal</button>
+        <button ng-click="changeMode('legendary')">Legendary</button>
+        <button ng-click="changeMode('chest')">Chest</button>
+    </ul>
+    <p>Animation Type</p>
+    <button ng-click="animation = 'normal'">Normal</button>
+    <button ng-click="animation = 'scroll'">Scroll</button>
 </div>
 <div class="history-container">
-	<p>History</p>
-	<ul>
-		<li ng-repeat="skin in skinHistory | limitTo: -10">
-			{{$index + 1}} - {{skin.name}} ({{skin.price}}rp)
-		</li>
-	</ul>
+    <p>History</p>
+    <ul>
+        <li ng-repeat="skin in skinHistory | limitTo: -10">
+            {{$index + 1}} - {{skin.name}} ({{skin.price}}rp)
+        </li>
+    </ul>
 </div>
-
+<div class="normal-result-container" ng-style="{'background-image':'url('+getImg()+')'}"></div>
+<button class="chest-button" ng-click="openSkin()" ng-hide="animation === 'scroll'">Open</button>
 <div class="scroll-container" ng-hide="animation === 'normal'">
-	<gift-animation></gift-animation>
+    <gift-animation></gift-animation>
 </div>
-<div class="normal-result-container" ng-hide="animation === 'scroll'" ng-style="{'background-image':'url('+skinImage+')'}"></div>
-<button class="chest-button" ng-click="openSkin()">Open</button>

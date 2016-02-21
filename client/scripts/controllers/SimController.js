@@ -35,10 +35,13 @@ simulation.controller('SimController', [
         // Contains all statistics
         $scope.statistics = StatService.statistics;
 
+        $scope.getImg = function() {
+            return GiftService.skinImage;
+        }
+
         // Invoked when button is clicked
         $scope.openSkin = function() {
             GiftService.openSkin(GiftService.currentMode);
-            $scope.skinImage = GiftService.skinImage;
         }
 
     }

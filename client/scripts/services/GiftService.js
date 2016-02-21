@@ -24,6 +24,9 @@ simulation.service('GiftService', [
             openSkin: function(mode) { // Invoked on gift open
                 var skins = this.retrieveList(mode);
                 var skinResult = skins[Math.floor(Math.random() * skins.length)];
+                this.updateData(skinResult, mode);
+            },
+            updateData: function(skinResult, mode) {
                 this.skinHistory.push({
                     name: skinResult.name,
                     price: skinResult.price
