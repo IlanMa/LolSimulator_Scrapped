@@ -61,11 +61,17 @@
 		position: absolute;
 		width: auto;
 		height: 80px;
-		background-color: red;
+		background-color: gray;
 		& > li {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
 			float: left;
 			width: 80px;
 			height: 80px;
+			& > span {
+				font-size: 74px
+			}
 		}
 	}
 }

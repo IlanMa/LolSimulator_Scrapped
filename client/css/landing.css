@@ -65,9 +65,15 @@
   position: absolute;
   width: auto;
   height: 80px;
-  background-color: red; }
+  background-color: gray; }
 
 .scroll-result > ul > li {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   float: left;
   width: 80px;
   height: 80px; }
+
+.scroll-result > ul > li > span {
+  font-size: 74px; }
