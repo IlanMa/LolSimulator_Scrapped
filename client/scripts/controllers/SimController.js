@@ -41,7 +41,6 @@ simulation.controller('SimController', [
         $scope.extraStats = StatService.extraStatistics;
 
         $scope.getData = function(data) {
-            console.log(GiftService[data])
             return GiftService[data];
         }
 

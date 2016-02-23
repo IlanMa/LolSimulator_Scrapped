@@ -1,80 +1,97 @@
 @mixin container($width, $height, $bg) {
-	position: relative;
-	width: $width;
-	height: $height;
-	background-color: $bg;
+    position: relative;
+    width: $width;
+    height: $height;
+    background-color: $bg;
+}
+
+@mixin box-sizing() {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .mode-container {
-	@include container(250px, auto, rgb(200,200,250));
-	float: left;
-	& > p {
-		/* stats p-tag */
-		margin-top: 10px;
-		font-size: 18px;
-		color: black;
-	}
-	& li {
-		color: black;
-		padding: 5px;
-		text-align: left;
-	}
+    @include container(250px, auto, rgb(200, 200, 250));
+    float: left;
+    & > p {
+        /* stats p-tag */
+        margin-top: 10px;
+        font-size: 18px;
+        color: black;
+    }
+    & li {
+        color: black;
+        padding: 5px;
+        text-align: left;
+    }
 }
 
 .history-container {
-	@include container(250px, 500px, rgb(100,100,100));
-	float: right;
-	& > p {
-		/* history p-tag */
-		margin-top: 10px;
-		font-size: 18px;
-		color: white;
-	}
-	& li {
-		color: rgb(200,200,200);
-		padding: 5px;
-		text-align: left;
-	}
+    @include container(250px, 500px, rgb(100, 100, 100));
+    float: right;
+    & > p {
+        /* history p-tag */
+        margin-top: 10px;
+        font-size: 18px;
+        color: white;
+    }
+    & li {
+        color: rgb(200, 200, 200);
+        padding: 5px;
+        text-align: left;
+    }
 }
 
 .normal-result-container {
-	@include container(240px, 350px, black);
+    @include container(240px, 350px, black);
     margin: 30px auto auto auto;
     background-size: 240px 350px;
     background-repeat: no-repeat;
 }
 
 .scroll-container {
-	@include container(400px, 80px, rgb(50, 50, 50))
-	margin: 30px auto auto auto;
+    @include container(400px, 80px, rgb(50, 50, 50)) margin: 30px auto auto auto;
 }
 
 .chest-button {
-	position: relative;
-	margin-top: 30px;
+    position: relative;
+    margin-top: 30px;
 }
 
 .scroll-result {
-	@include container(auto, 100%, yellow);
-	overflow: hidden;
-	& > ul {
-		position: absolute;
-		width: auto;
-		height: 80px;
-		background-color: gray;
-		& > li {
-			-webkit-box-sizing: border-box;
-			-moz-box-sizing: border-box;
-			box-sizing: border-box;
-			float: left;
-			width: 80px;
-			height: 80px;
-			border: orange 3px solid;
-			box-shadow: inset 0px 0px 25px 3px orange;
-			& > span {
-				color: orange;
-				font-size: 74px;
-			}
-		}
-	}
+    @include container(auto, 100%, yellow);
+    overflow: hidden;
+    & > ul {
+        position: absolute;
+        width: auto;
+        height: 80px;
+        background-color: gray;
+        & > li {
+            @include box-sizing();
+            float: left;
+            width: 80px;
+            height: 80px;
+            border: orange 3px solid;
+            box-shadow: inset 0px 0px 25px 3px orange;
+            & > span {
+                color: orange;
+                font-size: 74px;
+            }
+        }
+    }
+}
+
+.color-code {
+    @include container (10px, 10px, transparent)
+    float: left;
+    border: 1px solid black;
+    margin: 2px 7px 0 2px;
+}
+
+$colors-list: orange blue aquamarine purple silver red;
+@each $color in $colors-list {
+    .#{$color} { 
+        background-color: $color;
+    }
 }

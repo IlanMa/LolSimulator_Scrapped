@@ -80,3 +80,30 @@
 .scroll-result > ul > li > span {
   color: orange;
   font-size: 74px; }
+
+.color-code {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  float: left;
+  border: 1px solid black;
+  margin: 2px 7px 0 2px; }
+
+.orange {
+  background-color: orange; }
+
+.blue {
+  background-color: blue; }
+
+.aquamarine {
+  background-color: aquamarine; }
+
+.purple {
+  background-color: purple; }
+
+.silver {
+  background-color: silver; }
+
+.red {
+  background-color: red; }
