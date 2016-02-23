@@ -1,7 +1,7 @@
 .mode-container {
   position: relative;
   width: 250px;
-  height: 300px;
+  height: 350px;
   background-color: #c8c8fa;
   float: left; }
 
@@ -19,7 +19,7 @@
 .history-container {
   position: relative;
   width: 250px;
-  height: 300px;
+  height: 350px;
   background-color: #646464;
   float: right; }
 

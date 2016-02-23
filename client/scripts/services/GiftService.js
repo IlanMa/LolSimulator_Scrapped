@@ -27,7 +27,14 @@ simulation.service('GiftService', [
             openSkin: function(mode) { // Invoked on gift open
                 var skins = this.retrieveList(mode);
                 var skinResult = skins[Math.floor(Math.random() * skins.length)];
+                this.removeSkin(skinResult);
                 this.updateData(skinResult, mode);
+            },
+            removeSkin: function(skinResult) {
+                var skinList = this.skinList.normal;
+                this.skinList.normal = skinList.filter(function(element) {
+                    return element.name !== skinResult.name;
+                }); // filtered contains no occurrences of hello
             },
             updateData: function(skinResult, mode) {
                 this.skinHistory.push({
