@@ -9,17 +9,20 @@ simulation.service('GiftService', [
         return {
             skinHistory: [], // Contains skins history
             currentMode: 'normal',
+            legendaryPromo: false,
+            switchedModes: false,
             currentAnimation: 'normal',
             skinList: {
-                normal: [], // Skin list for normal mode
+                normal: ChampionInfo.slice(0), // Skin list for normal mode
                 chest: [], // Skin list for chest mode
-                legendary: [] // Skin list for legendary promo mode
+                normalLegendary: [], // Skin list for normal legendary promo
+                chestLegendary: [] // Skin list for chest legendary promo
             },
             price: {
                 normal: 490, // RP Price to open mystery gift
                 chest: 790 // RP Price to open mystery chest
             },
-            skinImage: 'http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg',
+            skinImage: 'http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_.jpg',
 
             openSkin: function(mode) { // Invoked on gift open
                 var skins = this.retrieveList(mode);
@@ -28,35 +31,51 @@ simulation.service('GiftService', [
             },
             updateData: function(skinResult, mode) {
                 this.skinHistory.push({
-                    name: skinResult.name,
-                    price: skinResult.price
-                })
-                this.skinImage = skinResult.img;
+                        name: skinResult.name,
+                        price: skinResult.price
+                    })
+                    // this.skinImage = skinResult.img;
                 StatService.calculateStatistics(skinResult, mode);
             },
             retrieveList: function(mode) {
-                if (!this.skinList[mode].length) {
-                    if (mode === 'normal') {
-                        this.skinList.normal = ChampionInfo;
-                        return this.skinList.normal
-                    } else if (mode === 'chest') {
-                        for (var skin in ChampionInfo) {
-                            if (ChampionInfo[skin].price >= 975) {
-                                this.skinList.chest.push(ChampionInfo[skin]);
-                            }
-                        }
-                        return this.skinList.chest;
-                    } else if (mode === 'legendary') {
-                        this.skinList.legendary = ChampionInfo;
-                        for (var skin in ChampionInfo) {
-                            if (ChampionInfo[skin].price >= 1820) {
-                                this.skinList.legendary.push(ChampionInfo[skin]);
-                            }
-                        }
-                        return this.skinList.legendary;
-                    }
+                if (mode === 'normal' && !this.legendaryPromo) {
+                    console.log('NORMAL', this.skinList.normal.length)
+                    return this.skinList.normal;
                 } else {
-                    return this.skinList[mode];
+                    var normalGifts = this.skinList.normal;
+                    if (mode === 'chest' && !this.legendaryPromo) {
+                        this.skinList.chest = [];
+                        for (var skin in normalGifts) {
+                            if (normalGifts[skin].price >= 975) {
+                                this.skinList.chest.push(normalGifts[skin]);
+                            }
+                        }
+                        console.log('CHEST', this.skinList.chest.length)
+                        return this.skinList.chest;
+                    } else if (mode === 'normal' && this.legendaryPromo) {
+                        this.skinList.normalLegendary = normalGifts.slice(0); // Create shallow copy
+                        for (var skin in normalGifts) {
+                            if (normalGifts[skin].price >= 1820) {
+                                this.skinList.normalLegendary.push(normalGifts[skin]);
+                            }
+                        }
+                        console.log('NORMALLEGENDARY', this.skinList.normalLegendary.length)
+                        return this.skinList.normalLegendary;
+
+                    } else if (mode === 'chest' && this.legendaryPromo) {
+                        this.skinList.chestLegendary = [];
+                        for (var skin in normalGifts) {
+                            if (normalGifts[skin].price >= 975) {
+                                this.skinList.chestLegendary.push(normalGifts[skin]);
+                                if (normalGifts[skin].price >= 1820) {
+                                    this.skinList.chestLegendary.push(normalGifts[skin]);
+                                }
+                            }
+                        }
+                        console.log('CHESTLEGENDARY', this.skinList.chestLegendary.length)
+                        return this.skinList.chestLegendary;
+                    }
+                    this.switchedModes = false;
                 }
             }
         }

@@ -23,11 +23,14 @@ simulation.controller('SimController', [
         // });
 
         $scope.changeMode = function(mode) {
-            GiftService.currentMode = mode;
+            if (GiftService.currentMode != mode) {
+                GiftService.currentMode = mode;
+                GiftService.switchedModes = true;
+            }
         }
 
         // Determines animation mode
-        $scope.animation = 'scroll';
+        $scope.animation = 'normal';
 
         // Contains skin history
         $scope.skinHistory = GiftService.skinHistory;
@@ -37,6 +40,11 @@ simulation.controller('SimController', [
 
         $scope.getImg = function() {
             return GiftService.skinImage;
+        }
+
+        $scope.enablePromo = function() {
+            GiftService.switchedModes = true;
+            GiftService.legendaryPromo = !GiftService.legendaryPromo;
         }
 
         // Invoked when button is clicked

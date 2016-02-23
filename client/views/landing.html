@@ -6,10 +6,12 @@
         <li>RP Spent: {{statistics.rpSpent}}</li>
         <li>RP Gained: {{statistics.rpGained}}</li>
         <li>Dollars Return: {{statistics.dollarReturn | currency}}</li>
-        <button ng-click="changeMode('normal')">Normal</button>
-        <button ng-click="changeMode('legendary')">Legendary</button>
-        <button ng-click="changeMode('chest')">Chest</button>
     </ul>
+    <p>Gift Type</p>
+    <button ng-click="changeMode('normal')">Normal</button>
+    <button ng-click="changeMode('chest')">Chest</button>
+    <p>Legendary Promo</p>
+    <button ng-click="enablePromo()">Legendary</button>
     <p>Animation Type</p>
     <button ng-click="animation = 'normal'">Normal</button>
     <button ng-click="animation = 'scroll'">Scroll</button>
@@ -24,6 +26,7 @@
 </div>
 <div class="normal-result-container" ng-style="{'background-image':'url('+getImg()+')'}"></div>
 <button class="chest-button" ng-click="openSkin()" ng-hide="animation === 'scroll'">Open</button>
+
 <div class="scroll-container" ng-hide="animation === 'normal'">
     <gift-animation></gift-animation>
 </div>

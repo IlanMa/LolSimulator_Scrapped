@@ -21,7 +21,7 @@ simulation.service('StatService', [
                 var costToOpen = (mode === 'chest' ? this.price.chest : this.price.normal);
                 stats.chestsOpened += 1;
                 stats.dollarSpent += costToOpen * 0.0096153846153846;
-                stats.rpSpent = stats.chestsOpened * costToOpen;
+                stats.rpSpent += costToOpen;
                 stats.rpGained += skin.price;
                 stats.dollarReturn = (stats.rpGained - stats.rpSpent) * 0.0096153846153846;
             }
