@@ -8,23 +8,32 @@
         <li>Dollars Return: {{statistics.dollarReturn | currency}}</li>
     </ul>
     <p>Gift Type</p>
-    <button ng-click="changeMode('normal')">Normal</button>
-    <button ng-click="changeMode('chest')">Chest</button>
+    <button ng-click="changeMode('normal')" ng-class="{'button-active': getData('currentMode') === 'normal'}">Normal</button>
+    <button ng-click="changeMode('chest')" ng-class="{'button-active': getData('currentMode') === 'chest'}">Chest</button>
     <p>Legendary Promo</p>
-    <button ng-click="enablePromo()">Legendary</button>
+    <button ng-click="enablePromo()" ng-class="{'button-active': getData('legendaryPromo')}">Legendary</button>
     <p>Animation Type</p>
-    <button ng-click="animation = 'normal'">Normal</button>
-    <button ng-click="animation = 'scroll'">Scroll</button>
+    <button ng-click="animation = 'normal'" ng-class="{'button-active': animation === 'normal'}">Normal</button>
+    <button ng-click="animation = 'scroll'" ng-class="{'button-active': animation === 'scroll'}">Scroll</button>
+    <p>Bonus Stats</p>
+    <ul>
+    	<li>520RP - {{extraStats['520RP']}} Skins</li>
+    	<li>750RP - {{extraStats['750RP']}} Skins</li>
+    	<li>975RP - {{extraStats['975RP']}} Skins</li>
+    	<li>1350RP - {{extraStats['1350RP']}} Skins</li>
+    	<li>1820RP - {{extraStats['1820RP']}} Skins</li>
+    	<li>3250RP - {{extraStats['3250RP']}} Skins</li>
+    </ul>
 </div>
 <div class="history-container">
     <p>History</p>
     <ul>
-        <li ng-repeat="skin in skinHistory | limitTo: -10">
+        <li ng-repeat="skin in skinHistory | limitTo: -15">
             {{$index + 1}} - {{skin.name}} ({{skin.price}}rp)
         </li>
     </ul>
 </div>
-<div class="normal-result-container" ng-style="{'background-image':'url('+getImg()+')'}"></div>
+<div class="normal-result-container" ng-style="{'background-image':'url('+getData('skinImage')+')'}"></div>
 <button class="chest-button" ng-click="openSkin()" ng-hide="animation === 'scroll'">Open</button>
 
 <div class="scroll-container" ng-hide="animation === 'normal'">

@@ -6,7 +6,7 @@
 }
 
 .mode-container {
-	@include container(250px, 350px, rgb(200,200,250));
+	@include container(250px, auto, rgb(200,200,250));
 	float: left;
 	& > p {
 		/* stats p-tag */
@@ -22,7 +22,7 @@
 }
 
 .history-container {
-	@include container(250px, 350px, rgb(100,100,100));
+	@include container(250px, 500px, rgb(100,100,100));
 	float: right;
 	& > p {
 		/* history p-tag */

@@ -38,8 +38,11 @@ simulation.controller('SimController', [
         // Contains all statistics
         $scope.statistics = StatService.statistics;
 
-        $scope.getImg = function() {
-            return GiftService.skinImage;
+        $scope.extraStats = StatService.extraStatistics;
+
+        $scope.getData = function(data) {
+            console.log(GiftService[data])
+            return GiftService[data];
         }
 
         $scope.enablePromo = function() {

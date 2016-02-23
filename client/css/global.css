@@ -69,3 +69,7 @@ table {
   /* ng-view */
   position: absolute;
   width: 100%; }
+
+.button-active {
+  background-color: red;
+  color: white; }

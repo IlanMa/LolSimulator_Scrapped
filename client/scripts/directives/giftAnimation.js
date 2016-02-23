@@ -37,6 +37,7 @@ simulation.directive('giftAnimation', [
                         left: (currentLeft = currentLeft - 2800) + 'px'
                     }, 3000, function() {
                         $timeout(function() {
+                        	GiftService.removeSkin(skinArray[37]);
                             GiftService.updateData(skinArray[37], mode);
                         })
                     });
