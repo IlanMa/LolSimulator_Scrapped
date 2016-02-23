@@ -1,13 +1,13 @@
 .mode-container {
   position: relative;
-  width: 250px;
+  width: 300px;
   height: auto;
   background-color: #c8c8fa;
   float: left; }
 
 .mode-container > p {
   /* stats p-tag */
-  margin-top: 10px;
+  margin: 10px 10px;
   font-size: 18px;
   color: black; }
 
@@ -18,7 +18,7 @@
 
 .history-container {
   position: relative;
-  width: 250px;
+  width: 300px;
   height: 500px;
   background-color: #646464;
   float: right; }
@@ -83,9 +83,12 @@
 
 .color-code {
   position: relative;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   background-color: transparent;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   float: left;
   border: 1px solid black;
   margin: 2px 7px 0 2px; }

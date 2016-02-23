@@ -12,11 +12,11 @@
 }
 
 .mode-container {
-    @include container(250px, auto, rgb(200, 200, 250));
+    @include container(300px, auto, rgb(200, 200, 250));
     float: left;
     & > p {
         /* stats p-tag */
-        margin-top: 10px;
+        margin: 10px 10px;
         font-size: 18px;
         color: black;
     }
@@ -28,7 +28,7 @@
 }
 
 .history-container {
-    @include container(250px, 500px, rgb(100, 100, 100));
+    @include container(300px, 500px, rgb(100, 100, 100));
     float: right;
     & > p {
         /* history p-tag */
@@ -83,7 +83,8 @@
 }
 
 .color-code {
-    @include container (10px, 10px, transparent)
+    @include container (12px, 12px, transparent)
+    @include box-sizing();
     float: left;
     border: 1px solid black;
     margin: 2px 7px 0 2px;

@@ -17,12 +17,12 @@
     <button ng-click="animation = 'scroll'" ng-class="{'button-active': animation === 'scroll'}">Scroll</button>
     <p>Bonus Stats</p>
     <ul>
-    	<li><span class="color-code orange"></span> 520RP - {{extraStats['520RP']}} Skins</li>
-    	<li><span class="color-code blue"></span> 750RP - {{extraStats['750RP']}} Skins</li>
-    	<li><span class="color-code aquamarine"></span> 975RP - {{extraStats['975RP']}} Skins</li>
-    	<li><span class="color-code purple"></span> 1350RP - {{extraStats['1350RP']}} Skins</li>
-    	<li><span class="color-code silver"></span> 1820RP - {{extraStats['1820RP']}} Skins</li>
-    	<li><span class="color-code red"></span> 3250RP - {{extraStats['3250RP']}} Skins</li>
+    	<li><span class="color-code orange"></span> 520RP - {{typeCount['520RP']}} Skins - Odds: {{probability['520RP'].probability * 100 | number: 3}}%</li>
+    	<li><span class="color-code blue"></span> 750RP - {{typeCount['750RP']}} Skins - Odds: {{probability['750RP'].probability * 100 | number: 3}}%</li>
+    	<li><span class="color-code aquamarine"></span> 975RP - {{typeCount['975RP']}} Skins - Odds: {{probability['975RP'].probability * 100 | number: 3}}%</li>
+    	<li><span class="color-code purple"></span> 1350RP - {{typeCount['1350RP']}} Skins - Odds: {{probability['1350RP'].probability * 100 | number: 3}}%</li>
+    	<li><span class="color-code silver"></span> 1820RP - {{typeCount['1820RP']}} Skins - Odds: {{probability['1820RP'].probability * 100 | number: 3}}%</li>
+    	<li><span class="color-code red"></span> 3250RP - {{typeCount['3250RP']}} Skins - Odds: {{probability['3250RP'].probability * 100 | number: 4}}%</li>
     </ul>
 </div>
 <div class="history-container">

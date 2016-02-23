@@ -27,14 +27,15 @@ simulation.service('GiftService', [
             openSkin: function(mode) { // Invoked on gift open
                 var skins = this.retrieveList(mode);
                 var skinResult = skins[Math.floor(Math.random() * skins.length)];
-                this.removeSkin(skinResult);
+                this.removeSkin(skinResult, skins);
                 this.updateData(skinResult, mode);
+                return StatService.calculateProbability(skins);
             },
-            removeSkin: function(skinResult) {
+            removeSkin: function(skinResult, skinList) {
                 var skinList = this.skinList.normal;
                 this.skinList.normal = skinList.filter(function(element) {
                     return element.name !== skinResult.name;
-                }); // filtered contains no occurrences of hello
+                }); // Filter all occurences of a skin
             },
             updateData: function(skinResult, mode) {
                 this.skinHistory.push({
@@ -43,6 +44,10 @@ simulation.service('GiftService', [
                     })
                     // this.skinImage = skinResult.img;
                 StatService.calculateStatistics(skinResult, mode);
+            },
+            getProbability: function(mode) {
+                var skinList = this.retrieveList(mode);
+                return StatService.calculateProbability(skinList);
             },
             retrieveList: function(mode) {
                 if (mode === 'normal' && !this.legendaryPromo) {
@@ -82,7 +87,6 @@ simulation.service('GiftService', [
                         console.log('CHESTLEGENDARY', this.skinList.chestLegendary.length)
                         return this.skinList.chestLegendary;
                     }
-                    this.switchedModes = false;
                 }
             }
         }

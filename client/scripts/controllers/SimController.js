@@ -25,7 +25,7 @@ simulation.controller('SimController', [
         $scope.changeMode = function(mode) {
             if (GiftService.currentMode != mode) {
                 GiftService.currentMode = mode;
-                GiftService.switchedModes = true;
+                $scope.probability = GiftService.getProbability(GiftService.currentMode);
             }
         }
 
@@ -38,20 +38,21 @@ simulation.controller('SimController', [
         // Contains all statistics
         $scope.statistics = StatService.statistics;
 
-        $scope.extraStats = StatService.extraStatistics;
+        $scope.typeCount = StatService.skinTypeCount;
 
         $scope.getData = function(data) {
             return GiftService[data];
         }
 
         $scope.enablePromo = function() {
-            GiftService.switchedModes = true;
             GiftService.legendaryPromo = !GiftService.legendaryPromo;
+            $scope.probability = GiftService.getProbability(GiftService.currentMode);
         }
 
         // Invoked when button is clicked
         $scope.openSkin = function() {
             GiftService.openSkin(GiftService.currentMode);
+            $scope.probability = GiftService.getProbability(GiftService.currentMode);
         }
 
     }
