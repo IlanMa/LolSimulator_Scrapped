@@ -6,9 +6,9 @@
 }
 
 @mixin box-sizing() {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .mode-container {
@@ -54,7 +54,8 @@
     @include container(400px, 80px, rgb(50, 50, 50)) margin: 30px auto auto auto;
 }
 
-.chest-button {
+.chest-button,
+.chest-button-scroll {
     position: relative;
     margin-top: 30px;
 }
@@ -62,6 +63,7 @@
 .scroll-result {
     @include container(auto, 100%, yellow);
     overflow: hidden;
+    box-shadow: 0 0 3px 3px black;
     & > ul {
         position: absolute;
         width: auto;
@@ -80,8 +82,7 @@
 }
 
 .color-code {
-    @include container (12px, 12px, transparent)
-    @include box-sizing();
+    @include container (12px, 12px, transparent) @include box-sizing();
     float: left;
     border: 1px solid black;
     margin: 2px 7px 0 2px;
@@ -89,7 +90,20 @@
 
 $colors-list: orange blue aquamarine purple silver red;
 @each $color in $colors-list {
-    .#{$color} { 
+    .#{$color} {
         background-color: $color;
     }
+}
+
+.graph-container {
+    @include container (100%, 600px, green);
+    margin-top: 150px;
+    & > h1 {
+    	font-size: 40px;
+    	color: white;
+    }
+}
+
+.footer-container {
+	@include container (100%, 100px, black);
 }
