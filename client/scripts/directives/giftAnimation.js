@@ -14,13 +14,13 @@ simulation.directive('giftAnimation', [
                 var skinArray = [];
                 var skinsToGenerate = 40;
                 var skinList;
-                // Invoked when gift button is clicked
+                // Invoked when gift button is clicked during scroll animation type
                 function openGift() {
                     var mode = GiftService.currentMode;
                     var skins = GiftService.retrieveList(mode);
                     var currentLeft = 0;
-                    skinList = '';
-                    if (skinArray.length) {
+                    skinList = ''; // Contains DOM to be added
+                    if (skinArray.length) { // Only when function invoked more than once
                         skinsToGenerate = 35;
                         $('.skin-list').css('left', '0px');
                         skinArray.splice(0, 35);
@@ -28,7 +28,7 @@ simulation.directive('giftAnimation', [
                             populateDOM(skinArray[i]);
                         }
                     }
-                    for (var i = 0; i < skinsToGenerate; i++) {
+                    for (var i = 0; i < skinsToGenerate; i++) { // Generates skins and appends to string
                         var skinResult = skins[Math.floor(Math.random() * skins.length)];
                         skinArray.push(skinResult);
                         populateDOM(skinResult);
@@ -39,6 +39,7 @@ simulation.directive('giftAnimation', [
                         $timeout(function() {
                         	GiftService.removeSkin(skinArray[37]);
                             GiftService.updateData(skinArray[37], mode);
+                            GiftService.getProbability(GiftService.currentMode);
                         })
                     });
                 }

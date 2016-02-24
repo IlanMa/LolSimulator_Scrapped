@@ -22,13 +22,6 @@ simulation.controller('SimController', [
         //     console.log(skins);
         // });
 
-        $scope.changeMode = function(mode) {
-            if (GiftService.currentMode != mode) {
-                GiftService.currentMode = mode;
-                $scope.probability = GiftService.getProbability(GiftService.currentMode);
-            }
-        }
-
         // Determines animation mode
         $scope.animation = 'normal';
 
@@ -38,22 +31,40 @@ simulation.controller('SimController', [
         // Contains all statistics
         $scope.statistics = StatService.statistics;
 
+        // Contains the acquired amount of each skin type
         $scope.typeCount = StatService.skinTypeCount;
 
-        $scope.getData = function(data) {
+        // Get probability as the page loads
+        GiftService.getProbability(GiftService.currentMode);
+
+        $scope.getGiftData = function(data) {
             return GiftService[data];
         }
 
-        $scope.enablePromo = function() {
-            GiftService.legendaryPromo = !GiftService.legendaryPromo;
-            $scope.probability = GiftService.getProbability(GiftService.currentMode);
+        $scope.getStatData = function(data) {
+            return StatService[data];
         }
 
-        // Invoked when button is clicked
+        // Invoked when legendary promo button is clicked
+        $scope.enablePromo = function() {
+            GiftService.legendaryPromo = !GiftService.legendaryPromo;
+            GiftService.getProbability(GiftService.currentMode);
+        }
+
+        // Invoked when open button is clicked
         $scope.openSkin = function() {
             GiftService.openSkin(GiftService.currentMode);
-            $scope.probability = GiftService.getProbability(GiftService.currentMode);
+            GiftService.getProbability(GiftService.currentMode);
         }
+
+        // Invoked when changing gift modes
+        $scope.changeMode = function(mode) {
+            if (GiftService.currentMode != mode) {
+                GiftService.currentMode = mode;
+                GiftService.getProbability(GiftService.currentMode);
+            }
+        }
+
 
     }
 ])

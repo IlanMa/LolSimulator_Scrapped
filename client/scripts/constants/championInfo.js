@@ -1043,12 +1043,6 @@ simulation.constant('ChampionInfo', [{
     "num": 7,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ashe_7.jpg"
 }, {
-    "name": "Phantom Karthus",
-    "champ": "Karthus",
-    "price": 460,
-    "num": 1,
-    "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Karthus_1.jpg"
-}, {
     "name": "Statue of Karthus",
     "champ": "Karthus",
     "price": 520,
@@ -1072,12 +1066,6 @@ simulation.constant('ChampionInfo', [{
     "price": 750,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Karthus_5.jpg"
-}, {
-    "name": "Golden Alistar",
-    "champ": "Alistar",
-    "price": 390,
-    "num": 2,
-    "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Alistar_2.jpg"
 }, {
     "name": "Matador Alistar",
     "champ": "Alistar",
@@ -1582,12 +1570,6 @@ simulation.constant('ChampionInfo', [{
     "price": 750,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Galio_5.jpg"
-}, {
-    "name": "White Mage Veigar",
-    "champ": "Veigar",
-    "price": 390,
-    "num": 1,
-    "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Veigar_1.jpg"
 }, {
     "name": "Curling Veigar",
     "champ": "Veigar",
@@ -3502,12 +3484,6 @@ simulation.constant('ChampionInfo', [{
     "price": 975,
     "num": 7,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Twitch_7.jpg"
-}, {
-    "name": "Assassin Master Yi",
-    "champ": "MasterYi",
-    "price": 390,
-    "num": 1,
-    "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/MasterYi_1.jpg"
 }, {
     "name": "Chosen Master Yi",
     "champ": "MasterYi",

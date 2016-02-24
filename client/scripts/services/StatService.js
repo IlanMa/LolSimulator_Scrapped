@@ -1,5 +1,6 @@
 simulation.service('StatService', [
-    function() {
+    '$timeout',
+    function($timeout) {
         'use strict';
 
         console.log('### STAT SERVICE');
@@ -12,7 +13,7 @@ simulation.service('StatService', [
                 rpGained: 0, // RP gained
                 dollarReturn: 0 // Dollar Return 
             },
-            skinTypeCount: {
+            skinTypeCount: { // Amount acquired for each type
                 '520RP': 0,
                 '750RP': 0,
                 '975RP': 0,
@@ -20,10 +21,12 @@ simulation.service('StatService', [
                 '1820RP': 0,
                 '3250RP': 0
             },
+            probabilities: {}, // Contains probabilities
             price: {
                 normal: 490, // RP Price to open mystery gift
                 chest: 790 // RP Price to open mystery chest
             },
+            // Invoked after each open button press
             calculateStatistics: function(skin, mode) {
                 var stats = this.statistics;
                 var costToOpen = (mode === 'chest' ? this.price.chest : this.price.normal);
@@ -34,9 +37,10 @@ simulation.service('StatService', [
                 stats.dollarReturn = (stats.rpGained - stats.rpSpent) * 0.0096153846153846;
                 this.skinTypeCount[skin.price + 'RP'] += 1;
             },
+            // Invoked after each gift open and gift type change
             calculateProbability: function(skinList) {
-                var probabilities = {
-                    total: skinList.length,
+                this.probabilities = {
+                    total: 0,
                     '520RP': {
                         remaining: 0,
                         probability: 0
@@ -61,19 +65,17 @@ simulation.service('StatService', [
                         remaining: 0,
                         probability: 0
                     }
-                };
-                for (var i = 0; i < skinList.length; i++) {
-                    var skinType = probabilities[skinList[i].price + "RP"];
-                    if (skinType) {
-                        skinType.remaining++;
-                    }
                 }
-                for (var type in probabilities) {
+                for (var i = 0; i < skinList.length; i++) { // Count the remaining skins for each type
+                    var skinType = this.probabilities[skinList[i].price + "RP"];
+                    skinType.remaining++;
+                }
+                this.probabilities['total'] = skinList.length;
+                for (var type in this.probabilities) { // Count the probability of each type
                     if (type != 'total') {
-                        probabilities[type].probability = probabilities[type].remaining / probabilities.total;
+                        this.probabilities[type].probability = (this.probabilities[type].remaining / this.probabilities.total) * 100;
                     }
                 }
-                return probabilities;
             }
         }
     }

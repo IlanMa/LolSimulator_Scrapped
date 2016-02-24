@@ -8,10 +8,9 @@ simulation.service('GiftService', [
 
         return {
             skinHistory: [], // Contains skins history
-            currentMode: 'normal',
+            currentMode: 'normal', // Current gift mode
             legendaryPromo: false,
-            switchedModes: false,
-            currentAnimation: 'normal',
+            currentAnimation: 'normal', // Current animation mode
             skinList: {
                 normal: ChampionInfo.slice(0), // Skin list for normal mode
                 chest: [], // Skin list for chest mode
@@ -29,14 +28,15 @@ simulation.service('GiftService', [
                 var skinResult = skins[Math.floor(Math.random() * skins.length)];
                 this.removeSkin(skinResult, skins);
                 this.updateData(skinResult, mode);
-                return StatService.calculateProbability(skins);
             },
+            // Invoked each time a gift is opened to remove the skin to prevent it being opened again
             removeSkin: function(skinResult, skinList) {
                 var skinList = this.skinList.normal;
                 this.skinList.normal = skinList.filter(function(element) {
                     return element.name !== skinResult.name;
                 }); // Filter all occurences of a skin
             },
+            // Update general data after each gift
             updateData: function(skinResult, mode) {
                 this.skinHistory.push({
                         name: skinResult.name,
@@ -45,11 +45,11 @@ simulation.service('GiftService', [
                     // this.skinImage = skinResult.img;
                 StatService.calculateStatistics(skinResult, mode);
             },
-            getProbability: function(mode) {
+            getProbability: function(mode) { // Invoked after each action
                 var skinList = this.retrieveList(mode);
-                return StatService.calculateProbability(skinList);
+                StatService.calculateProbability(skinList);
             },
-            retrieveList: function(mode) {
+            retrieveList: function(mode) { // Used to retrieve the possible skins for each gift type
                 if (mode === 'normal' && !this.legendaryPromo) {
                     console.log('NORMAL', this.skinList.normal.length)
                     return this.skinList.normal;
@@ -73,7 +73,6 @@ simulation.service('GiftService', [
                         }
                         console.log('NORMALLEGENDARY', this.skinList.normalLegendary.length)
                         return this.skinList.normalLegendary;
-
                     } else if (mode === 'chest' && this.legendaryPromo) {
                         this.skinList.chestLegendary = [];
                         for (var skin in normalGifts) {
