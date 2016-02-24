@@ -19,7 +19,7 @@ simulation.service('SkinService', [
                 var skins = [];
                 for (var index in data) {
                     var length = data[index].skins.length;
-                    for (var i = 0; i < length; i++) {
+                    for (var i = 0; i < length; i++) { //O(n^2)
 
                         var tempSkin = {
                             "name": data[index].skins[i].name,
