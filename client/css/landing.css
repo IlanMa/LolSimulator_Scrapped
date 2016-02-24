@@ -73,12 +73,9 @@
   box-sizing: border-box;
   float: left;
   width: 80px;
-  height: 80px;
-  border: orange 3px solid;
-  box-shadow: inset 0px 0px 25px 3px orange; }
+  height: 80px; }
 
 .scroll-result > ul > li > span {
-  color: orange;
   font-size: 74px; }
 
 .color-code {

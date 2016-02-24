@@ -22,6 +22,8 @@ simulation.service('StatService', [
                 '3250RP': 0
             },
             probabilities: {}, // Contains probabilities
+            total: 0, // Contains total skins remaining
+            average: 0, // Contains the average value of the next skin
             price: {
                 normal: 490, // RP Price to open mystery gift
                 chest: 790 // RP Price to open mystery chest
@@ -40,7 +42,6 @@ simulation.service('StatService', [
             // Invoked after each gift open and gift type change
             calculateProbability: function(skinList) {
                 this.probabilities = {
-                    total: 0,
                     '520RP': {
                         remaining: 0,
                         probability: 0
@@ -70,13 +71,14 @@ simulation.service('StatService', [
                     var skinType = this.probabilities[skinList[i].price + "RP"];
                     skinType.remaining++;
                 }
-                this.probabilities['total'] = skinList.length;
+                this.total = skinList.length;
+                this.average = 0;
                 for (var type in this.probabilities) { // Count the probability of each type
-                    if (type != 'total') {
-                        this.probabilities[type].probability = (this.probabilities[type].remaining / this.probabilities.total) * 100;
-                    }
+                    this.probabilities[type].probability = (this.probabilities[type].remaining / this.total) * 100;
+                    this.average += (this.probabilities[type].probability * type.substring(0, type.length - 2) / 100)
                 }
-            }
+                console.log(this.average);
+            }   
         }
     }
 ])
