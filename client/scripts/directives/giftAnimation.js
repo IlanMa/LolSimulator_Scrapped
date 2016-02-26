@@ -81,6 +81,7 @@ simulation.directive('giftAnimation', [
                 }
                 generateSkinArray('normal')
                 $('.chest-button-scroll').on('click', openGift);
+
             }
         }
     }

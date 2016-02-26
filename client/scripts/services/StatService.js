@@ -21,6 +21,8 @@ simulation.service('StatService', [
                 '1820RP': 0,
                 '3250RP': 0
             },
+            rpArray: [],
+            avgArray: [],
             probabilities: {}, // Contains probabilities
             total: 0, // Contains total skins remaining
             average: 0, // Contains the average value of the next skin
@@ -31,6 +33,16 @@ simulation.service('StatService', [
             // Invoked after each open button press
             calculateStatistics: function(skin, mode) {
                 var stats = this.statistics;
+                this.rpArray.push(skin.price);
+
+                var statArray = this.rpArray;
+                var sum = 0;
+                for (var i = 0; i < statArray.length; i++) {
+                    sum += statArray[i];
+                }
+                var avg = sum / statArray.length;
+                this.avgArray.push(avg);
+
                 var costToOpen = (mode === 'chest' ? this.price.chest : this.price.normal);
                 stats.chestsOpened += 1;
                 stats.dollarSpent += costToOpen * 0.0096153846153846;
