@@ -33,16 +33,6 @@ simulation.service('StatService', [
             // Invoked after each open button press
             calculateStatistics: function(skin, mode) {
                 var stats = this.statistics;
-                this.rpArray.push(skin.price);
-
-                var statArray = this.rpArray;
-                var sum = 0;
-                for (var i = 0; i < statArray.length; i++) {
-                    sum += statArray[i];
-                }
-                var avg = sum / statArray.length;
-                this.avgArray.push(avg);
-
                 var costToOpen = (mode === 'chest' ? this.price.chest : this.price.normal);
                 stats.chestsOpened += 1;
                 stats.dollarSpent += costToOpen * 0.0096153846153846;
@@ -50,6 +40,7 @@ simulation.service('StatService', [
                 stats.rpGained += skin.price;
                 stats.dollarReturn = (stats.rpGained - stats.rpSpent) * 0.0096153846153846;
                 this.skinTypeCount[skin.price + 'RP'] += 1;
+                this.calculateGraphData(skin);
             },
             // Invoked after each gift open and gift type change
             calculateProbability: function(skinList) {
@@ -89,8 +80,19 @@ simulation.service('StatService', [
                     this.probabilities[type].probability = (this.probabilities[type].remaining / this.total) * 100;
                     this.average += (this.probabilities[type].probability * type.substring(0, type.length - 2) / 100)
                 }
-                console.log(this.average);
-            }   
+            },
+            // Calculate data to update the graph
+            calculateGraphData: function(skin) {
+                this.rpArray.push(skin.price);
+                var rpArray = this.rpArray;
+                var sum = 0;
+                var numOfValues = (rpArray.length >= 5) ? 5 : rpArray.length;
+                for (var i = rpArray.length - 1; i >= rpArray.length - numOfValues; i--) {
+                    sum += rpArray[i];
+                }
+                var avg = sum / numOfValues;
+                this.avgArray.push(avg);
+            }
         }
     }
 ])

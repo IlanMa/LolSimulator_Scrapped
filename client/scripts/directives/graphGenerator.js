@@ -8,44 +8,37 @@ simulation.directive('graphGenerator', [
         return {
             restrict: 'E',
             scope: {},
-            template: "<div id='graph' style='width:100%; height:400px;''></div>",
+            template: "<div id='graph'></div>",
             link: function(scope, element, attrs) {
-                var avgArray = [];
-                drawGraph();
-
+            	// Graph Data
+                var graphData = {
+                        "type": "line",
+                        "plot": {
+                            "aspect": "spline"
+                        },
+                        "series": [
+                            { "values": StatService.rpArray },
+                            { "values": StatService.avgArray }
+                        ]
+                    }
+                // Render Graph
+                zingchart.render({
+                    id: 'graph',
+                    data: graphData,
+                    height: 500,
+                    width: 1000
+                });
+                // Update Graph
                 function drawGraph() {
-                	var statArray = StatService.rpArray.slice();
-                	var sum = 0;
-                	for (var i = 0; i < statArray.length; i++) {
-                		sum += statArray[i];
-                	}
-                	var avg = sum / statArray.length;
-                	avgArray.push(avg);
-                	console.log('AVG', avgArray)
-                    $('#graph').highcharts({
-                        chart: {
-                            type: 'line'
-                        },
-                        title: {
-                            text: 'Mystery Gift'
-                        },
-                        plotOptions: {
-                                    series: {
-                                        animation: false
-                                    }
-                                },
-                        yAxis: {
-                            title: {
-                                text: 'RP Value'
-                            }
-                        },
-                        series: [{
-                            name: 'Average',
-                            data: StatService.avgArray
-                        }, {
-                            name: 'Gift',
-                            data: StatService.rpArray
-                        }]
+                    zingchart.exec('graph', 'modify', {
+                        graphid: 0,
+                        object: 'title',
+                        data: {
+                            "series": [
+                                { "values": StatService.rpArray },
+                                { "values": StatService.avgArray }
+                            ]
+                        }
                     });
                 }
 
