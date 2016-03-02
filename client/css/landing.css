@@ -121,6 +121,10 @@
   font-size: 40px;
   color: white; }
 
+.graph-container #graph {
+  margin: 25px auto 0 auto;
+  width: 1000px; }
+
 .footer-container {
   position: relative;
   width: 100%;

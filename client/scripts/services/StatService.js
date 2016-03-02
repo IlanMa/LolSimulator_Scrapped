@@ -86,7 +86,7 @@ simulation.service('StatService', [
                 this.rpArray.push(skin.price);
                 var rpArray = this.rpArray;
                 var sum = 0;
-                var numOfValues = (rpArray.length >= 5) ? 5 : rpArray.length;
+                var numOfValues = (rpArray.length >= 10) ? 10 : rpArray.length;
                 for (var i = rpArray.length - 1; i >= rpArray.length - numOfValues; i--) {
                     sum += rpArray[i];
                 }
