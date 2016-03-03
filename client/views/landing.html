@@ -19,6 +19,9 @@
     <button ng-click="animation = 'normal'" ng-class="{'button-active': animation === 'normal'}">Normal</button>
     <button ng-click="animation = 'scroll'" ng-class="{'button-active': animation === 'scroll'}">Scroll</button>
     <p>Bonus Stats</p>
+    <h4 ng-repeat="champ in getGiftData('champArray')">
+    	{{champ}}
+    </h4>
     <ul>
     	<li><span class="color-code orange"></span> 520RP - {{typeCount['520RP']}} Skins - Odds: {{getStatData('probabilities')['520RP'].probability | number: 3}}%</li>
     	<li><span class="color-code blue"></span> 750RP - {{typeCount['750RP']}} Skins - Odds: {{getStatData('probabilities')['750RP'].probability | number: 3}}%</li>
@@ -49,4 +52,5 @@
 	<graph-generator></graph-generator>
 </div>
 
-<div class="footer-container"></div>
+<div class="footer-container">
+</div>

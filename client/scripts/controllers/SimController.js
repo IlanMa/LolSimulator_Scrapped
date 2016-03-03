@@ -37,7 +37,10 @@ simulation.controller('SimController', [
         // Get probability as the page loads
         GiftService.getProbability(GiftService.currentMode);
 
+        GiftService.giftArrayToObj();
+
         $scope.getGiftData = function(data) {
+            console.log("DATA", GiftService[data])
             return GiftService[data];
         }
 
@@ -55,6 +58,9 @@ simulation.controller('SimController', [
         $scope.openSkin = function() {
             GiftService.openSkin(GiftService.currentMode);
             GiftService.getProbability(GiftService.currentMode);
+            $scope.champsBro = GiftService.champArray;
+            console.log(GiftService.skinHistory)
+
         }
 
         // Invoked when changing gift modes
