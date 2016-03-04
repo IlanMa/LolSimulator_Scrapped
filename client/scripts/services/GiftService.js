@@ -97,7 +97,7 @@ simulation.service('GiftService', [
                         changedChamp = skinArray[i].champ;
                         this.champArray[skinArray[i].champ] = [];
                     }
-                    this.champArray[skinArray[i].champ].push(skinArray[i].name)
+                    this.champArray[skinArray[i].champ].push(skinArray[i].name);
                 }
             }
         }

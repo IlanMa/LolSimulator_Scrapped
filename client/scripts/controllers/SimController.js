@@ -37,18 +37,6 @@ simulation.controller('SimController', [
         // Get probability as the page loads
         GiftService.getProbability(GiftService.currentMode);
 
-        // Create Obj containing skins of each champion
-        GiftService.giftArrayToObj();
-
-        $scope.getGiftData = function(data) {
-            console.log("DATA", GiftService[data])
-            return GiftService[data];
-        }
-
-        $scope.getStatData = function(data) {
-            return StatService[data];
-        }
-
         // Invoked when legendary promo button is clicked
         $scope.enablePromo = function() {
             GiftService.legendaryPromo = !GiftService.legendaryPromo;
@@ -60,7 +48,6 @@ simulation.controller('SimController', [
             GiftService.openSkin(GiftService.currentMode);
             GiftService.getProbability(GiftService.currentMode);
             $scope.champsBro = GiftService.champArray;
-            console.log(GiftService.skinHistory)
 
         }
 
@@ -71,7 +58,6 @@ simulation.controller('SimController', [
                 GiftService.getProbability(GiftService.currentMode);
             }
         }
-
 
     }
 ])
