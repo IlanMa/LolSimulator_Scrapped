@@ -37,6 +37,7 @@ simulation.controller('SimController', [
         // Get probability as the page loads
         GiftService.getProbability(GiftService.currentMode);
 
+        // Create Obj containing skins of each champion
         GiftService.giftArrayToObj();
 
         $scope.getGiftData = function(data) {

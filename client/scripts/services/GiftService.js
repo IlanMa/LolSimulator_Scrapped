@@ -17,7 +17,7 @@ simulation.service('GiftService', [
                 normalLegendary: [], // Skin list for normal legendary promo
                 chestLegendary: [] // Skin list for chest legendary promo
             },
-            champArray: [], // Contains list of skins for each champion
+            champArray: {}, // Contains list of skins for each champion
             price: {
                 normal: 490, // RP Price to open mystery gift
                 chest: 790 // RP Price to open mystery chest
@@ -91,14 +91,14 @@ simulation.service('GiftService', [
             },
             giftArrayToObj: function() { // Create objects of each champion containg all their skins
                 var skinArray = ChampionInfo.slice(0);
-                var champArr = this.champArray;
+                var changedChamp;
                 for (var i = 0; i < skinArray.length; i++) {
-                    var currentChampion = skinArray[i].champ;
-                    if (!champArr[currentChampion]) {
-                        champArr[currentChampion] = [];
+                    if (changedChamp !== skinArray[i].champ) {
+                        changedChamp = skinArray[i].champ;
+                        this.champArray[skinArray[i].champ] = [];
                     }
-                    champArr.push( skinArray[i].name);
-                 }
+                    this.champArray[skinArray[i].champ].push(skinArray[i].name)
+                }
             }
         }
     }
