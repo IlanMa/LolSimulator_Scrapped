@@ -97,8 +97,9 @@ simulation.service('GiftService', [
                         changedChamp = skinArray[i].champ;
                         this.champArray[skinArray[i].champ] = [];
                     }
-                    this.champArray[skinArray[i].champ].push(skinArray[i].name);
+                    this.champArray[skinArray[i].champ].push({name: skinArray[i].name, selected: false});
                 }
+            console.log('YO', this.champArray)
             }
         }
     }

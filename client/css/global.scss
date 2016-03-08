@@ -52,7 +52,8 @@ table {
 }
 
 .global-container {
-	@include container(1200px, 1300px, blue);
+	@include container(100%, 1300px, blue);
+	max-width: 1200px;
 	margin: auto;
 	text-align: center;
 }
