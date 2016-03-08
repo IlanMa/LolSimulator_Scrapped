@@ -1,0 +1,29 @@
+.champion-container {
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  background-color: blue; }
+
+.selection-container {
+  position: relative;
+  width: 90%;
+  height: 1000px;
+  background-color: green;
+  text-align: center;
+  margin: auto; }
+  .selection-container > div {
+    margin: 5px;
+    width: 200px;
+    background-color: darkgreen;
+    border: 2px solid white;
+    box-shadow: 2px 2px 4px 0 #ccc; }
+    .selection-container > div > h2 {
+      font-size: 26px;
+      color: white; }
+    .selection-container > div > p {
+      text-align: left;
+      color: white;
+      margin: 5px; }
+
+.repeated-img {
+  margin: 0 5px 5px 0; }

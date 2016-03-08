@@ -1,0 +1,36 @@
+@mixin container($width, $height, $bg) {
+    position: relative;
+    width: $width;
+    height: $height;
+    background-color: $bg;
+}
+
+.champion-container {
+    @include container(100%, 1000px, blue);
+}
+
+.selection-container {
+	@include container(90%, 1000px, green);
+	text-align: center;
+	margin: auto;
+    & > div {
+      	margin: 5px;
+      	width: 200px;
+      	background-color: darkgreen;
+      	border: 2px solid white;
+      	box-shadow: 2px 2px 4px 0 #ccc;
+        & > h2 {
+           font-size: 26px;
+           color: white;
+        }
+        & > p {
+        	text-align: left;
+        	color: white;
+        	margin: 5px;
+        }
+    }
+}
+
+.repeated-img {
+  margin: 0 5px 5px 0;
+}

@@ -1,6 +1,11 @@
-<ul ng-repeat="(champ, arr) in getGiftData('champArray')">
-    <h1 style='color:red'>{{champ}}</h1>
-    <li ng-repeat="skin in arr">
-        <h5>{{skin}}</h5>
-    </li>
-</ul>
+<div class="champion-container">
+    <div class="selection-container" masonry>
+        <div ng-repeat="(champ, arr) in getGiftData('champArray')" class="masonry-brick">
+            <h2>{{champ}}</h2>
+            <p ng-repeat="skin in arr">
+                {{skin}}
+            </p>
+        </div>
+    </div>
+
+</div>

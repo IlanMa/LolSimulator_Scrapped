@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/IlanMa/LolSimulator#readme",
   "dependencies": {
+    "angular-masonry": "^0.16.0",
     "express": "^4.13.3",
     "request": "^2.69.0"
   }
