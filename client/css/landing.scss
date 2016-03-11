@@ -44,7 +44,7 @@
 }
 
 .normal-result-container {
-    @include container(240px, 350px, black);
+    @include container(350px, 350px, darkblue);
     margin: 30px auto auto auto;
     background-size: 240px 350px;
     background-repeat: no-repeat;
@@ -99,15 +99,70 @@ $colors-list: orange blue aquamarine purple silver red;
     @include container (100%, 600px, green);
     margin-top: 150px;
     & > h1 {
-    	font-size: 40px;
-    	color: white;
+        font-size: 40px;
+        color: white;
     }
     #graph {
-    	margin: 25px auto 0 auto;
-    	width: 1000px
+        margin: 25px auto 0 auto;
+        width: 1000px
     }
 }
 
 .footer-container {
-	@include container (100%, 100px, black);
+    @include container (100%, 100px, black);
+}
+
+.chest-container {
+    @include container (100%, 100%, white);
+    @include box-sizing();
+    & > div {
+        @include box-sizing();
+    }
+    & > .body-piece-left {
+        position: absolute;
+        top: 150px;
+        left: 30px;
+        background-color: black;
+        width: 200px;
+        height: 100px;
+        transform: rotate(15deg) skewX(15deg);
+        border: 5px solid gold;
+    }
+    & > .body-piece-right {
+        position: absolute;
+        top: 163px;
+        left: 224px;
+        background-color: black;
+        width: 100px;
+        height: 100px;
+        transform: rotate(-15deg) skewX(-15deg);
+        border: 5px solid gold;
+    }
+    & > .body-piece-top {
+        position: absolute;
+        top: 73px;
+        left: 46px;
+        background-color: black;
+        width: 228px;
+        height: 83px;
+        transform: rotate(15deg) skewX(-10deg);
+        border-top-left-radius: 20% 100%;
+        border-top-right-radius: 1% 3%;
+        border-bottom-right-radius: 15% 100%;
+        border-bottom-left-radius: 20% 0%;
+        border: 5px solid gold;
+    }
+    & > .body-piece-side {
+        position: absolute;
+        top: 107px;
+        left: 221px;
+        background-color: black;
+        width: 100px;
+        height: 55px;
+        transform: rotate(-15deg) skewX(-10deg);
+        border-radius: 50% / 100%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border: 5px solid gold;
+    }
 }

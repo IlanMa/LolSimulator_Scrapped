@@ -36,7 +36,10 @@
         </li>
     </ul>
 </div>
-<div class="normal-result-container" ng-style="{'background-image':'url('+getGiftData('skinImage')+')'}"></div>
+<div class="normal-result-container" ng-style="{'background-image':'url('+getGiftData('skinImage')+')'}">
+    
+    <div ng-include="'/views/chest.html'"></div>
+</div>
 <button class="chest-button" ng-click="openSkin()" ng-hide="animation === 'scroll'">Open</button>
 <div class="scroll-container" ng-hide="animation === 'normal'">
     <gift-animation></gift-animation>

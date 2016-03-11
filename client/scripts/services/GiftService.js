@@ -36,8 +36,7 @@ simulation.service('GiftService', [
                 this.skinList.normal = skinList.filter(function(element) {
                     return element.name !== skinResult.name;
                 }); // Filter all occurences of a skin
-                console.log( this.skinList.normal.length)
-
+                
             },
             // Invoked when deselecting skin
             addSkin: function(skin) {
@@ -111,7 +110,6 @@ simulation.service('GiftService', [
                     }
                     this.champArray[skinArray[i].champ].push({name: skinArray[i].name, selected: false});
                 }
-            console.log('YO', this.champArray)
             }
         }
     }
