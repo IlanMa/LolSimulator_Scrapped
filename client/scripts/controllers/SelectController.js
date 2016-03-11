@@ -1,14 +1,19 @@
 simulation.controller('SelectController', [
-	'$scope',
-	'GiftService',
-	function($scope, GiftService) {
-		'use strict';
+    '$scope',
+    'GiftService',
+    function($scope, GiftService) {
+        'use strict';
 
-		console.log("### SELECT CONTROLLER");
+        console.log("### SELECT CONTROLLER");
 
-		$scope.selectSkin = function(skin, index) {
-			GiftService.champArray[skin][index].selected = !GiftService.champArray[skin][index].selected;
-		}
-
-
-}])
+        $scope.selectSkin = function(champion, index) {
+            var skin = GiftService.champArray[champion][index];
+            skin.selected = !skin.selected;
+            if (skin.selected) {
+                GiftService.removeSkin({ name: skin.name });
+            } else {
+            	GiftService.addSkin(skin.name);
+            }
+        }
+    }
+])

@@ -27,15 +27,27 @@ simulation.service('GiftService', [
             openSkin: function(mode) { // Invoked on gift open
                 var skins = this.retrieveList(mode);
                 var skinResult = skins[Math.floor(Math.random() * skins.length)];
-                this.removeSkin(skinResult, skins);
+                this.removeSkin(skinResult);
                 this.updateData(skinResult, mode);
             },
             // Invoked each time a gift is opened to remove the skin to prevent it being opened again
-            removeSkin: function(skinResult, skinList) {
+            removeSkin: function(skinResult) {
                 var skinList = this.skinList.normal;
                 this.skinList.normal = skinList.filter(function(element) {
                     return element.name !== skinResult.name;
                 }); // Filter all occurences of a skin
+                console.log( this.skinList.normal.length)
+
+            },
+            // Invoked when deselecting skin
+            addSkin: function(skin) {
+                for (var i = 0; i < ChampionInfo.length; i++) {
+                    if (ChampionInfo[i].name === skin) {
+                        this.skinList.normal.push(ChampionInfo[i])
+                        break;
+                    }
+                }
+                console.log( this.skinList.normal.length)
             },
             // Update general data after each gift
             updateData: function(skinResult, mode) {
