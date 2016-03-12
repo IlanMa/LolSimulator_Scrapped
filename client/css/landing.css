@@ -197,10 +197,16 @@
   border-bottom-right-radius: 15% 100%;
   border-bottom-left-radius: 20% 0%;
   border: 5px solid gold;
-  transform-origin: -100% -100%;
-  animation-name: topmove;
-  animation-duration: 4s;
-  animation-iteration-count: infinite; }
+  transform-origin: -100% -100%; }
+
+.chest-container > .light {
+  position: absolute;
+  top: 142px;
+  left: 175px;
+  background-color: yellow;
+  width: 9px;
+  height: 12px;
+  box-shadow: 0px 0px 87px 63px yellow; }
 
 .chest-container > div > .body-piece-side {
   position: absolute;
@@ -214,10 +220,7 @@
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   border: 5px solid gold;
-  transform-origin: 100% 100%;
-  animation-name: sidemove;
-  animation-duration: 4s;
-  animation-iteration-count: infinite; }
+  transform-origin: 100% 100%; }
 
 .chest-container > .body-piece-inner {
   z-index: 0;
@@ -232,6 +235,11 @@
 @keyframes contmove {
   100% {
     transform: rotateZ(17deg) rotateX(40deg); } }
+
+@keyframes lightmove {
+  100% {
+    left: 135px;
+    box-shadow: 0px 0px 150px 110px red; } }
 
 @keyframes sidemove {
   100% {
