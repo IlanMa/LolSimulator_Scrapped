@@ -58,6 +58,5 @@ simulation.controller('SimController', [
                 GiftService.getProbability(GiftService.currentMode);
             }
         }
-
     }
 ])
