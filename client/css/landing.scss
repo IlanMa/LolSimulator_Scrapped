@@ -119,6 +119,7 @@ $colors-list: orange blue aquamarine purple silver red;
         @include box-sizing();
     }
     & > .chest-background {
+    	z-index: 1;
         position: absolute;
         top: 170px;
         left: 70px;
@@ -128,6 +129,7 @@ $colors-list: orange blue aquamarine purple silver red;
         border: 5px solid gold;
     }
     & > .chest-bottom {
+    	z-index: 3;
         position: absolute;
         top: 200px;
         left: 70px;
@@ -136,15 +138,28 @@ $colors-list: orange blue aquamarine purple silver red;
         height: 100px;
         border: 5px solid gold;
     }
+    & > .chest-light {
+    	z-index: 2;
+    	position: absolute;
+    	top: 210px;
+    	left: 0;
+    	right: 0;
+    	margin: auto;
+    	background-color: gold;
+    	width: 90px;
+    	height: 0px;
+    	box-shadow: 0 0 60px 30px blue;
+    	animation: lightmove 3s infinite;
+    }
     & > .chest-top {
-    	z-index: 10;
+    	z-index: 3;
         position: absolute;
         top: 150px;
         left: 70px;
         background-color: black;
         width: 200px;
         height: 50px;
-        border: 5px solid gold;
+        border: 5px solid red;
         border-radius: 10px 10px 0 0;
         animation: open 3s infinite;
         & > .chest-lock {
@@ -166,5 +181,13 @@ $colors-list: orange blue aquamarine purple silver red;
 @keyframes open {
     100% {
     	transform: rotateX(75deg);
+    	border: 5px solid blue;
+    }
+}
+
+
+@keyframes lightmove {
+    100% {
+    	width: 120px;
     }
 }
