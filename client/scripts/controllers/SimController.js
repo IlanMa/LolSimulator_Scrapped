@@ -47,8 +47,6 @@ simulation.controller('SimController', [
         $scope.openSkin = function() {
             GiftService.openSkin(GiftService.currentMode);
             GiftService.getProbability(GiftService.currentMode);
-            $scope.champsBro = GiftService.champArray;
-
         }
 
         // Invoked when changing gift modes
@@ -57,6 +55,12 @@ simulation.controller('SimController', [
                 GiftService.currentMode = mode;
                 GiftService.getProbability(GiftService.currentMode);
             }
+        }
+
+        // TEMP - TO BE REMOVED
+        $scope.closeChest = function() {
+            GiftService.chestIsOpen = false;
+            GiftService.skinColor = 'gold';
         }
 
     }

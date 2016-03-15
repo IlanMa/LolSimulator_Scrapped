@@ -113,10 +113,11 @@ $colors-list: orange blue aquamarine purple silver red;
 }
 
 .chest-container {
-    @include container (100%, 100%, white);
+    @include container (100%, 100%, black);
     &,
     & div {
         @include box-sizing();
+        transition: 3s;
     }
     & > .chest-background {
     	z-index: 1;
@@ -148,8 +149,9 @@ $colors-list: orange blue aquamarine purple silver red;
     	background-color: gold;
     	width: 90px;
     	height: 0px;
-    	box-shadow: 0 0 60px 30px blue;
-    	animation: lightmove 3s infinite;
+    	&.width-increase {
+    		width: 150px;
+    	}
     }
     & > .chest-top {
     	z-index: 3;
@@ -159,9 +161,11 @@ $colors-list: orange blue aquamarine purple silver red;
         background-color: black;
         width: 200px;
         height: 50px;
-        border: 5px solid red;
+        border: 5px solid gold;
         border-radius: 10px 10px 0 0;
-        animation: open 3s infinite;
+        &.open {
+        	transform: rotateX(75deg);
+        }
         & > .chest-lock {
         	position: absolute;
         	left: 0;
@@ -174,20 +178,5 @@ $colors-list: orange blue aquamarine purple silver red;
         	width: 16px;
         	height: 30px;
         }
-    }
-}
-
-
-@keyframes open {
-    100% {
-    	transform: rotateX(75deg);
-    	border: 5px solid blue;
-    }
-}
-
-
-@keyframes lightmove {
-    100% {
-    	width: 120px;
     }
 }

@@ -22,6 +22,8 @@ simulation.service('GiftService', [
                 normal: 490, // RP Price to open mystery gift
                 chest: 790 // RP Price to open mystery chest
             },
+            skinColor: 'gold',
+            chestIsOpen: false,
             skinImage: 'http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_.jpg',
 
             openSkin: function(mode) { // Invoked on gift open
@@ -29,6 +31,8 @@ simulation.service('GiftService', [
                 var skinResult = skins[Math.floor(Math.random() * skins.length)];
                 this.removeSkin(skinResult);
                 this.updateData(skinResult, mode);
+                this.skinColor = this.getColor(skinResult);
+                this.chestIsOpen = true;
             },
             // Invoked each time a gift is opened to remove the skin to prevent it being opened again
             removeSkin: function(skinResult) {
@@ -110,6 +114,32 @@ simulation.service('GiftService', [
                     }
                     this.champArray[skinArray[i].champ].push({name: skinArray[i].name, selected: false});
                 }
+            },
+            getColor: function(skin) {
+                var color;
+                switch (skin.price) {
+                    case 520:
+                        color = 'Orange';
+                        break;
+                    case 750:
+                        color = 'Blue';
+                        break;
+                    case 975:
+                        color = 'Aquamarine';
+                        break;
+                    case 1350:
+                        color = 'Purple';
+                        break;
+                    case 1820:
+                        color = 'Silver';
+                        break;
+                    case 3250:
+                        color = 'Red';
+                        break;
+                    default:
+                        color = 'Black';
+                }
+                return color;
             }
         }
     }

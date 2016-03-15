@@ -1,10 +1,9 @@
 <div class="chest-container">
-	<div class="chest-background"></div>
-    <div class="chest-top">
-    	<div class="chest-lock"></div>
+    <div class="chest-background" ng-style="{'border-color': getGiftData('skinColor')}"></div>
+    <div class="chest-top" ng-class="{'open': getGiftData('chestIsOpen')}" ng-style="{'border-color': getGiftData('skinColor')}">
+        <div class="chest-lock"></div>
     </div>
-    <div class="chest-light"></div>
-    <div class="chest-bottom">
+    <div class="chest-light" ng-style="{'box-shadow': '0 0 60px 30px ' + getGiftData('skinColor')}" ng-class="{'width-increase': getGiftData('chestIsOpen')}"></div>
+    <div class="chest-bottom" ng-style="{'border-color': getGiftData('skinColor')}">
     </div>
 </div>
-		

@@ -53,29 +53,7 @@ simulation.directive('giftAnimation', [
                 }
 
                 function populateDOM(skin) {
-                    var color;
-                    switch (skin.price) {
-                        case 520:
-                            color = 'Orange';
-                            break;
-                        case 750:
-                            color = 'Blue';
-                            break;
-                        case 975:
-                            color = 'Aquamarine';
-                            break;
-                        case 1350:
-                            color = 'Purple';
-                            break;
-                        case 1820:
-                            color = 'Silver';
-                            break;
-                        case 3250:
-                            color = 'Red';
-                            break;
-                        default:
-                            color = 'Black';
-                    }
+                    var color = GiftService.getColor(skin);
                     skinList += "<li style='border: " + color + " 3px solid; box-shadow:inset 0px 0px 25px 3px " + color + "'>" +
                         "<span style='color: " + color + "'>?</span></li>";
                 }
