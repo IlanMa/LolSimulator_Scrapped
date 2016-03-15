@@ -112,6 +112,15 @@ $colors-list: orange blue aquamarine purple silver red;
     @include container (100%, 100px, black);
 }
 
+@mixin chest-piece($top, $left, $bg, $width, $height) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    background-color: $bg;
+    width: $width;
+    height: $height;
+}
+
 .chest-container {
     @include container (100%, 100%, black);
     &,
@@ -120,47 +129,28 @@ $colors-list: orange blue aquamarine purple silver red;
         transition: 3s;
     }
     & > .chest-background {
+    	@include chest-piece (170px, 70px, black, 200px, 130px);
     	z-index: 1;
-        position: absolute;
-        top: 170px;
-        left: 70px;
-        background-color: black;
-        width: 200px;
-        height: 130px;
         border: 5px solid gold;
     }
     & > .chest-bottom {
+    	@include chest-piece (200px, 70px, black, 200px, 100px);
     	z-index: 3;
-        position: absolute;
-        top: 200px;
-        left: 70px;
-        background-color: black;
-        width: 200px;
-        height: 100px;
         border: 5px solid gold;
     }
     & > .chest-light {
+    	@include chest-piece (210px, 0, gold, 90px, 0);
     	z-index: 2;
-    	position: absolute;
-    	top: 210px;
-    	left: 0;
     	right: 0;
     	margin: auto;
     	background-color: gold;
-    	width: 90px;
-    	height: 0px;
     	&.width-increase {
     		width: 150px;
     	}
     }
     & > .chest-top {
+    	@include chest-piece (150px, 70px, black, 200px, 50px);
     	z-index: 3;
-        position: absolute;
-        top: 150px;
-        left: 70px;
-        background-color: black;
-        width: 200px;
-        height: 50px;
         border: 5px solid gold;
         border-radius: 10px 10px 0 0;
         &.open {
