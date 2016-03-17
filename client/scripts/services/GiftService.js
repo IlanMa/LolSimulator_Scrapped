@@ -114,6 +114,7 @@ simulation.service('GiftService', [
                     }
                     this.champArray[skinArray[i].champ].push({name: skinArray[i].name, selected: false});
                 }
+                console.log(" this.champArray",  this.champArray)
             },
             getColor: function(skin) {
                 var color;

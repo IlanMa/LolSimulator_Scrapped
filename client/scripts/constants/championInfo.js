@@ -1373,6 +1373,12 @@ simulation.constant('ChampionInfo', [{
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Khazix_2.jpg"
 }, {
+    "name": "Death Blossom Kha'Zix",
+    "champ": "Khazix",
+    "price": 975,
+    "num": 3,
+    "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Khazix_3.jpg"
+}, {
     "name": "Ice Toboggan Corki",
     "champ": "Corki",
     "price": 1820,
@@ -1540,6 +1546,12 @@ simulation.constant('ChampionInfo', [{
     "price": 975,
     "num": 5,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Kennen_5.jpg"
+}, {
+    "name": "Blood Moon Kenne",
+    "champ": "Kennen",
+    "price": 975,
+    "num": 6,
+    "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Kennen_6.jpg"
 }, {
     "name": "Enchanted Galio",
     "champ": "Galio",
@@ -2555,6 +2567,12 @@ simulation.constant('ChampionInfo', [{
     "num": 2,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Yasuo_2.jpg"
 }, {
+    "name": "Blood Moon Yasuo",
+    "champ": "Yasuo",
+    "price": 975,
+    "num": 3,
+    "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Yasuo_3.jpg"
+}, {
     "name": "Runeborn Xerath",
     "champ": "Xerath",
     "price": 750,
@@ -3094,6 +3112,12 @@ simulation.constant('ChampionInfo', [{
     "price": 975,
     "num": 4,
     "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Leblanc_4.jpg"
+}, {
+    "name": "Elderwood LeBlanc",
+    "champ": "Leblanc",
+    "price": 1350,
+    "num": 5,
+    "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Leblanc_5.jpg"
 }, {
     "name": "Old Saint Zilean",
     "champ": "Zilean",

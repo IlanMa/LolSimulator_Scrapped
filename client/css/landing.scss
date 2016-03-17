@@ -51,7 +51,8 @@
 }
 
 .scroll-container {
-    @include container(400px, 80px, rgb(50, 50, 50)) margin: 30px auto auto auto;
+    @include container(400px, 80px, rgb(50, 50, 50));
+    margin: 30px auto auto auto;
 }
 
 .chest-button,
@@ -129,44 +130,44 @@ $colors-list: orange blue aquamarine purple silver red;
         transition: 3s;
     }
     & > .chest-background {
-    	@include chest-piece (170px, 70px, black, 200px, 130px);
-    	z-index: 1;
+        @include chest-piece (170px, 70px, black, 200px, 130px);
+        z-index: 1;
         border: 5px solid gold;
     }
     & > .chest-bottom {
-    	@include chest-piece (200px, 70px, black, 200px, 100px);
-    	z-index: 3;
+        @include chest-piece (200px, 70px, black, 200px, 100px);
+        z-index: 3;
         border: 5px solid gold;
     }
     & > .chest-light {
-    	@include chest-piece (210px, 0, gold, 90px, 0);
-    	z-index: 2;
-    	right: 0;
-    	margin: auto;
-    	background-color: gold;
-    	&.width-increase {
-    		width: 150px;
-    	}
+        @include chest-piece (210px, 0, gold, 90px, 0);
+        z-index: 2;
+        right: 0;
+        margin: auto;
+        background-color: gold;
+        &.width-increase {
+            width: 150px;
+        }
     }
     & > .chest-top {
-    	@include chest-piece (150px, 70px, black, 200px, 50px);
-    	z-index: 3;
+        @include chest-piece (150px, 70px, black, 200px, 50px);
+        z-index: 3;
         border: 5px solid gold;
         border-radius: 10px 10px 0 0;
         &.open {
-        	transform: rotateX(75deg);
+            transform: rotateX(75deg);
         }
         & > .chest-lock {
-        	position: absolute;
-        	left: 0;
-        	right: 0;
-        	bottom: -16px;
-        	margin: auto;
-        	background-color: black;
-        	border: 5px solid gold;
-        	border-radius: 5px;
-        	width: 16px;
-        	height: 30px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -16px;
+            margin: auto;
+            background-color: black;
+            border: 5px solid gold;
+            border-radius: 5px;
+            width: 16px;
+            height: 30px;
         }
     }
 }
