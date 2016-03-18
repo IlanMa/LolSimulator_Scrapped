@@ -16,12 +16,6 @@ simulation.controller('SimController', [
 
         console.log('### SIM CONTROLLER');
 
-        // var skins = [];
-        // SkinService.getChampData(function(res){
-        //     skins = SkinService.getSkinsData(res);
-        //     console.log(skins);
-        // });
-
         // Determines animation mode
         $scope.animation = 'normal';
 

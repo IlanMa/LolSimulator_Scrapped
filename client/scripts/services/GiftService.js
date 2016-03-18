@@ -9,7 +9,7 @@ simulation.service('GiftService', [
         return {
             skinHistory: [], // Contains skins history
             currentMode: 'normal', // Current gift mode
-            legendaryPromo: false,
+            legendaryPromo: false, // If promo mode is enabled or not
             currentAnimation: 'normal', // Current animation mode
             skinList: {
                 normal: ChampionInfo.slice(0), // Skin list for normal mode
@@ -22,8 +22,8 @@ simulation.service('GiftService', [
                 normal: 490, // RP Price to open mystery gift
                 chest: 790 // RP Price to open mystery chest
             },
-            skinColor: 'gold',
-            chestIsOpen: false,
+            skinColor: 'gold', // Color inside the chest - depending on the rarity
+            chestIsOpen: false, // If chest is open or not
             skinImage: 'http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_.jpg',
 
             openSkin: function(mode) { // Invoked on gift open
