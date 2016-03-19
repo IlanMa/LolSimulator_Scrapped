@@ -35,7 +35,7 @@ simulation.directive('giftAnimation', [
                 }
 
                 function generateSkinArray(mode) {
-                    var skins = GiftService.retrieveList(mode);
+                    var skins = GiftService.retrieveList(mode, 'directive');
                     if (skinArray.length) { // Not met only on first run
                         skinsToGenerate = 35;
                         $('.skin-list').css('left', '0px');

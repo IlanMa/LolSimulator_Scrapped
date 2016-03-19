@@ -11,6 +11,7 @@ simulation.service('GiftService', [
             currentMode: 'normal', // Current gift mode
             legendaryPromo: false, // If promo mode is enabled or not
             currentAnimation: 'normal', // Current animation mode
+            changeOfData: true, // If data was changed, retrieve new list of skin
             skinList: {
                 normal: ChampionInfo.slice(0), // Skin list for normal mode
                 chest: [], // Skin list for chest mode
@@ -27,7 +28,8 @@ simulation.service('GiftService', [
             skinImage: 'http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_.jpg',
 
             openSkin: function(mode) { // Invoked on gift open
-                var skins = this.retrieveList(mode);
+                this.changeOfData = true;
+                var skins = this.retrieveList(mode, 'openSkin');
                 var skinResult = skins[Math.floor(Math.random() * skins.length)];
                 this.removeSkin(skinResult);
                 this.updateData(skinResult, mode);
@@ -40,7 +42,7 @@ simulation.service('GiftService', [
                 this.skinList.normal = skinList.filter(function(element) {
                     return element.name !== skinResult.name;
                 }); // Filter all occurences of a skin
-                
+
             },
             // Invoked when deselecting skin
             addSkin: function(skin) {
@@ -50,7 +52,7 @@ simulation.service('GiftService', [
                         break;
                     }
                 }
-                console.log( this.skinList.normal.length)
+                console.log(this.skinList.normal.length)
             },
             // Update general data after each gift
             updateData: function(skinResult, mode) {
@@ -62,45 +64,64 @@ simulation.service('GiftService', [
                 StatService.calculateStatistics(skinResult, mode);
             },
             getProbability: function(mode) { // Invoked after each action
-                var skinList = this.retrieveList(mode);
+                var skinList = this.retrieveList(mode, 'getProbablity');
                 StatService.calculateProbability(skinList);
             },
-            retrieveList: function(mode) { // Used to retrieve the possible skins for each gift type
+            getSkinArray: function(mode) {
                 if (mode === 'normal' && !this.legendaryPromo) {
-                    console.log('NORMAL', this.skinList.normal.length)
-                    return this.skinList.normal;
+                    return 'normal';
+                } else if (mode === 'chest' && !this.legendaryPromo) {
+                    return 'chest';
+                } else if (mode === 'normal' && this.legendaryPromo) {
+                    return 'normalLegendary';
+                } else if (mode === 'chest' && this.legendaryPromo) {
+                    return 'chestLegendary';
+                }
+            },
+            retrieveList: function(mode, location) { // Used to retrieve the possible skins for each gift type
+                var skinArray = this.getSkinArray(mode);
+                if (!this.changeOfData && this.skinList[skinArray].length) {
+                    console.log("IF", this.skinList[skinArray].length, "Location", location);
+                    return this.skinList[skinArray];
                 } else {
-                    var normalGifts = this.skinList.normal;
-                    if (mode === 'chest' && !this.legendaryPromo) {
-                        this.skinList.chest = [];
-                        for (var skin in normalGifts) {
-                            if (normalGifts[skin].price >= 975) {
-                                this.skinList.chest.push(normalGifts[skin]);
-                            }
-                        }
-                        console.log('CHEST', this.skinList.chest.length)
-                        return this.skinList.chest;
-                    } else if (mode === 'normal' && this.legendaryPromo) {
-                        this.skinList.normalLegendary = normalGifts.slice(0); // Create shallow copy
-                        for (var skin in normalGifts) {
-                            if (normalGifts[skin].price >= 1820) {
-                                this.skinList.normalLegendary.push(normalGifts[skin]);
-                            }
-                        }
-                        console.log('NORMALLEGENDARY', this.skinList.normalLegendary.length)
-                        return this.skinList.normalLegendary;
-                    } else if (mode === 'chest' && this.legendaryPromo) {
-                        this.skinList.chestLegendary = [];
-                        for (var skin in normalGifts) {
-                            if (normalGifts[skin].price >= 975) {
-                                this.skinList.chestLegendary.push(normalGifts[skin]);
-                                if (normalGifts[skin].price >= 1820) {
-                                    this.skinList.chestLegendary.push(normalGifts[skin]);
+                    console.log("ELSE ", "Location", location);
+                    this.changeOfData = false;
+                    if (skinArray === 'normal') {
+                        console.log('NORMAL', this.skinList.normal.length)
+                        return this.skinList.normal;
+                    } else {
+                        var normalGifts = this.skinList.normal;
+                        if (skinArray === 'chest') {
+                            this.skinList.chest = [];
+                            for (var skin in normalGifts) {
+                                if (normalGifts[skin].price >= 975) {
+                                    this.skinList.chest.push(normalGifts[skin]);
                                 }
                             }
+                            console.log('CHEST', this.skinList.chest.length)
+                            return this.skinList.chest;
+                        } else if (skinArray === 'normalLegendary') {
+                            this.skinList.normalLegendary = normalGifts.slice(0); // Create shallow copy
+                            for (var skin in normalGifts) {
+                                if (normalGifts[skin].price >= 1820) {
+                                    this.skinList.normalLegendary.push(normalGifts[skin]);
+                                }
+                            }
+                            console.log('NORMALLEGENDARY', this.skinList.normalLegendary.length)
+                            return this.skinList.normalLegendary;
+                        } else if (skinArray === 'chestLegendary') {
+                            this.skinList.chestLegendary = [];
+                            for (var skin in normalGifts) {
+                                if (normalGifts[skin].price >= 975) {
+                                    this.skinList.chestLegendary.push(normalGifts[skin]);
+                                    if (normalGifts[skin].price >= 1820) {
+                                        this.skinList.chestLegendary.push(normalGifts[skin]);
+                                    }
+                                }
+                            }
+                            console.log('CHESTLEGENDARY', this.skinList.chestLegendary.length)
+                            return this.skinList.chestLegendary;
                         }
-                        console.log('CHESTLEGENDARY', this.skinList.chestLegendary.length)
-                        return this.skinList.chestLegendary;
                     }
                 }
             },
@@ -112,9 +133,8 @@ simulation.service('GiftService', [
                         changedChamp = skinArray[i].champ;
                         this.champArray[skinArray[i].champ] = [];
                     }
-                    this.champArray[skinArray[i].champ].push({name: skinArray[i].name, selected: false});
+                    this.champArray[skinArray[i].champ].push({ name: skinArray[i].name, selected: false });
                 }
-                console.log(" this.champArray",  this.champArray)
             },
             getColor: function(skin) {
                 var color;
