@@ -104,17 +104,6 @@ simulation.service('GiftService', [
                     }
                 }
             },
-            getSkinArray: function(mode) {
-                if (mode === 'normal' && !this.legendaryPromo) {
-                    return 'normal';
-                } else if (mode === 'chest' && !this.legendaryPromo) {
-                    return 'chest';
-                } else if (mode === 'normal' && this.legendaryPromo) {
-                    return 'normalLegendary';
-                } else if (mode === 'chest' && this.legendaryPromo) {
-                    return 'chestLegendary';
-                }
-            },
             giftArrayToObj: function() { // Create objects of each champion containg all their skins
                 var skinArray = ChampionInfo.slice(0);
                 var changedChamp;
