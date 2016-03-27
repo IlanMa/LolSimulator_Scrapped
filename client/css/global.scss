@@ -52,18 +52,18 @@ table {
 }
 
 .global-container {
-	@include container(100%, 1300px, blue);
+	@include container(100%, 1300px, #003A54);
 	max-width: 1200px;
 	margin: auto;
 	text-align: center;
 }
 
 .banner-container {
-	@include container(100%, 100px, green);
+	@include container(100%, 100px, #003A54);
 }
 
 .nav-container {
-	@include container(100%, 30px, red);
+	@include container(100%, 30px, #024767);
 }
 
 .main-container {

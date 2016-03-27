@@ -12,7 +12,7 @@
 }
 
 .mode-container {
-    @include container(300px, auto, rgb(200, 200, 250));
+    @include container(300px, auto, #026794);
     float: left;
     & > p {
         /* stats p-tag */
@@ -28,7 +28,7 @@
 }
 
 .history-container {
-    @include container(300px, 500px, rgb(100, 100, 100));
+    @include container(300px, 500px, #026794);
     float: right;
     & > p {
         /* history p-tag */
@@ -44,7 +44,7 @@
 }
 
 .normal-result-container {
-    @include container(350px, 400px, darkblue);
+    @include container(350px, 400px, #003A54);
     margin: 30px auto auto auto;
     background-size: 240px 350px;
     background-repeat: no-repeat;
@@ -97,7 +97,7 @@ $colors-list: orange blue aquamarine purple silver red;
 }
 
 .graph-container {
-    @include container (100%, 600px, green);
+    @include container (100%, 600px, #003A54);
     margin-top: 150px;
     & > h1 {
         font-size: 40px;
@@ -123,7 +123,7 @@ $colors-list: orange blue aquamarine purple silver red;
 }
 
 .chest-container {
-    @include container (100%, 100%, blue);
+    @include container (100%, 100%, #003A54);
     &,
     & div {
         @include box-sizing();
@@ -179,7 +179,7 @@ $colors-list: orange blue aquamarine purple silver red;
     margin: auto;
     width: 300px;
     height: 450px;
-    background-color: green;
+    background-color: #263942;
     z-index: 4;
     & > div {
         width: 260px;

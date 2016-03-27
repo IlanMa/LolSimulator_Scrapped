@@ -54,6 +54,7 @@ simulation.controller('SimController', [
         // TEMP - TO BE REMOVED
         $scope.closeChest = function() {
             GiftService.chestIsOpen = false;
+            GiftService.displaySkin = false;
             GiftService.skinColor = 'gold';
         }
 

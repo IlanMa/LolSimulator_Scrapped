@@ -46,7 +46,7 @@ table {
   position: relative;
   width: 100%;
   height: 1300px;
-  background-color: blue;
+  background-color: #003A54;
   max-width: 1200px;
   margin: auto;
   text-align: center; }
@@ -55,13 +55,13 @@ table {
   position: relative;
   width: 100%;
   height: 100px;
-  background-color: green; }
+  background-color: #003A54; }
 
 .nav-container {
   position: relative;
   width: 100%;
   height: 30px;
-  background-color: red; }
+  background-color: #024767; }
 
 .main-container {
   position: relative; }

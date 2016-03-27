@@ -2,7 +2,7 @@
   position: relative;
   width: 300px;
   height: auto;
-  background-color: #c8c8fa;
+  background-color: #026794;
   float: left; }
 
 .mode-container > p {
@@ -20,7 +20,7 @@
   position: relative;
   width: 300px;
   height: 500px;
-  background-color: #646464;
+  background-color: #026794;
   float: right; }
 
 .history-container > p {
@@ -38,7 +38,7 @@
   position: relative;
   width: 350px;
   height: 400px;
-  background-color: darkblue;
+  background-color: #003A54;
   margin: 30px auto auto auto;
   background-size: 240px 350px;
   background-repeat: no-repeat; }
@@ -114,7 +114,7 @@
   position: relative;
   width: 100%;
   height: 600px;
-  background-color: green;
+  background-color: #003A54;
   margin-top: 150px; }
 
 .graph-container > h1 {
@@ -135,7 +135,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: blue; }
+  background-color: #003A54; }
 
 .chest-container,
 .chest-container div {
@@ -212,7 +212,7 @@
   margin: auto;
   width: 300px;
   height: 450px;
-  background-color: green;
+  background-color: #263942;
   z-index: 4; }
 
 .image-container > div {

@@ -1,7 +1,8 @@
 simulation.service('GiftService', [
+    '$timeout',
     'StatService',
     'ChampionInfo',
-    function(StatService, ChampionInfo) {
+    function($timeout, StatService, ChampionInfo) {
         'use strict';
 
         console.log('### GIFT SERVICE');
@@ -24,6 +25,7 @@ simulation.service('GiftService', [
             },
             skinColor: 'gold', // Color inside the chest - depending on the rarity
             chestIsOpen: false, // If chest is open or not
+            displaySkin: false,
             skinImage: 'http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg',
 
             openSkin: function(mode) { // Invoked on gift open
@@ -34,6 +36,10 @@ simulation.service('GiftService', [
                 this.updateData(skinResult, mode);
                 this.skinColor = this.getColor(skinResult);
                 this.chestIsOpen = true;
+                var self = this;
+                $timeout(function() {
+                    self.displaySkin = true;
+                }, 1000);
             },
             // Invoked each time a gift is opened to remove the skin to prevent it being opened again
             removeSkin: function(skinResult) {
