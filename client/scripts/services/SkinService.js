@@ -30,7 +30,7 @@ simulation.service('SkinService', [
 
 
                         if (name === "default") {
-                            tempSkin.img = "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/" + tempSkin.champ + "_0.jpg";
+                            tempSkin.img = "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/" + tempSkin.champ + "_.jpg";
                         } else {
                             tempSkin.img = "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/" + tempSkin.champ + "_" + tempSkin.num + ".jpg";
                         }

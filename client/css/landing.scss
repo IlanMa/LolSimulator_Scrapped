@@ -44,7 +44,7 @@
 }
 
 .normal-result-container {
-    @include container(350px, 350px, darkblue);
+    @include container(350px, 400px, darkblue);
     margin: 30px auto auto auto;
     background-size: 240px 350px;
     background-repeat: no-repeat;
@@ -123,7 +123,7 @@ $colors-list: orange blue aquamarine purple silver red;
 }
 
 .chest-container {
-    @include container (100%, 100%, black);
+    @include container (100%, 100%, blue);
     &,
     & div {
         @include box-sizing();
@@ -169,5 +169,27 @@ $colors-list: orange blue aquamarine purple silver red;
             width: 16px;
             height: 30px;
         }
+    }
+}
+
+.image-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 300px;
+    height: 450px;
+    background-color: green;
+    z-index: 4;
+    & > div {
+        width: 260px;
+        height: 390px;
+        margin: auto;
+        margin-top: 10px;
+        background-size: 260px 390px;
+        background-repeat: no-repeat;
+    }
+    & > button {
+        margin-top: 15px;
     }
 }

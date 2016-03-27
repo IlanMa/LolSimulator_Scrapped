@@ -24,11 +24,12 @@ simulation.service('GiftService', [
             },
             skinColor: 'gold', // Color inside the chest - depending on the rarity
             chestIsOpen: false, // If chest is open or not
-            skinImage: 'http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_.jpg',
+            skinImage: 'http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg',
 
             openSkin: function(mode) { // Invoked on gift open
                 var skins = this.retrieveList(mode);
                 var skinResult = skins[Math.floor(Math.random() * skins.length)];
+                this.skinImage = skinResult.img;
                 this.removeSkin(skinResult);
                 this.updateData(skinResult, mode);
                 this.skinColor = this.getColor(skinResult);

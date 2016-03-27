@@ -36,13 +36,18 @@
         </li>
     </ul>
 </div>
-<div class="normal-result-container" ng-style="{'background-image':'url('+getGiftData('skinImage')+')'}">
-    
+<div class="normal-result-container">
+    <!-- Image container -->
+    <div class="image-container" ng-show="getGiftData('chestIsOpen')">
+        <div ng-style="{'background-image':'url('+getGiftData('skinImage')+')'}"></div>
+        <button ng-click="closeChest()" ng-hide="animation === 'scroll'">Close</button>
+    </div>
+    <!-- chest.html -->
     <div ng-include="'/views/chest.html'"></div>
+    <!-- Open Button -->
+    <button class="chest-button" ng-click="openSkin()" ng-hide="animation === 'scroll'">Open</button>
+    <!-- TEMP - REMOVE LATER -->
 </div>
-<button class="chest-button" ng-click="openSkin()" ng-hide="animation === 'scroll'">Open</button>
-<!-- TEMP - REMOVE LATER -->
-<button class="chest-button" ng-click="closeChest()" ng-hide="animation === 'scroll'">Close</button>
 <div class="scroll-container" ng-hide="animation === 'normal'">
     <gift-animation></gift-animation>
 </div>
@@ -52,4 +57,3 @@
 </div>
 <div class="footer-container">
 </div>
-
