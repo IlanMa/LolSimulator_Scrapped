@@ -179,17 +179,19 @@ $colors-list: orange blue aquamarine purple silver red;
     margin: auto;
     width: 300px;
     height: 450px;
-    background-color: #263942;
+    background-color: #026794;
+    border: 1px solid #024C6D;
+    box-shadow: 0 0 5px 3px #024C6D;
     z-index: 4;
     & > div {
-        width: 260px;
+        width: 270px;
         height: 390px;
         margin: auto;
-        margin-top: 10px;
-        background-size: 260px 390px;
+        margin-top: 15px;
+        background-size: 270px 390px;
         background-repeat: no-repeat;
     }
     & > button {
-        margin-top: 15px;
+        margin: 12px;
     }
 }
