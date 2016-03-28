@@ -8,7 +8,7 @@
   position: relative;
   width: 90%;
   height: auto;
-  background-color: green;
+  background-color: #026794;
   margin: auto;
   padding: 20px;
   -webkit-column-count: 1;
@@ -20,27 +20,33 @@
   column-count: 1;
   column-gap: 15px;
   column-fill: auto; }
-
-.selection-container > div {
-  margin: 10px 0px;
-  width: 90%;
-  min-width: 200px;
-  background-color: darkgreen;
-  border: 2px solid white;
-  display: inline-block;
-  border: 2px solid #FAFAFA;
-  box-shadow: 2px 2px 4px 0 #ccc; }
-
-.selection-container > div > h2 {
-  font-size: 26px;
-  color: white; }
-
-.selection-container > div > div {
-  position: relative;
-  text-align: left;
-  color: white;
-  margin: 3px 0;
-  padding: 5px; }
+  .selection-container > div {
+    margin: 10px 0px;
+    width: 90%;
+    min-width: 200px;
+    background-color: #003A54;
+    border: 2px solid white;
+    display: inline-block;
+    box-shadow: 2px 2px 4px 0 #ccc; }
+    .selection-container > div > h2 {
+      font-size: 26px;
+      color: white; }
+    .selection-container > div > div {
+      position: relative;
+      text-align: left;
+      color: white;
+      margin: 3px 0;
+      padding: 5px; }
+      .selection-container > div > div.selected {
+        background-color: #021A25; }
+      .selection-container > div > div > span {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 25px;
+        font-size: 28px;
+        cursor: pointer; }
 
 .url-button {
   position: absolute;
@@ -49,39 +55,20 @@
   border-radius: 100%;
   bottom: 0;
   cursor: pointer; }
-
-.url-button.add, .url-button.remove {
-  background: 0 0;
-  right: 5px;
-  top: 0;
-  bottom: 0;
-  margin: auto; }
-
-.url-button.add > span, .url-button.remove > span {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-  background: #22c1ee; }
-
-.url-button.add > .horizontal-bar, .url-button.remove > .horizontal-bar {
-  width: 8px;
-  height: 2px; }
-
-.url-button.add > .vertical-bar, .url-button.remove > .vertical-bar {
-  width: 2px;
-  height: 8px; }
-
-.url-button.add {
-  border: 2px solid rgba(34, 198, 238, 0.3); }
-
-.url-button.remove {
-  border: 2px solid white; }
-
-.selected {
-  background-color: red; }
+  .url-button > span {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background: #22c1ee; }
+  .url-button > .horizontal-bar {
+    width: 8px;
+    height: 2px; }
+  .url-button > .vertical-bar {
+    width: 2px;
+    height: 8px; }
 
 @media (min-width: 480px) {
   #columns {

@@ -44,15 +44,14 @@
 }
 
 .normal-result-container {
-    @include container(350px, 400px, #003A54);
+    @include container(450px, 400px, #003A54);
     margin: 30px auto auto auto;
-    background-size: 240px 350px;
-    background-repeat: no-repeat;
 }
 
 .scroll-container {
     @include container(400px, 80px, rgb(50, 50, 50));
     margin: 30px auto auto auto;
+    top: 150px;
 }
 
 .chest-button,
@@ -123,19 +122,20 @@ $colors-list: orange blue aquamarine purple silver red;
 }
 
 .chest-container {
-    @include container (100%, 100%, #003A54);
+    @include container (200px, 100%, #003A54);
+    margin: auto;
     &,
     & div {
         @include box-sizing();
         transition: 3s;
     }
     & > .chest-background {
-        @include chest-piece (170px, 70px, black, 200px, 130px);
+        @include chest-piece (170px, 0, black, 200px, 130px);
         z-index: 1;
         border: 5px solid gold;
     }
     & > .chest-bottom {
-        @include chest-piece (200px, 70px, black, 200px, 100px);
+        @include chest-piece (200px, 0, black, 200px, 100px);
         z-index: 3;
         border: 5px solid gold;
     }
@@ -150,8 +150,8 @@ $colors-list: orange blue aquamarine purple silver red;
         }
     }
     & > .chest-top {
-        @include chest-piece (150px, 70px, black, 200px, 50px);
-        z-index: 3;
+        @include chest-piece (150px, 0, black, 200px, 50px);
+        z-index: 4;
         border: 5px solid gold;
         border-radius: 10px 10px 0 0;
         &.open {
@@ -182,7 +182,7 @@ $colors-list: orange blue aquamarine purple silver red;
     background-color: #026794;
     border: 1px solid #024C6D;
     box-shadow: 0 0 5px 3px #024C6D;
-    z-index: 4;
+    z-index: 5;
     & > div {
         width: 270px;
         height: 390px;

@@ -26,9 +26,11 @@ simulation.directive('giftAnimation', [
                         left: '-2800px'
                     }, 3000, function() {
                         $timeout(function() {
-                            GiftService.removeSkin(skinArray[37]);
-                            GiftService.updateData(skinArray[37], mode);
+                            var skinResult = skinArray[37];
+                            GiftService.removeSkin(skinResult);
+                            GiftService.updateData(skinResult, mode);
                             GiftService.getProbability(GiftService.currentMode);
+                            GiftService.updateUI(skinResult, 0);
                         })
                     });
                     generate = true;

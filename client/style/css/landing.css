@@ -32,19 +32,18 @@
 
 .normal-result-container {
   position: relative;
-  width: 350px;
+  width: 450px;
   height: 400px;
   background-color: #003A54;
-  margin: 30px auto auto auto;
-  background-size: 240px 350px;
-  background-repeat: no-repeat; }
+  margin: 30px auto auto auto; }
 
 .scroll-container {
   position: relative;
   width: 400px;
   height: 80px;
   background-color: #323232;
-  margin: 30px auto auto auto; }
+  margin: 30px auto auto auto;
+  top: 150px; }
 
 .chest-button,
 .chest-button-scroll {
@@ -124,9 +123,10 @@
 
 .chest-container {
   position: relative;
-  width: 100%;
+  width: 200px;
   height: 100%;
-  background-color: #003A54; }
+  background-color: #003A54;
+  margin: auto; }
   .chest-container,
   .chest-container div {
     -webkit-box-sizing: border-box;
@@ -136,7 +136,7 @@
   .chest-container > .chest-background {
     position: absolute;
     top: 170px;
-    left: 70px;
+    left: 0;
     background-color: black;
     width: 200px;
     height: 130px;
@@ -145,7 +145,7 @@
   .chest-container > .chest-bottom {
     position: absolute;
     top: 200px;
-    left: 70px;
+    left: 0;
     background-color: black;
     width: 200px;
     height: 100px;
@@ -167,11 +167,11 @@
   .chest-container > .chest-top {
     position: absolute;
     top: 150px;
-    left: 70px;
+    left: 0;
     background-color: black;
     width: 200px;
     height: 50px;
-    z-index: 3;
+    z-index: 4;
     border: 5px solid gold;
     border-radius: 10px 10px 0 0; }
     .chest-container > .chest-top.open {
@@ -198,7 +198,7 @@
   background-color: #026794;
   border: 1px solid #024C6D;
   box-shadow: 0 0 5px 3px #024C6D;
-  z-index: 4; }
+  z-index: 5; }
   .image-container > div {
     width: 270px;
     height: 390px;

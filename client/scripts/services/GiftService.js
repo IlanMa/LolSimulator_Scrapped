@@ -31,15 +31,18 @@ simulation.service('GiftService', [
             openSkin: function(mode) { // Invoked on gift open
                 var skins = this.retrieveList(mode);
                 var skinResult = skins[Math.floor(Math.random() * skins.length)];
-                this.skinImage = skinResult.img;
                 this.removeSkin(skinResult);
                 this.updateData(skinResult, mode);
                 this.skinColor = this.getColor(skinResult);
+                this.updateUI(skinResult, 1000);
+            },
+            updateUI: function(skin, delay) {
+                this.skinImage = skin.img;
                 this.chestIsOpen = true;
                 var self = this;
                 $timeout(function() {
                     self.displaySkin = true;
-                }, 1000);
+                }, delay);
             },
             // Invoked each time a gift is opened to remove the skin to prevent it being opened again
             removeSkin: function(skinResult) {

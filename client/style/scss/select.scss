@@ -10,7 +10,7 @@
 }
 
 .selection-container {
-    @include container(90%, auto, green);
+    @include container(90%, auto, #026794);
     margin: auto;
     padding: 20px;
     -webkit-column-count: 1;
@@ -26,10 +26,9 @@
         margin: 10px 0px;
         width: 90%;
         min-width: 200px;
-        background-color: darkgreen;
+        background-color: #003A54;
         border: 2px solid white;
         display: inline-block;
-        border: 2px solid #FAFAFA;
         box-shadow: 2px 2px 4px 0 #ccc;
         & > h2 {
             font-size: 26px;
@@ -41,6 +40,18 @@
             color: white;
             margin: 3px 0;
             padding: 5px;
+            &.selected {
+                background-color: #021A25;
+            }
+            & > span {
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 100%;
+                width: 25px;
+                font-size: 28px;
+                cursor: pointer;
+            }
         }
     }
 }
@@ -71,19 +82,6 @@
     }
 }
 
-&.add {
-    border: 2px solid rgba(34, 198, 238, .3);
-}
-
-&.remove {
-    border: 2px solid white;
-}
-
-
-}
-.selected {
-    background-color: red;
-}
 @media (min-width: 480px) {
     #columns {
         -webkit-column-count: 2;
@@ -91,6 +89,7 @@
         column-count: 2;
     }
 }
+
 @media (min-width: 730px) {
     #columns {
         -webkit-column-count: 3;
@@ -98,6 +97,7 @@
         column-count: 3;
     }
 }
+
 @media (min-width: 960px) {
     #columns {
         -webkit-column-count: 4;
@@ -105,6 +105,7 @@
         column-count: 4;
     }
 }
+
 @media (min-width: 1100px) {
     #columns {
         -webkit-column-count: 4;

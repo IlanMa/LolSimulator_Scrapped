@@ -4,13 +4,7 @@
             <h2>{{champ}}</h2>
             <div ng-repeat="skin in arr" ng-class="{'selected': getGiftData('champArray')[champ][$index].selected}" ng-click="selectSkin(champ, $index)">
                 {{skin.name}}
-                <div class="url-button add" ng-hide="getGiftData('champArray')[champ][$index].selected">
-                    <span class="horizontal-bar"></span>
-                    <span class="vertical-bar"></span>
-                </div>
-                <div class="url-button remove" ng-show="getGiftData('champArray')[champ][$index].selected">
-                    <span class="horizontal-bar"></span>
-                </div>
+                <span>O</span>
             </div>
         </div>
     </div>
