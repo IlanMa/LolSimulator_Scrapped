@@ -1,10 +1,15 @@
 <div class="champion-container">
+    <div class="dark-gradient" ng-click="closePreview()" ng-show="preview"></div>
+    <div class="image-preview" ng-show="preview">
+        <div ng-style="{'background-image': 'url('+image+')'}"></div>
+        <button ng-click="closePreview()">Close Preview</button>
+    </div>
     <div class="selection-container" id="columns">
         <div ng-repeat="(champ, arr) in getGiftData('champArray')" class="pin">
             <h2>{{champ}}</h2>
             <div ng-repeat="skin in arr" ng-class="{'selected': getGiftData('champArray')[champ][$index].selected}" ng-click="selectSkin(champ, $index)">
                 {{skin.name}}
-                <span>O</span>
+                <span ng-click="previewImage(skin.img)">O</span>
             </div>
         </div>
     </div>

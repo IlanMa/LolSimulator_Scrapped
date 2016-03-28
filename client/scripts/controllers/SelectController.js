@@ -15,6 +15,14 @@ simulation.controller('SelectController', [
             	GiftService.addSkin(skin.name);
             }
         }
+
+        $scope.previewImage = function(img) {
+            $scope.preview = true;
+            $scope.image = img;
+        }
+        $scope.closePreview = function() {
+            $scope.preview = false;
+        }
     }
 ])
 	
