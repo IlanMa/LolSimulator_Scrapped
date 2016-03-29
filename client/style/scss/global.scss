@@ -1,4 +1,6 @@
-
+// Import Base Scss File
+@import "base";
+// -----------
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -44,15 +46,8 @@ table {
 	border-spacing: 0;
 }
 
-@mixin container($width, $height, $bg) {
-	position: relative;
-	width: $width;
-	height: $height;
-	background-color: $bg;
-}
-
 .global-container {
-	@include container(100%, 1300px, #003A54);
+	@include container(100%, 1300px, $palette-1);
 	max-width: 1200px;
 	margin: auto;
 	text-align: center;

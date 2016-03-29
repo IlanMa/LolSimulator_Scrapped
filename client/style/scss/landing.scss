@@ -1,18 +1,8 @@
-@mixin container($width, $height, $bg) {
-    position: relative;
-    width: $width;
-    height: $height;
-    background-color: $bg;
-}
-
-@mixin box-sizing() {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
+// Import Base Scss File
+@import "base";
+// -----------
 .mode-container {
-    @include container(300px, auto, #026794);
+    @include container(300px, auto, $palette-3);
     float: left;
     & > p {
         /* stats p-tag */
@@ -28,8 +18,7 @@
 }
 
 .history-container {
-    @include container(300px, 500px, #026794);
-    overflow-y: scroll;
+    @include container(300px, 500px, $palette-3);
     float: right;
     & > p {
         /* history p-tag */
@@ -45,7 +34,7 @@
 }
 
 .normal-result-container {
-    @include container(450px, 400px, #003A54);
+    @include container(450px, 400px, $palette-1);
     margin: 30px auto auto auto;
 }
 
@@ -97,7 +86,7 @@ $colors-list: orange blue aquamarine purple silver red;
 }
 
 .graph-container {
-    @include container (100%, 600px, #003A54);
+    @include container (100%, 600px, $palette-1);
     margin-top: 150px;
     & > h1 {
         font-size: 40px;
@@ -113,17 +102,8 @@ $colors-list: orange blue aquamarine purple silver red;
     @include container (100%, 100px, black);
 }
 
-@mixin chest-piece($top, $left, $bg, $width, $height) {
-    position: absolute;
-    top: $top;
-    left: $left;
-    background-color: $bg;
-    width: $width;
-    height: $height;
-}
-
 .chest-container {
-    @include container (200px, 100%, #003A54);
+    @include container (200px, 100%, $palette-1);
     margin: auto;
     &,
     & div {

@@ -1,0 +1,27 @@
+$palette-1: #003A54;
+$palette-2: #8367C7;
+$palette-3: #026794;
+$palette-4: #C2F8CB;
+
+
+@mixin container($width, $height, $bg) {
+    position: relative;
+    width: $width;
+    height: $height;
+    background-color: $bg;
+}
+
+@mixin box-sizing() {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@mixin chest-piece($top, $left, $bg, $width, $height) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    background-color: $bg;
+    width: $width;
+    height: $height;
+}

@@ -65,11 +65,10 @@ table {
 
 .main-container {
   position: relative; }
-
-.main-container > div {
-  /* ng-view */
-  position: absolute;
-  width: 100%; }
+  .main-container > div {
+    /* ng-view */
+    position: absolute;
+    width: 100%; }
 
 .button-active {
   background-color: red;
