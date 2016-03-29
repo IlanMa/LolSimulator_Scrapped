@@ -54,11 +54,11 @@ table {
 }
 
 .banner-container {
-	@include container(100%, 100px, #003A54);
+	@include container(100%, 100px, $palette-1);
 }
 
 .nav-container {
-	@include container(100%, 30px, #024767);
+	@include container(100%, 30px, $palette-2);
 }
 
 .main-container {

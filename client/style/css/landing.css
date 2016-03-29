@@ -1,9 +1,10 @@
 .mode-container {
   position: relative;
   width: 300px;
-  height: auto;
+  height: 580px;
   background-color: #026794;
-  float: left; }
+  float: left;
+  border: 2px solid black; }
   .mode-container > p {
     /* stats p-tag */
     margin: 10px 10px;
@@ -17,9 +18,10 @@
 .history-container {
   position: relative;
   width: 300px;
-  height: 500px;
+  height: 580px;
   background-color: #026794;
-  float: right; }
+  float: right;
+  border: 2px solid black; }
   .history-container > p {
     /* history p-tag */
     margin-top: 10px;
@@ -29,6 +31,58 @@
     color: #c8c8c8;
     padding: 5px;
     text-align: left; }
+  .history-container > span {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    color: white;
+    font-size: 18px;
+    text-decoration: underline;
+    cursor: pointer; }
+
+.full-history-container {
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  background-color: #026794;
+  z-index: 5;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  overflow-y: auto;
+  overflow-x: hidden; }
+  .full-history-container > h1 {
+    color: white;
+    font-size: 24px;
+    margin: 10px 0; }
+  .full-history-container > ul {
+    background-color: #026794;
+    width: 350px;
+    height: 90%;
+    margin: auto; }
+    .full-history-container > ul > li {
+      font-size: 16px;
+      margin: 5px 0;
+      text-align: left;
+      color: white; }
+      .full-history-container > ul > li .left-float {
+        position: relative;
+        width: 35%;
+        display: inline-block; }
+      .full-history-container > ul > li .center {
+        margin-left: -4px;
+        position: relative;
+        width: 50%;
+        display: inline-block; }
+      .full-history-container > ul > li .right-float {
+        text-align: right;
+        margin-left: -4px;
+        position: relative;
+        width: 15%;
+        display: inline-block; }
 
 .normal-result-container {
   position: relative;
@@ -107,7 +161,8 @@
   width: 100%;
   height: 600px;
   background-color: #003A54;
-  margin-top: 150px; }
+  margin-top: 150px;
+  border-top: 2px solid black; }
   .graph-container > h1 {
     font-size: 40px;
     color: white; }

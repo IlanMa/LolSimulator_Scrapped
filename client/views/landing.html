@@ -1,5 +1,13 @@
-<script type="text/javascript">
-</script>
+<div class="full-history-container" ng-show="displayFull">
+    <h1>Full History</h1>
+    <ul>
+        <li ng-repeat="skin in skinHistory">
+            <span class="left-float">{{$index+1}}) {{skin.champ}} </span>
+            <span class="center">{{skin.name}}</span>
+            <span class="right-float">{{skin.price}}RP</span>
+        </li>
+    </ul>
+</div>
 <!-- Mode Container -->
 <div class="mode-container">
     <p>Stats</p>
@@ -33,10 +41,11 @@
 <div class="history-container">
     <p>History</p>
     <ul>
-        <li ng-repeat="skin in skinHistory | limitTo: 15">
+        <li ng-repeat="skin in skinHistory | limitTo: 20">
             {{$index + 1}} - {{skin.name}} ({{skin.price}}rp)
         </li>
     </ul>
+    <span ng-click="displayFull = !displayFull">View Full History</span>
 </div>
 <!-- Result Container -->
 <div class="normal-result-container">

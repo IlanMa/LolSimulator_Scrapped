@@ -14,7 +14,7 @@
 }
 
 .selection-container {
-    @include container(90%, auto, #026794);
+    @include container(90%, auto, $palette-3);
     margin: auto;
     padding: 20px;
     -webkit-column-count: 1;
@@ -30,7 +30,7 @@
         margin: 10px 0px;
         width: 90%;
         min-width: 200px;
-        background-color: #003A54;
+        background-color: $palette-1;
         border: 2px solid white;
         display: inline-block;
         box-shadow: 2px 2px 4px 0 #ccc;

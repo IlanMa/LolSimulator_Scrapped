@@ -2,8 +2,9 @@
 @import "base";
 // -----------
 .mode-container {
-    @include container(300px, auto, $palette-3);
+    @include container(300px, 580px, $palette-3);
     float: left;
+    border: 2px solid black;
     & > p {
         /* stats p-tag */
         margin: 10px 10px;
@@ -18,8 +19,9 @@
 }
 
 .history-container {
-    @include container(300px, 500px, $palette-3);
+    @include container(300px, 580px, $palette-3);
     float: right;
+    border: 2px solid black;
     & > p {
         /* history p-tag */
         margin-top: 10px;
@@ -30,6 +32,69 @@
         color: rgb(200, 200, 200);
         padding: 5px;
         text-align: left;
+    }
+    & > span {
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        color: white;
+        font-size: 18px;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+
+.full-history-container {
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    background-color: $palette-3;
+    z-index: 5;
+    top: 40px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    & > h1 {
+        color: white;
+        font-size: 24px;
+        margin: 10px 0;
+    }
+    & > ul {
+        background-color: $palette-3;
+        width: 350px;
+        height: 90%;
+        margin: auto;
+
+        & > li {
+            font-size: 16px;
+            margin: 5px 0;
+            text-align: left;
+            color: white;
+            & .left-float {
+                position: relative;
+                width: 35%;
+                display: inline-block;
+            }
+            & .center {
+                margin-left: -4px;
+                position: relative;
+                width: 50%;
+                display: inline-block;
+            }
+            & .right-float {
+                text-align: right;
+                margin-left: -4px;
+                position: relative;
+                width: 15%;
+                display: inline-block;
+            }
+        }
     }
 }
 
@@ -88,6 +153,7 @@ $colors-list: orange blue aquamarine purple silver red;
 .graph-container {
     @include container (100%, 600px, $palette-1);
     margin-top: 150px;
+    border-top: 2px solid black;
     & > h1 {
         font-size: 40px;
         color: white;
@@ -160,7 +226,7 @@ $colors-list: orange blue aquamarine purple silver red;
     margin: auto;
     width: 300px;
     height: 450px;
-    background-color: #026794;
+    background-color: $palette-3;
     border: 1px solid #024C6D;
     box-shadow: 0 0 5px 3px #024C6D;
     z-index: 5;
