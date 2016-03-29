@@ -52,6 +52,7 @@
   left: 0;
   right: 0;
   margin: auto;
+  border: 2px solid #2196F3;
   overflow-y: auto;
   overflow-x: hidden; }
   .full-history-container > h1 {
@@ -251,15 +252,23 @@
   width: 300px;
   height: 450px;
   background-color: #026794;
-  border: 1px solid #024C6D;
+  border: 2px solid #2196F3;
   box-shadow: 0 0 5px 3px #024C6D;
   z-index: 5; }
   .image-container > div {
+    position: relative;
     width: 270px;
     height: 390px;
     margin: auto;
     margin-top: 15px;
     background-size: 270px 390px;
     background-repeat: no-repeat; }
+    .image-container > div > span {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+      font-size: 20px;
+      color: white; }
   .image-container > button {
     margin: 12px; }
