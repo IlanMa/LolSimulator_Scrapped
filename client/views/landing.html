@@ -1,5 +1,6 @@
 <script type="text/javascript">
 </script>
+<!-- Mode Container -->
 <div class="mode-container">
     <p>Stats</p>
     <ul>
@@ -28,14 +29,16 @@
         <li>Average value of next skin: {{getStatData('average') | number: 2}}RP</li>
     </ul>
 </div>
+<!-- History Container -->
 <div class="history-container">
     <p>History</p>
     <ul>
-        <li ng-repeat="skin in skinHistory | limitTo: -15">
+        <li ng-repeat="skin in skinHistory | limitTo: -100">
             {{$index + 1}} - {{skin.name}} ({{skin.price}}rp)
         </li>
     </ul>
 </div>
+<!-- Result Container -->
 <div class="normal-result-container">
     <!-- Image container -->
     <div class="image-container" ng-show="getGiftData('displaySkin')">
@@ -51,9 +54,11 @@
         <gift-animation></gift-animation>
     </div>
 </div>
+<!-- Graph Container -->
 <div class="graph-container">
     <h1>Graph Stats</h1>
     <graph-generator></graph-generator>
 </div>
+<!-- Footer Container -->
 <div class="footer-container">
 </div>

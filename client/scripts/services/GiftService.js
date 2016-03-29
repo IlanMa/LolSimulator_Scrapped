@@ -64,7 +64,7 @@ simulation.service('GiftService', [
             },
             // Update general data after each gift
             updateData: function(skinResult, mode) {
-                this.skinHistory.push({
+                this.skinHistory.unshift({
                         name: skinResult.name,
                         price: skinResult.price
                     })

@@ -29,6 +29,7 @@
 
 .history-container {
     @include container(300px, 500px, #026794);
+    overflow-y: scroll;
     float: right;
     & > p {
         /* history p-tag */
