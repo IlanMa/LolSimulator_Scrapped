@@ -48,34 +48,15 @@
         background-color: #021A25; }
       .selection-container > div > div > span {
         position: absolute;
-        top: 0;
-        right: 0;
-        height: 100%;
+        margin: auto;
         width: 25px;
+        height: 100%;
+        top: 0;
+        bottom: auto;
+        left: auto;
+        right: 0;
         font-size: 28px;
         cursor: pointer; }
-
-.url-button {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 100%;
-  bottom: 0;
-  cursor: pointer; }
-  .url-button > span {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    margin: auto;
-    background: #22c1ee; }
-  .url-button > .horizontal-bar {
-    width: 8px;
-    height: 2px; }
-  .url-button > .vertical-bar {
-    width: 2px;
-    height: 8px; }
 
 .image-preview {
   position: fixed;

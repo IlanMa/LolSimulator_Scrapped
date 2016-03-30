@@ -48,11 +48,7 @@
                 background-color: #021A25;
             }
             & > span {
-                position: absolute;
-                top: 0;
-                right: 0;
-                height: 100%;
-                width: 25px;
+                @include absolute-position(25px, 100%, 0, 0, auto, auto);
                 font-size: 28px;
                 cursor: pointer;
             }
@@ -60,31 +56,6 @@
     }
 }
 
-.url-button {
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 100%;
-    bottom: 0;
-    cursor: pointer;
-    & > span {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        margin: auto;
-        background: #22c1ee;
-    }
-    & > .horizontal-bar {
-        width: 8px;
-        height: 2px;
-    }
-    & > .vertical-bar {
-        width: 2px;
-        height: 8px;
-    }
-}
 
 .image-preview {
     position: fixed;

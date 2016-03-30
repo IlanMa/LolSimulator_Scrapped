@@ -34,11 +34,7 @@
         text-align: left;
     }
     & > span {
-        position: absolute;
-        bottom: 10px;
-        right: 0;
-        left: 0;
-        margin: auto;
+        @include absolute-position(auto, auto, auto, 0, 10, 0);
         color: white;
         font-size: 18px;
         text-decoration: underline;
@@ -46,54 +42,43 @@
     }
 }
 
-
 .full-history-container {
-    position: absolute;
-    width: 400px;
-    height: 500px;
-    background-color: $palette-3;
+    @include absolute-position(400px, 500px, 40px, 0, auto, 0);
     z-index: 5;
-    top: 40px;
-    left: 0;
-    right: 0;
-    margin: auto;
     border: 2px solid #2196F3;
+    background-color: $palette-3;
     overflow-y: auto;
     overflow-x: hidden;
-
     & > h1 {
+        margin: 10px 0;
         color: white;
         font-size: 24px;
-        margin: 10px 0;
     }
     & > ul {
-        background-color: $palette-3;
         width: 350px;
         height: 90%;
         margin: auto;
-
+        background-color: $palette-3;
         & > li {
             font-size: 16px;
             margin: 5px 0;
             text-align: left;
             color: white;
-            & .left-float {
+            & > span {
                 position: relative;
-                width: 35%;
                 display: inline-block;
+            }
+            & .left-float {
+                width: 35%;
             }
             & .center {
                 margin-left: -4px;
-                position: relative;
                 width: 50%;
-                display: inline-block;
             }
             & .right-float {
                 text-align: right;
                 margin-left: -4px;
-                position: relative;
                 width: 15%;
-                display: inline-block;
             }
         }
     }
@@ -206,27 +191,16 @@ $colors-list: orange blue aquamarine purple silver red;
             transform: rotateX(75deg);
         }
         & > .chest-lock {
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: -16px;
-            margin: auto;
+            @include absolute-position(16px, 30px, auto, 0, -16px, 0);
             background-color: black;
             border: 5px solid gold;
             border-radius: 5px;
-            width: 16px;
-            height: 30px;
         }
     }
 }
 
 .image-container {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 300px;
-    height: 450px;
+    @include absolute-position(300px, 450px, auto, 0, auto, 0);
     background-color: $palette-3;
     border: 2px solid #2196F3;
     box-shadow: 0 0 5px 3px #024C6D;

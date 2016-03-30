@@ -33,10 +33,13 @@
     text-align: left; }
   .history-container > span {
     position: absolute;
-    bottom: 10px;
-    right: 0;
-    left: 0;
     margin: auto;
+    width: auto;
+    height: auto;
+    top: auto;
+    bottom: 10;
+    left: 0;
+    right: 0;
     color: white;
     font-size: 18px;
     text-decoration: underline;
@@ -44,46 +47,44 @@
 
 .full-history-container {
   position: absolute;
+  margin: auto;
   width: 400px;
   height: 500px;
-  background-color: #026794;
-  z-index: 5;
   top: 40px;
+  bottom: auto;
   left: 0;
   right: 0;
-  margin: auto;
+  z-index: 5;
   border: 2px solid #2196F3;
+  background-color: #026794;
   overflow-y: auto;
   overflow-x: hidden; }
   .full-history-container > h1 {
+    margin: 10px 0;
     color: white;
-    font-size: 24px;
-    margin: 10px 0; }
+    font-size: 24px; }
   .full-history-container > ul {
-    background-color: #026794;
     width: 350px;
     height: 90%;
-    margin: auto; }
+    margin: auto;
+    background-color: #026794; }
     .full-history-container > ul > li {
       font-size: 16px;
       margin: 5px 0;
       text-align: left;
       color: white; }
-      .full-history-container > ul > li .left-float {
+      .full-history-container > ul > li > span {
         position: relative;
-        width: 35%;
         display: inline-block; }
+      .full-history-container > ul > li .left-float {
+        width: 35%; }
       .full-history-container > ul > li .center {
         margin-left: -4px;
-        position: relative;
-        width: 50%;
-        display: inline-block; }
+        width: 50%; }
       .full-history-container > ul > li .right-float {
         text-align: right;
         margin-left: -4px;
-        position: relative;
-        width: 15%;
-        display: inline-block; }
+        width: 15%; }
 
 .normal-result-container {
   position: relative;
@@ -234,23 +235,26 @@
       transform: rotateX(75deg); }
     .chest-container > .chest-top > .chest-lock {
       position: absolute;
+      margin: auto;
+      width: 16px;
+      height: 30px;
+      top: auto;
+      bottom: -16px;
       left: 0;
       right: 0;
-      bottom: -16px;
-      margin: auto;
       background-color: black;
       border: 5px solid gold;
-      border-radius: 5px;
-      width: 16px;
-      height: 30px; }
+      border-radius: 5px; }
 
 .image-container {
   position: absolute;
-  left: 0;
-  right: 0;
   margin: auto;
   width: 300px;
   height: 450px;
+  top: auto;
+  bottom: auto;
+  left: 0;
+  right: 0;
   background-color: #026794;
   border: 2px solid #2196F3;
   box-shadow: 0 0 5px 3px #024C6D;
