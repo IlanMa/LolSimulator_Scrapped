@@ -6,6 +6,7 @@ simulation.service('GiftService', [
         'use strict';
 
         console.log('### GIFT SERVICE');
+                    console.log(ChampionInfo)
 
         return {
             skinHistory: [], // Contains skins history
@@ -13,7 +14,7 @@ simulation.service('GiftService', [
             legendaryPromo: false, // If promo mode is enabled or not
             currentAnimation: 'normal', // Current animation mode
             skinList: {
-                normal: ChampionInfo.slice(0), // Skin list for normal mode
+                normal: ChampionInfo.data.slice(0), // Skin list for normal mode
                 chest: [], // Skin list for chest mode
                 normalLegendary: [], // Skin list for normal legendary promo
                 chestLegendary: [] // Skin list for chest legendary promo
@@ -54,9 +55,9 @@ simulation.service('GiftService', [
             },
             // Invoked when deselecting skin
             addSkin: function(skin) {
-                for (var i = 0; i < ChampionInfo.length; i++) {
-                    if (ChampionInfo[i].name === skin) {
-                        this.skinList.normal.push(ChampionInfo[i])
+                for (var i = 0; i < ChampionInfo.data.length; i++) {
+                    if (ChampionInfo[i].data.name === skin) {
+                        this.skinList.normal.push(ChampionInfo.data[i])
                         break;
                     }
                 }
@@ -117,7 +118,7 @@ simulation.service('GiftService', [
                 }
             },
             giftArrayToObj: function() { // Create objects of each champion containg all their skins
-                var skinArray = ChampionInfo.slice(0);
+                var skinArray = ChampionInfo.data.slice(0);
                 var changedChamp;
                 for (var i = 0; i < skinArray.length; i++) {
                     if (changedChamp !== skinArray[i].champ) {
