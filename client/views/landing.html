@@ -10,7 +10,7 @@
 </div>
 <!-- Mode Container -->
 <div class="mode-container">
-    <p>Stats</p>
+    <p class="bold-info">Stats</p>
     <ul>
         <li>Chests Opened: {{statistics.chestsOpened}}</li>
         <li>Dollars Spent: {{statistics.dollarSpent | currency}}</li>
@@ -18,15 +18,15 @@
         <li>RP Gained: {{statistics.rpGained}}</li>
         <li>Dollars Return: {{statistics.dollarReturn | currency}}</li>
     </ul>
-    <p>Gift Type</p>
-    <button ng-click="changeMode('normal')" ng-class="{'button-active': getGiftData('currentMode') === 'normal'}">Normal</button>
-    <button ng-click="changeMode('chest')" ng-class="{'button-active': getGiftData('currentMode') === 'chest'}">Chest</button>
-    <p>Legendary Promo</p>
-    <button ng-click="enablePromo()" ng-class="{'button-active': getGiftData('legendaryPromo')}">Legendary</button>
-    <p>Animation Type</p>
-    <button ng-click="animation = 'normal'" ng-class="{'button-active': animation === 'normal'}">Normal</button>
-    <button ng-click="animation = 'scroll'" ng-class="{'button-active': animation === 'scroll'}">Scroll</button>
-    <p>Bonus Stats</p>
+    <p class="bold-info">Gift Type</p>
+    <button class="global-button" ng-click="changeMode('normal')" ng-class="{'button-active': getGiftData('currentMode') === 'normal'}">Normal</button>
+    <button class="global-button" ng-click="changeMode('chest')" ng-class="{'button-active': getGiftData('currentMode') === 'chest'}">Chest</button>
+    <p class="bold-info">Legendary Promo</p>
+    <button class="global-button" ng-click="enablePromo()" ng-class="{'button-active': getGiftData('legendaryPromo')}">Legendary</button>
+    <p class="bold-info">Animation Type</p>
+    <button class="global-button" ng-click="animation = 'normal'" ng-class="{'button-active': animation === 'normal'}">Normal</button>
+    <button class="global-button" ng-click="animation = 'scroll'" ng-class="{'button-active': animation === 'scroll'}">Scroll</button>
+    <p class="bold-info">Bonus Stats</p>
     <ul>
         <li><span class="color-code orange"></span> 520RP - {{typeCount['520RP']}} Skins - Odds: {{getStatData('probabilities')['520RP'].probability | number: 3}}%</li>
         <li><span class="color-code blue"></span> 750RP - {{typeCount['750RP']}} Skins - Odds: {{getStatData('probabilities')['750RP'].probability | number: 3}}%</li>
@@ -34,7 +34,7 @@
         <li><span class="color-code purple"></span> 1350RP - {{typeCount['1350RP']}} Skins - Odds: {{getStatData('probabilities')['1350RP'].probability | number: 3}}%</li>
         <li><span class="color-code silver"></span> 1820RP - {{typeCount['1820RP']}} Skins - Odds: {{getStatData('probabilities')['1820RP'].probability | number: 3}}%</li>
         <li><span class="color-code red"></span> 3250RP - {{typeCount['3250RP']}} Skins - Odds: {{getStatData('probabilities')['3250RP'].probability | number: 4}}%</li>
-        <li>Average value of next skin: {{getStatData('average') | number: 2}}RP</li>
+        <li class="bold-info">Average value of next skin: {{getStatData('average') | number: 2}}RP</li>
     </ul>
 </div>
 <!-- History Container -->
@@ -54,12 +54,12 @@
         <div ng-style="{'background-image':'url('+getGiftData('skinImage')+')'}">
             <span>{{skinHistory[0].name}}</span>
         </div>
-        <button ng-click="closeChest()">Close</button>
+        <button class="global-button" ng-click="closeChest()">Close</button>
     </div>
     <!-- chest.html -->
     <div ng-include="'/views/chest.html'" ng-hide="animation === 'scroll'"></div>
     <!-- Open Button -->
-    <button class="chest-button" ng-click="openSkin()" ng-hide="animation === 'scroll'">Open</button>
+    <button class="chest-button" ng-click="openSkin()" ng-hide="animation === 'scroll' || getGiftData('chestIsOpen')">Open</button>
     <!-- Scroll Directive -->
     <div class="scroll-container" ng-hide="animation === 'normal'">
         <gift-animation></gift-animation>

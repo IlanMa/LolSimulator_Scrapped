@@ -34,7 +34,7 @@ simulation.service('GiftService', [
                 this.removeSkin(skinResult);
                 this.updateData(skinResult, mode);
                 this.skinColor = this.getColor(skinResult);
-                this.updateUI(skinResult, 1000);
+                this.updateUI(skinResult, 5);
             },
             updateUI: function(skin, delay) {
                 this.skinImage = skin.img;

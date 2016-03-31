@@ -59,6 +59,8 @@ table {
 
 .nav-container {
 	@include container(100%, 30px, $palette-2);
+	@include box-sizing();
+	border: 2px solid  black;
 }
 
 .main-container {
@@ -69,7 +71,19 @@ table {
 		width: 100%;
 	}
 }
-.button-active {
-	background-color: red;
-	color: white
+
+.global-button {
+	background-color: #003A54;
+    color: white;
+    font-size: 18px;
+    border: 1px solid white;
+    &.button-active {
+		background-color: red;
+		color: white;
+	}
+}
+
+.bold-info {
+	color: white;
+	font-weight: bold;
 }

@@ -43,6 +43,7 @@ simulation.directive('graphGenerator', [
                 });
                 // Update Graph
                 function drawGraph() {
+                    console.log("YO")
                     zingchart.exec('graph', 'modify', {
                         graphid: 0,
                         object: 'title',

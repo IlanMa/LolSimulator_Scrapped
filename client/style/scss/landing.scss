@@ -3,16 +3,16 @@
 // -----------
 .mode-container {
     @include container(300px, 580px, $palette-3);
+    color: #DDDDDD;
     float: left;
     border: 2px solid black;
+    border-top: 0;
     & > p {
         /* stats p-tag */
         margin: 10px 10px;
         font-size: 18px;
-        color: black;
     }
     & li {
-        color: black;
         padding: 5px;
         text-align: left;
     }
@@ -22,6 +22,7 @@
     @include container(300px, 580px, $palette-3);
     float: right;
     border: 2px solid black;
+    border-top: 0;
     & > p {
         /* history p-tag */
         margin-top: 10px;
@@ -29,7 +30,7 @@
         color: white;
     }
     & li {
-        color: rgb(200, 200, 200);
+        color: #DDDDDD;
         padding: 5px;
         text-align: left;
     }
@@ -43,7 +44,7 @@
 }
 
 .full-history-container {
-    @include absolute-position(400px, 500px, 40px, 0, auto, 0);
+    @include absolute-position(450px, 535px, 20px, 0, auto, 0);
     z-index: 5;
     border: 2px solid #2196F3;
     background-color: $palette-3;
@@ -55,7 +56,7 @@
         font-size: 24px;
     }
     & > ul {
-        width: 350px;
+        width: 400px;
         height: 90%;
         margin: auto;
         background-color: $palette-3;
@@ -85,8 +86,8 @@
 }
 
 .normal-result-container {
-    @include container(450px, 400px, $palette-1);
-    margin: 30px auto auto auto;
+    @include container(450px, 580px, $palette-1);
+    margin: auto;
 }
 
 .scroll-container {
@@ -95,10 +96,25 @@
     top: 150px;
 }
 
-.chest-button,
 .chest-button-scroll {
-    position: relative;
     margin-top: 30px;
+}
+
+.chest-button {
+    @include absolute-position(100px, 35px, auto, 0, 30px, 0);
+    border: 2px solid gold;
+    background-color: black;
+    font-size: 20px;
+    color: yellow;
+    cursor: pointer;
+    z-index: 4;
+    box-shadow: 0 0 40px 3px gold;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.chest-button:hover {
+    box-shadow: 0 0 40px 3px gold;
 }
 
 .scroll-result {
@@ -138,7 +154,6 @@ $colors-list: orange blue aquamarine purple silver red;
 
 .graph-container {
     @include container (100%, 600px, $palette-1);
-    margin-top: 150px;
     border-top: 2px solid black;
     & > h1 {
         font-size: 40px;
@@ -154,26 +169,58 @@ $colors-list: orange blue aquamarine purple silver red;
     @include container (100%, 100px, black);
 }
 
+.chest-button:after {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: -175px;
+    width: 150%;
+    height: 300%;
+    transform: rotate(30deg);
+    opacity: 0;
+    background: rgba(255, 255, 255, 0.13);
+    background: linear-gradient( to right, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0.0) 100%);
+}
+
+
+/* Hover state - trigger effect */
+
+.chest-button:hover:after {
+    opacity: 1;
+    top: -20px;
+    left: -10px;
+    transition-property: left, top, opacity;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-timing-function: ease;
+}
+
+
+/* Active state */
+
+.chest-button:active:after {
+    opacity: 0;
+}
+
 .chest-container {
-    @include container (200px, 100%, $palette-1);
-    margin: auto;
+    @include absolute-position (200px, 150px, auto, 0, 0, 0);
+    background-color: #003A54;
     &,
     & div {
         @include box-sizing();
-        transition: 3s;
+        transition: 2s;
     }
     & > .chest-background {
-        @include chest-piece (170px, 0, black, 200px, 130px);
+        @include chest-piece (20px, 0, black, 200px, 130px);
         z-index: 1;
         border: 5px solid gold;
     }
     & > .chest-bottom {
-        @include chest-piece (200px, 0, black, 200px, 100px);
+        @include chest-piece (50px, 0, black, 200px, 100px);
         z-index: 3;
         border: 5px solid gold;
     }
     & > .chest-light {
-        @include chest-piece (210px, 0, gold, 90px, 0);
+        @include chest-piece (60px, 0, gold, 90px, 0);
         z-index: 2;
         right: 0;
         margin: auto;
@@ -183,7 +230,7 @@ $colors-list: orange blue aquamarine purple silver red;
         }
     }
     & > .chest-top {
-        @include chest-piece (150px, 0, black, 200px, 50px);
+        @include chest-piece (0px, 0, black, 200px, 50px);
         z-index: 4;
         border: 5px solid gold;
         border-radius: 10px 10px 0 0;
@@ -200,18 +247,18 @@ $colors-list: orange blue aquamarine purple silver red;
 }
 
 .image-container {
-    @include absolute-position(300px, 450px, auto, 0, auto, 0);
+    @include absolute-position(250px, 415px, 5px, 0, auto, 0);
     background-color: $palette-3;
     border: 2px solid #2196F3;
     box-shadow: 0 0 5px 3px #024C6D;
     z-index: 5;
     & > div {
         position: relative;
-        width: 270px;
-        height: 390px;
+        width: 240px;
+        height: 380px;
         margin: auto;
-        margin-top: 15px;
-        background-size: 270px 390px;
+        margin-top: 5px;
+        background-size: 240px 380px;
         background-repeat: no-repeat;
         & > span {
             position: absolute;
@@ -223,6 +270,6 @@ $colors-list: orange blue aquamarine purple silver red;
         }
     }
     & > button {
-        margin: 12px;
+        margin: 3px;
     }
 }

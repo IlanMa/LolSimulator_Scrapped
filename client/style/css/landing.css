@@ -3,15 +3,15 @@
   width: 300px;
   height: 580px;
   background-color: #026794;
+  color: #DDDDDD;
   float: left;
-  border: 2px solid black; }
+  border: 2px solid black;
+  border-top: 0; }
   .mode-container > p {
     /* stats p-tag */
     margin: 10px 10px;
-    font-size: 18px;
-    color: black; }
+    font-size: 18px; }
   .mode-container li {
-    color: black;
     padding: 5px;
     text-align: left; }
 
@@ -21,14 +21,15 @@
   height: 580px;
   background-color: #026794;
   float: right;
-  border: 2px solid black; }
+  border: 2px solid black;
+  border-top: 0; }
   .history-container > p {
     /* history p-tag */
     margin-top: 10px;
     font-size: 18px;
     color: white; }
   .history-container li {
-    color: #c8c8c8;
+    color: #DDDDDD;
     padding: 5px;
     text-align: left; }
   .history-container > span {
@@ -48,9 +49,9 @@
 .full-history-container {
   position: absolute;
   margin: auto;
-  width: 400px;
-  height: 500px;
-  top: 40px;
+  width: 450px;
+  height: 535px;
+  top: 20px;
   bottom: auto;
   left: 0;
   right: 0;
@@ -64,7 +65,7 @@
     color: white;
     font-size: 24px; }
   .full-history-container > ul {
-    width: 350px;
+    width: 400px;
     height: 90%;
     margin: auto;
     background-color: #026794; }
@@ -89,9 +90,9 @@
 .normal-result-container {
   position: relative;
   width: 450px;
-  height: 400px;
+  height: 580px;
   background-color: #003A54;
-  margin: 30px auto auto auto; }
+  margin: auto; }
 
 .scroll-container {
   position: relative;
@@ -101,10 +102,30 @@
   margin: 30px auto auto auto;
   top: 150px; }
 
-.chest-button,
 .chest-button-scroll {
-  position: relative;
   margin-top: 30px; }
+
+.chest-button {
+  position: absolute;
+  margin: auto;
+  width: 100px;
+  height: 35px;
+  top: auto;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  border: 2px solid gold;
+  background-color: black;
+  font-size: 20px;
+  color: yellow;
+  cursor: pointer;
+  z-index: 4;
+  box-shadow: 0 0 40px 3px gold;
+  transition: 0.5s;
+  overflow: hidden; }
+
+.chest-button:hover {
+  box-shadow: 0 0 40px 3px gold; }
 
 .scroll-result {
   position: relative;
@@ -163,7 +184,6 @@
   width: 100%;
   height: 600px;
   background-color: #003A54;
-  margin-top: 150px;
   border-top: 2px solid black; }
   .graph-container > h1 {
     font-size: 40px;
@@ -178,21 +198,50 @@
   height: 100px;
   background-color: black; }
 
+.chest-button:after {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: -175px;
+  width: 150%;
+  height: 300%;
+  transform: rotate(30deg);
+  opacity: 0;
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0) 100%); }
+
+/* Hover state - trigger effect */
+.chest-button:hover:after {
+  opacity: 1;
+  top: -20px;
+  left: -10px;
+  transition-property: left, top, opacity;
+  transition-duration: 0.7s, 0.7s, 0.15s;
+  transition-timing-function: ease; }
+
+/* Active state */
+.chest-button:active:after {
+  opacity: 0; }
+
 .chest-container {
-  position: relative;
+  position: absolute;
+  margin: auto;
   width: 200px;
-  height: 100%;
-  background-color: #003A54;
-  margin: auto; }
+  height: 150px;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #003A54; }
   .chest-container,
   .chest-container div {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    transition: 3s; }
+    transition: 2s; }
   .chest-container > .chest-background {
     position: absolute;
-    top: 170px;
+    top: 20px;
     left: 0;
     background-color: black;
     width: 200px;
@@ -201,7 +250,7 @@
     border: 5px solid gold; }
   .chest-container > .chest-bottom {
     position: absolute;
-    top: 200px;
+    top: 50px;
     left: 0;
     background-color: black;
     width: 200px;
@@ -210,7 +259,7 @@
     border: 5px solid gold; }
   .chest-container > .chest-light {
     position: absolute;
-    top: 210px;
+    top: 60px;
     left: 0;
     background-color: gold;
     width: 90px;
@@ -223,7 +272,7 @@
       width: 150px; }
   .chest-container > .chest-top {
     position: absolute;
-    top: 150px;
+    top: 0px;
     left: 0;
     background-color: black;
     width: 200px;
@@ -249,9 +298,9 @@
 .image-container {
   position: absolute;
   margin: auto;
-  width: 300px;
-  height: 450px;
-  top: auto;
+  width: 250px;
+  height: 415px;
+  top: 5px;
   bottom: auto;
   left: 0;
   right: 0;
@@ -261,11 +310,11 @@
   z-index: 5; }
   .image-container > div {
     position: relative;
-    width: 270px;
-    height: 390px;
+    width: 240px;
+    height: 380px;
     margin: auto;
-    margin-top: 15px;
-    background-size: 270px 390px;
+    margin-top: 5px;
+    background-size: 240px 380px;
     background-repeat: no-repeat; }
     .image-container > div > span {
       position: absolute;
@@ -275,4 +324,4 @@
       font-size: 20px;
       color: white; }
   .image-container > button {
-    margin: 12px; }
+    margin: 3px; }
