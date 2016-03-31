@@ -1,4 +1,4 @@
-var simulation = angular.module('simulation', ['ngRoute', 'wu.masonry']);
+var simulation = angular.module('simulation', ['ngRoute']);
 
 console.log("### APP JS")
 
