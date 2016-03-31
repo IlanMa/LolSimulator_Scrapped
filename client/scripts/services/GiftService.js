@@ -5,9 +5,6 @@ simulation.service('GiftService', [
     function($timeout, StatService, ChampionInfo) {
         'use strict';
 
-        console.log('### GIFT SERVICE');
-                    console.log(ChampionInfo)
-
         return {
             skinHistory: [], // Contains skins history
             currentMode: 'normal', // Current gift mode
