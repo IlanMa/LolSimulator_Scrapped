@@ -66,7 +66,9 @@ simulation.directive('graphGenerator', [
                         }
                     });
                 }
-
+                // $(document).on('click', '.chest-button-scroll' , function() {
+                //     drawGraph();
+                // });
                 $('.chest-button').on('click', drawGraph);
 
             }

@@ -20,6 +20,7 @@
     <!-- DIRECTIVES -->
     <script src='/scripts/directives/giftAnimation.js'></script>
     <script src='/scripts/directives/graphGenerator.js'></script>
+    <script src='/scripts/directives/imagePreload.js'></script>
     <!-- VENDORS -->
     <script src="scripts/vendor/angular-routes.js"></script>
     <!-- CSS -->
@@ -36,7 +37,9 @@
             <button class="global-button" ng-click="changeRoutes('select')">SELECT</button>
         </div>
         <div class="main-container">
-            <div ng-view=""></div>
+            <image-preload>
+                <div ng-view=""></div>
+            <image-preload>
         </div>
     </div>
 </body>

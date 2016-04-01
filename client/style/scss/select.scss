@@ -56,7 +56,6 @@
     }
 }
 
-
 .image-preview {
     position: fixed;
     left: 0;
@@ -70,17 +69,21 @@
     border: 1px solid #024C6D;
     box-shadow: 0 0 5px 3px #024C6D;
     z-index: 5;
-    & > div {
-        position: relative;
-        width: 270px;
-        height: 390px;
-        margin: auto;
-        margin-top: 15px;
-        background-size: 270px 390px;
-        background-repeat: no-repeat;
+    & > img {
+        margin-top: 10px;
+        width: 260px;
+        height: 410px;
+    }
+    & > span {
+        position: absolute;
+        bottom: 45px;
+        left: 0;
+        right: 0;
+        font-size: 20px;
+        color: white;
     }
     & > button {
-        margin-top: 12px;
+        margin: 3px;
     }
 }
 

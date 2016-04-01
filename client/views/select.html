@@ -1,7 +1,7 @@
 <div class="champion-container">
     <div class="dark-gradient" ng-click="closePreview()" ng-show="preview"></div>
     <div class="image-preview" ng-show="preview">
-        <div ng-style="{'background-image': 'url('+image+')'}"></div>
+        <img ng-src="{{image}}">
         <button ng-click="closePreview()">Close Preview</button>
     </div>
     <div class="selection-container" id="columns">

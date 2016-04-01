@@ -300,20 +300,15 @@
   border: 2px solid #2196F3;
   box-shadow: 0 0 5px 3px #024C6D;
   z-index: 5; }
-  .image-container > div {
-    position: relative;
+  .image-container > img {
     width: 240px;
-    height: 380px;
-    margin: auto;
-    margin-top: 5px;
-    background-size: 240px 380px;
-    background-repeat: no-repeat; }
-    .image-container > div > span {
-      position: absolute;
-      bottom: 10px;
-      left: 0;
-      right: 0;
-      font-size: 20px;
-      color: white; }
+    height: 380px; }
+  .image-container > span {
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+    color: white; }
   .image-container > button {
     margin: 3px; }

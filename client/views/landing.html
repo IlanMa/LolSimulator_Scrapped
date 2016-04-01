@@ -51,9 +51,8 @@
 <div class="normal-result-container">
     <!-- Image container -->
     <div class="image-container" ng-show="getGiftData('displaySkin')">
-        <div ng-style="{'background-image':'url('+getGiftData('skinImage')+')'}">
-            <span>{{skinHistory[0].name}}</span>
-        </div>
+        <img ng-src="{{getGiftData('skinImage')}}">
+        <span>{{skinHistory[0].name}}</span>
         <button class="global-button" ng-click="closeChest()">Close</button>
     </div>
     <!-- TEMP QUICK BUTTON -->
