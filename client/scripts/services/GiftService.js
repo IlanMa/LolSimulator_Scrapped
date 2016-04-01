@@ -21,9 +21,10 @@ simulation.service('GiftService', [
                 normal: 490, // RP Price to open mystery gift
                 chest: 790 // RP Price to open mystery chest
             },
+            quickOpening: false, // If allow user to open gifts quickly or not
             skinColor: 'gold', // Color inside the chest - depending on the rarity
             chestIsOpen: false, // If chest is open or not
-            displaySkin: false,
+            displaySkin: false, // If skin window is displayed or not
             skinImage: 'http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg',
 
             openSkin: function(mode) { // Invoked on gift open

@@ -51,6 +51,10 @@ simulation.controller('SimController', [
             }
         }
 
+        $scope.toggleQuick = function() {
+            GiftService.quickOpening = !GiftService.quickOpening;
+        }
+
         // TEMP - TO BE REMOVED
         $scope.closeChest = function() {
             GiftService.chestIsOpen = false;

@@ -56,10 +56,12 @@
         </div>
         <button class="global-button" ng-click="closeChest()">Close</button>
     </div>
+    <!-- TEMP QUICK BUTTON -->
+    <button class="global-button quick-button" ng-click="toggleQuick()" ng-class="{'button-active': getGiftData('quickOpening')}">Quick Opening</button>
     <!-- chest.html -->
     <div ng-include="'/views/chest.html'" ng-hide="animation === 'scroll'"></div>
     <!-- Open Button -->
-    <button class="chest-button" ng-click="openSkin()" ng-hide="animation === 'scroll' || getGiftData('chestIsOpen')">Open</button>
+    <button class="chest-button" ng-click="openSkin()" ng-hide="(animation === 'scroll' || getGiftData('chestIsOpen')) && !getGiftData('quickOpening')">Open</button>
     <!-- Scroll Directive -->
     <div class="scroll-container" ng-hide="animation === 'normal'">
         <gift-animation></gift-animation>
