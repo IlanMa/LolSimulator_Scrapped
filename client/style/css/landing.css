@@ -9,7 +9,7 @@
   border-top: 0; }
   .mode-container > p {
     /* stats p-tag */
-    margin: 10px 10px;
+    margin: 8px 10px;
     font-size: 18px; }
   .mode-container li {
     padding: 5px;
@@ -309,6 +309,7 @@
     left: 0;
     right: 0;
     font-size: 20px;
-    color: white; }
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
   .image-container > button {
     margin: 3px; }

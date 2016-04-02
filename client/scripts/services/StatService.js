@@ -9,9 +9,10 @@ simulation.service('StatService', [
             statistics: {
                 chestsOpened: 0, // Chests opened
                 dollarSpent: 0, // Dollars spent
+                dollarGained: 0, // Total dollar value of all acquired skins
                 rpSpent: 0, // RP spent
                 rpGained: 0, // RP gained
-                dollarReturn: 0 // Dollar Return 
+                dollarReturn: 0 // Net Profit 
             },
             skinTypeCount: { // Amount acquired for each type
                 '520RP': 0,
@@ -30,15 +31,17 @@ simulation.service('StatService', [
                 normal: 490, // RP Price to open mystery gift
                 chest: 790 // RP Price to open mystery chest
             },
+            valueOfOneRp: 0.0096153846153846,
             // Invoked after each open button press
             calculateStatistics: function(skin, mode) {
                 var stats = this.statistics;
                 var costToOpen = (mode === 'chest' ? this.price.chest : this.price.normal);
                 stats.chestsOpened += 1;
-                stats.dollarSpent += costToOpen * 0.0096153846153846;
+                stats.dollarSpent += costToOpen * this.valueOfOneRp;
+                stats.dollarGained +=  skin.price * this.valueOfOneRp;
                 stats.rpSpent += costToOpen;
                 stats.rpGained += skin.price;
-                stats.dollarReturn = (stats.rpGained - stats.rpSpent) * 0.0096153846153846;
+                stats.dollarReturn = (stats.rpGained - stats.rpSpent) * this.valueOfOneRp;
                 this.skinTypeCount[skin.price + 'RP'] += 1;
                 this.calculateGraphData(skin);
             },

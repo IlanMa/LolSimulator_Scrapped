@@ -9,7 +9,7 @@
     border-top: 0;
     & > p {
         /* stats p-tag */
-        margin: 10px 10px;
+        margin: 8px 10px;
         font-size: 18px;
     }
     & li {
@@ -256,6 +256,7 @@ $colors-list: orange blue aquamarine purple silver red;
         right: 0;
         font-size: 20px;
         color: white;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     }
     & > button {
         margin: 3px;
