@@ -18,14 +18,18 @@
         <li>RP Gained: {{statistics.rpGained}}</li>
         <li>Dollars Return: {{statistics.dollarReturn | currency}}</li>
     </ul>
+    <!-- Gift Type -->
     <p class="bold-info">Gift Type</p>
     <button class="global-button" ng-click="changeMode('normal')" ng-class="{'button-active': getGiftData('currentMode') === 'normal'}">Normal</button>
     <button class="global-button" ng-click="changeMode('chest')" ng-class="{'button-active': getGiftData('currentMode') === 'chest'}">Chest</button>
+    <!-- Legendary Promo -->
     <p class="bold-info">Legendary Promo</p>
     <button class="global-button" ng-click="enablePromo()" ng-class="{'button-active': getGiftData('legendaryPromo')}">Legendary</button>
+    <!-- Animation Type -->
     <p class="bold-info">Animation Type</p>
     <button class="global-button" ng-click="animation = 'normal'" ng-class="{'button-active': animation === 'normal'}">Normal</button>
     <button class="global-button" ng-click="animation = 'scroll'" ng-class="{'button-active': animation === 'scroll'}">Scroll</button>
+    <!-- Bonus Stats -->
     <p class="bold-info">Bonus Stats</p>
     <ul>
         <li><span class="color-code orange"></span> 520RP - {{typeCount['520RP']}} Skins - Odds: {{getStatData('probabilities')['520RP'].probability | number: 3}}%</li>
