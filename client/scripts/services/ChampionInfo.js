@@ -637,6 +637,12 @@ simulation.service('ChampionInfo', [function() {
             "num": 5,
             "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Maokai_5.jpg"
         }, {
+            "name": "Meowkai",
+            "champ": "Maokai",
+            "price": 1350,
+            "num": 6,
+            "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Maokai_6.jpg"
+        }, {
             "name": "Bloodstone Lissandra",
             "champ": "Lissandra",
             "price": 975,
@@ -652,7 +658,7 @@ simulation.service('ChampionInfo', [function() {
             "name": "Program Lissandra",
             "champ": "Lissandra",
             "price": 1350,
-            "num": 2,
+            "num": 3,
             "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Lissandra_3.jpg"
         }, {
             "name": "Exiled Morgana",
@@ -2130,6 +2136,12 @@ simulation.service('ChampionInfo', [function() {
             "price": 975,
             "num": 1,
             "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/TahmKench_1.jpg"
+        }, {
+            "name": "Urf Kench",
+            "champ": "TahmKench",
+            "price": 750,
+            "num": 2,
+            "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/TahmKench_2.jpg"
         }, {
             "name": "Dark Valkyrie Diana",
             "champ": "Diana",
@@ -3720,6 +3732,12 @@ simulation.service('ChampionInfo', [function() {
             "price": 1350,
             "num": 2,
             "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Velkoz_2.jpg"
+        }, {
+            "name": "Definitely Not Vel'Koz",
+            "champ": "Velkoz",
+            "price": 750,
+            "num": 3,
+            "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Velkoz_3.jpg"
         }, {
             "name": "Wildfire Zyra",
             "champ": "Zyra",
