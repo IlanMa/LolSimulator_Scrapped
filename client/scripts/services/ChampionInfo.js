@@ -649,6 +649,12 @@ simulation.service('ChampionInfo', [function() {
             "num": 2,
             "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Lissandra_2.jpg"
         }, {
+            "name": "Program Lissandra",
+            "champ": "Lissandra",
+            "price": 1350,
+            "num": 2,
+            "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Lissandra_3.jpg"
+        }, {
             "name": "Exiled Morgana",
             "champ": "Morgana",
             "price": 975,
@@ -3180,6 +3186,12 @@ simulation.service('ChampionInfo', [function() {
             "price": 750,
             "num": 5,
             "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Soraka_5.jpg"
+        }, {
+            "name": "Program Soraka",
+            "champ": "Soraka",
+            "price": 1350,
+            "num": 6,
+            "img": "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Soraka_6.jpg"
         }, {
             "name": "Frozen Terror Nocturne",
             "champ": "Nocturne",
